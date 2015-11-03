@@ -1,0 +1,41 @@
+// Only modify this file to include
+// - function definitions (prototypes)
+// - include files
+// - extern variable definitions
+// In the appropriate section
+
+#ifndef _heater_chamber_v1_H_
+#define _heater_chamber_v1_H_
+#include "Arduino.h"
+//add your includes for the project heater_chamber_v1 here
+
+
+//end of add your includes here
+#ifdef __cplusplus
+extern "C" {
+#endif
+extern uint8_t arduino_logo[];
+void loop();
+void setup();
+#ifdef __cplusplus
+} // extern "C"
+#endif
+
+//add your function definitions for the project heater_chamber_v1 here
+void check_buttons(void);
+void process_buttons(byte bt);
+void UpButton(byte mn);
+void DownButton(byte mn);
+void read_configs(void);
+void save_configs(void);
+void set_debug(boolean _debug);
+boolean set_serial(String _serial);
+void set_temp(float _temp);
+void set_humi(float _humi);
+void DeCommand(String *_request, String _separate,String *_key,String *_val);
+float read_ds(String *stt);
+
+
+
+//Do not add code below this line
+#endif /* _heater_chamber_v1_H_ */

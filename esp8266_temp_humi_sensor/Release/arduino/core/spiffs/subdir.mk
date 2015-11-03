@@ -1,0 +1,64 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+C:/Users/Administrator/AppData/Roaming/Arduino15/packages/esp8266/hardware/esp8266/1.6.5-947-g39819f0/cores/esp8266/spiffs/spiffs_cache.c \
+C:/Users/Administrator/AppData/Roaming/Arduino15/packages/esp8266/hardware/esp8266/1.6.5-947-g39819f0/cores/esp8266/spiffs/spiffs_check.c \
+C:/Users/Administrator/AppData/Roaming/Arduino15/packages/esp8266/hardware/esp8266/1.6.5-947-g39819f0/cores/esp8266/spiffs/spiffs_gc.c \
+C:/Users/Administrator/AppData/Roaming/Arduino15/packages/esp8266/hardware/esp8266/1.6.5-947-g39819f0/cores/esp8266/spiffs/spiffs_hydrogen.c \
+C:/Users/Administrator/AppData/Roaming/Arduino15/packages/esp8266/hardware/esp8266/1.6.5-947-g39819f0/cores/esp8266/spiffs/spiffs_nucleus.c 
+
+C_DEPS += \
+./arduino/spiffs_cache.c.d \
+./arduino/spiffs_check.c.d \
+./arduino/spiffs_gc.c.d \
+./arduino/spiffs_hydrogen.c.d \
+./arduino/spiffs_nucleus.c.d 
+
+AR_OBJ += \
+./arduino/spiffs_cache.c.o \
+./arduino/spiffs_check.c.o \
+./arduino/spiffs_gc.c.o \
+./arduino/spiffs_hydrogen.c.o \
+./arduino/spiffs_nucleus.c.o 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+arduino/spiffs_cache.c.o: C:/Users/Administrator/AppData/Roaming/Arduino15/packages/esp8266/hardware/esp8266/1.6.5-947-g39819f0/cores/esp8266/spiffs/spiffs_cache.c
+	@echo 'Building file: $<'
+	@echo 'Starting C compile'
+	"/bin/xtensa-lx106-elf-gcc" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-I/tools/sdk//include" -c -Os -g -Wpointer-arith -Wno-implicit-function-declaration -Wl,-EL -fno-inline-functions -nostdlib -mlongcalls -mtext-section-literals -falign-functions=4 -MMD -std=gnu99 -DF_CPU=80000000L -DARDUINO=165-r5 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_1.6.5-947-G39819F0  -DESP8266   -I"C:\Users\Administrator\AppData\Roaming\Arduino15\packages\esp8266\hardware\esp8266\1.6.5-947-g39819f0\cores\esp8266" -I"C:\Users\Administrator\AppData\Roaming\Arduino15\packages\esp8266\hardware\esp8266\1.6.5-947-g39819f0\variants\generic" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -D__IN_ECLIPSE__=1 "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+arduino/spiffs_check.c.o: C:/Users/Administrator/AppData/Roaming/Arduino15/packages/esp8266/hardware/esp8266/1.6.5-947-g39819f0/cores/esp8266/spiffs/spiffs_check.c
+	@echo 'Building file: $<'
+	@echo 'Starting C compile'
+	"/bin/xtensa-lx106-elf-gcc" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-I/tools/sdk//include" -c -Os -g -Wpointer-arith -Wno-implicit-function-declaration -Wl,-EL -fno-inline-functions -nostdlib -mlongcalls -mtext-section-literals -falign-functions=4 -MMD -std=gnu99 -DF_CPU=80000000L -DARDUINO=165-r5 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_1.6.5-947-G39819F0  -DESP8266   -I"C:\Users\Administrator\AppData\Roaming\Arduino15\packages\esp8266\hardware\esp8266\1.6.5-947-g39819f0\cores\esp8266" -I"C:\Users\Administrator\AppData\Roaming\Arduino15\packages\esp8266\hardware\esp8266\1.6.5-947-g39819f0\variants\generic" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -D__IN_ECLIPSE__=1 "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+arduino/spiffs_gc.c.o: C:/Users/Administrator/AppData/Roaming/Arduino15/packages/esp8266/hardware/esp8266/1.6.5-947-g39819f0/cores/esp8266/spiffs/spiffs_gc.c
+	@echo 'Building file: $<'
+	@echo 'Starting C compile'
+	"/bin/xtensa-lx106-elf-gcc" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-I/tools/sdk//include" -c -Os -g -Wpointer-arith -Wno-implicit-function-declaration -Wl,-EL -fno-inline-functions -nostdlib -mlongcalls -mtext-section-literals -falign-functions=4 -MMD -std=gnu99 -DF_CPU=80000000L -DARDUINO=165-r5 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_1.6.5-947-G39819F0  -DESP8266   -I"C:\Users\Administrator\AppData\Roaming\Arduino15\packages\esp8266\hardware\esp8266\1.6.5-947-g39819f0\cores\esp8266" -I"C:\Users\Administrator\AppData\Roaming\Arduino15\packages\esp8266\hardware\esp8266\1.6.5-947-g39819f0\variants\generic" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -D__IN_ECLIPSE__=1 "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+arduino/spiffs_hydrogen.c.o: C:/Users/Administrator/AppData/Roaming/Arduino15/packages/esp8266/hardware/esp8266/1.6.5-947-g39819f0/cores/esp8266/spiffs/spiffs_hydrogen.c
+	@echo 'Building file: $<'
+	@echo 'Starting C compile'
+	"/bin/xtensa-lx106-elf-gcc" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-I/tools/sdk//include" -c -Os -g -Wpointer-arith -Wno-implicit-function-declaration -Wl,-EL -fno-inline-functions -nostdlib -mlongcalls -mtext-section-literals -falign-functions=4 -MMD -std=gnu99 -DF_CPU=80000000L -DARDUINO=165-r5 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_1.6.5-947-G39819F0  -DESP8266   -I"C:\Users\Administrator\AppData\Roaming\Arduino15\packages\esp8266\hardware\esp8266\1.6.5-947-g39819f0\cores\esp8266" -I"C:\Users\Administrator\AppData\Roaming\Arduino15\packages\esp8266\hardware\esp8266\1.6.5-947-g39819f0\variants\generic" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -D__IN_ECLIPSE__=1 "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+arduino/spiffs_nucleus.c.o: C:/Users/Administrator/AppData/Roaming/Arduino15/packages/esp8266/hardware/esp8266/1.6.5-947-g39819f0/cores/esp8266/spiffs/spiffs_nucleus.c
+	@echo 'Building file: $<'
+	@echo 'Starting C compile'
+	"/bin/xtensa-lx106-elf-gcc" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-I/tools/sdk//include" -c -Os -g -Wpointer-arith -Wno-implicit-function-declaration -Wl,-EL -fno-inline-functions -nostdlib -mlongcalls -mtext-section-literals -falign-functions=4 -MMD -std=gnu99 -DF_CPU=80000000L -DARDUINO=165-r5 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_1.6.5-947-G39819F0  -DESP8266   -I"C:\Users\Administrator\AppData\Roaming\Arduino15\packages\esp8266\hardware\esp8266\1.6.5-947-g39819f0\cores\esp8266" -I"C:\Users\Administrator\AppData\Roaming\Arduino15\packages\esp8266\hardware\esp8266\1.6.5-947-g39819f0\variants\generic" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -D__IN_ECLIPSE__=1 "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

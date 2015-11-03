@@ -1,0 +1,27 @@
+14:16:57 **** Incremental Build of configuration Release for project heater_chamber_v1 ****
+make all 
+'Building target: heater_chamber_v1'
+'Printing size:'
+"C:/Program Files/Arduino/hardware/tools/avr/bin/avr-size" -A "C:/eclipse/workspace/heater_chamber_v1/Release/heater_chamber_v1.elf"
+C:/eclipse/workspace/heater_chamber_v1/Release/heater_chamber_v1.elf  :
+section            size      addr
+.data                92   8388864
+.text             16984         0
+.bss               1061   8388956
+.comment             17         0
+.debug_aranges     2560         0
+.debug_info       92789         0
+.debug_abbrev     12641         0
+.debug_line       14750         0
+.debug_frame       9696         0
+.debug_str        14817         0
+.debug_loc        59789         0
+.debug_ranges      2864         0
+Total            228060
+
+
+'Finished building target: heater_chamber_v1'
+' '
+
+14:17:05 Build Finished (took 8s.504ms)
+
