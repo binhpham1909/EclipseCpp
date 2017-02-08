@@ -27,44 +27,19 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>Libraries/Arduino-DHT22-master</name>
+			<name>core/core</name>
 			<type>2</type>
-			<locationURI>ArduinoPivateLibPath/Arduino-DHT22-master</locationURI>
+			<location>C:/eclipse/arduino-1.6.12/hardware/arduino/avr/cores/arduino</location>
 		</link>
 		<link>
-			<name>Libraries/EEPROM</name>
+			<name>core/variant</name>
 			<type>2</type>
-			<locationURI>ArduinoHardwareLibPath/EEPROM</locationURI>
+			<location>C:/eclipse/arduino-1.6.12/hardware/arduino/avr/variants/eightanaloginputs</location>
 		</link>
 		<link>
-			<name>Libraries/LCD5110_Graph</name>
+			<name>libraries/EEPROM</name>
 			<type>2</type>
-			<locationURI>ArduinoPivateLibPath/LCD5110_Graph</locationURI>
-		</link>
-		<link>
-			<name>Libraries/OneWire-master</name>
-			<type>2</type>
-			<locationURI>ArduinoPivateLibPath/OneWire-master</locationURI>
-		</link>
-		<link>
-			<name>Libraries/PID</name>
-			<type>2</type>
-			<locationURI>ArduinoPivateLibPath/PID</locationURI>
-		</link>
-		<link>
-			<name>Libraries/Wire</name>
-			<type>2</type>
-			<locationURI>ArduinoHardwareLibPath/Wire</locationURI>
-		</link>
-		<link>
-			<name>arduino/core</name>
-			<type>2</type>
-			<locationURI>ArduinoPlatformPath/cores/arduino</locationURI>
-		</link>
-		<link>
-			<name>arduino/variant</name>
-			<type>2</type>
-			<locationURI>ArduinoPinPath/eightanaloginputs</locationURI>
+			<location>C:/eclipse/arduino-1.6.12/hardware/arduino/avr/libraries/EEPROM</location>
 		</link>
 	</linkedResources>
 	<variableList>

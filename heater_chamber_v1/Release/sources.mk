@@ -2,39 +2,47 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-ELF_SRCS := 
+INO_SRCS := 
+ASM_SRCS := 
 O_UPPER_SRCS := 
-O_SRCS := 
-EEP_SRCS := 
 CPP_SRCS := 
+S_UPPER_SRCS := 
+O_SRCS := 
+ELF_SRCS := 
 C_UPPER_SRCS := 
-C_SRCS := 
-AR_SRCS := 
 CXX_SRCS := 
 C++_SRCS := 
+PDE_SRCS := 
 CC_SRCS := 
-ELF := 
-C++_DEPS := 
-AR := 
-C_DEPS := 
-CC_DEPS := 
-FLASH_IMAGE := 
-AR_OBJ := 
-CPP_DEPS := 
-LINK_OBJ := 
-EEP := 
-CXX_DEPS := 
+AR_SRCS := 
+C_SRCS := 
 C_UPPER_DEPS := 
+PDE_DEPS := 
+C_DEPS := 
+AR := 
+CC_DEPS := 
+AR_OBJ := 
+C++_DEPS := 
+LINK_OBJ := 
+CXX_DEPS := 
+ASM_DEPS := 
+HEX := 
+INO_DEPS := 
 SIZEDUMMY := 
+S_UPPER_DEPS := 
+ELF := 
+CPP_DEPS := 
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
-Libraries/Arduino-DHT22-master \
-Libraries/LCD5110_Graph \
-Libraries/OneWire-master \
-Libraries/PID \
-Libraries/Wire \
-Libraries/Wire/utility \
-arduino/core \
+core\core \
 . \
+libraries\EEPROM\examples\eeprom_clear \
+libraries\EEPROM\examples\eeprom_crc \
+libraries\EEPROM\examples\eeprom_get \
+libraries\EEPROM\examples\eeprom_iteration \
+libraries\EEPROM\examples\eeprom_put \
+libraries\EEPROM\examples\eeprom_read \
+libraries\EEPROM\examples\eeprom_update \
+libraries\EEPROM\examples\eeprom_write \
 

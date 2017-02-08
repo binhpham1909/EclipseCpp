@@ -3,18 +3,15 @@
 ################################################################################
 
 # Add inputs and outputs from these tool invocations to the build variables 
-CPP_SRCS += \
-..\heater_chamber_v1.cpp 
+INO_SRCS += \
+C:\eclipse\arduino-1.6.12\hardware\arduino\avr\libraries\EEPROM\examples\eeprom_put\eeprom_put.ino 
 
-LINK_OBJ += \
-.\heater_chamber_v1.cpp.o 
-
-CPP_DEPS += \
-.\heater_chamber_v1.cpp.d 
+INO_DEPS += \
+.\libraries\EEPROM\examples\eeprom_put\eeprom_put.ino.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
-heater_chamber_v1.cpp.o: ../heater_chamber_v1.cpp
+libraries\EEPROM\examples\eeprom_put/eeprom_put.o: C:\eclipse\arduino-1.6.12\hardware\arduino\avr\libraries\EEPROM\examples\eeprom_put\eeprom_put.ino
 	@echo 'Building file: $<'
 	@echo 'Starting C++ compile'
 	"/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_PRO -DARDUINO_ARCH_AVR   -I"C:\eclipse\arduino-1.6.12\hardware\arduino\avr\cores\arduino" -I"C:\eclipse\arduino-1.6.12\hardware\arduino\avr\variants\eightanaloginputs" -I"C:\eclipse\arduino-1.6.12\hardware\arduino\avr\libraries\EEPROM" -I"C:\eclipse\arduino-1.6.12\hardware\arduino\avr\libraries\EEPROM\src" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -D__IN_ECLIPSE__=1 -x c++ "$<" -o "$@"  -Wall

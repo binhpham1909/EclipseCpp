@@ -1,16 +1,25 @@
+714=1
 Arduino\ Board=
 Arduino\ Custom\ Option\ Selections=
 Arduino\ IDE\ Version=1.6.5-r5
 Arduino\ Path=C\:\\Program Files\\Arduino
 Arduino\ Port=
 Arduino\ boards\ file=
+Automatically\ import\ libraries=true
+Board=Arduino Pro or Pro Mini
+Board\ custom\ option\ selections=Flash Mode\=\nProcessor\=ATmega328 (5V, 16 MHz)\nFlash Size\=\nDebug port\=\nlwIP Variant\=\nDebug Level\=\nReset Method\=\nVariant\=\nFlash Frequency\=\nCPU Frequency\=\nCPU Speed(MHz)\=\nModule\=\nUpload Speed\=\nUpload method\=\nBootloader version\=
+Boards\ file=C\:\\eclipse\\arduino-1.6.12\\hardware\\arduino\\avr\\boards.txt
+Build\ before\ upload\ option=ASK
 FmStatus=2
 FsStatus=3
 FuStatub=50
 FuStatus=1
 JANTJE.TEMPLATE_FOLDER=
 JANTJE.TEMPLATE_USE_DEFAULT=true
-Private\ Library\ Path=C\:\\Users\\Administrator\\OneDrive\\Documents\\Arduino\\libraries
-Private\ hardware\ Path=C\:\\Program Files\\Arduino\\hardware
+Open\ serial\ connections\ with\ the\ monitor=true
+Private\ Library\ Path=C\:\\eclipse\\EclipseCpp\\zzzlibraries;
+Private\ hardware\ Path=C\:\\eclipse\\arduino-1.6.12\\hardware;
+UPLOAD.PROTOCOL=Default
+Upload\ port=COM3
 eclipse.preferences.version=1
 lFsStatus=51
