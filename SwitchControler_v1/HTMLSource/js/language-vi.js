@@ -1,0 +1,20 @@
+var vi=new Array(
+		"Đăng nhập",
+		"Tên đăng nhập",
+		"Mật khẩu",
+		"Đang đăng nhập",
+		"Đang chuyển hướng",
+		"Sai mật khẩu",
+		"Sai tên đăng nhập",
+		"Cài đặt mạng internet",
+		"Tên mạng Wifi",
+		"Mật khẩu Wifi",
+		"Bạn muốn khởi động lại thiết bị?",
+		"Đang khởi động lại thiết bị.",
+		"Lưu thành công, khởi động lại thiết bị để thiết lập có hiệu lực.",
+		"IP không đúng",
+		"Subnet mask không đúng",
+		"Gateway không đúng",
+		"Port phải trong khoảng 80 - 65535",
+		"Tên đăng nhập"
+);

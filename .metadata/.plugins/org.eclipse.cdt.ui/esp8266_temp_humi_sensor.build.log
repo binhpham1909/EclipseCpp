@@ -1,9 +1,0 @@
-13:54:17 **** Incremental Build of configuration Release for project esp8266_temp_humi_sensor ****
-make all 
-Cannot run program "make": Launching failed
-
-Error: Program "make" not found in PATH
-PATH=[/bin/;;C:/Program Files/Arduino/hardware/tools/avr/utils/bin;C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files\Arduino\hardware\tools\avr;C:\Users\Administrator\AppData\Roaming\npm;C:\eclipse]
-
-13:54:17 Build Finished (took 87ms)
-
