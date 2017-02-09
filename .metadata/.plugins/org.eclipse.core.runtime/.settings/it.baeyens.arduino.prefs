@@ -9,6 +9,9 @@ Arduino\ Path=C\:\\Program Files\\Arduino
 Arduino\ Port=
 Arduino\ boards\ file=
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 62967bf... bo sung eclipse setup file
+=======
 >>>>>>> parent of 62967bf... bo sung eclipse setup file
 =======
 >>>>>>> parent of 62967bf... bo sung eclipse setup file
@@ -19,10 +22,13 @@ Boards\ file=C\:\\eclipse\\arduino-1.6.12\\hardware\\arduino\\avr\\boards.txt
 Build\ before\ upload\ option=ASK
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 FmStatus=1
 FuStatub=9
 FuStatus=1
 =======
+=======
+>>>>>>> parent of 62967bf... bo sung eclipse setup file
 =======
 >>>>>>> parent of 62967bf... bo sung eclipse setup file
 FmStatus=2
@@ -32,6 +38,9 @@ FuStatus=1
 JANTJE.TEMPLATE_FOLDER=
 JANTJE.TEMPLATE_USE_DEFAULT=true
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 62967bf... bo sung eclipse setup file
+=======
 >>>>>>> parent of 62967bf... bo sung eclipse setup file
 =======
 >>>>>>> parent of 62967bf... bo sung eclipse setup file
