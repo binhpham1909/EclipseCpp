@@ -13,9 +13,6 @@
 					<entry kind="includePath" name="C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="/SwitchControler_v1/Release/core">
-						<flag value="BUILTIN|READONLY|VALUE_WORKSPACE_PATH|RESOLVED"/>
-					</entry>
 					<entry kind="includePath" name="C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/xtensa-lx106-elf/lib/gcc/xtensa-lx106-elf/4.8.2/include">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
@@ -731,9 +728,6 @@
 					</entry>
 					<entry kind="includePath" name="C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include">
 						<flag value="BUILTIN|READONLY"/>
-					</entry>
-					<entry kind="includePath" name="/SwitchControler_v1/Release/core">
-						<flag value="BUILTIN|READONLY|VALUE_WORKSPACE_PATH|RESOLVED"/>
 					</entry>
 					<entry kind="includePath" name="C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/xtensa-lx106-elf/xtensa-lx106-elf/include/c++/4.8.2">
 						<flag value="BUILTIN|READONLY"/>

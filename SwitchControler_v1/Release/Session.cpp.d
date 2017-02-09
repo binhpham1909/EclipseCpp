@@ -59,7 +59,7 @@ Session.cpp.o: ../Session.cpp ../Session.h ../Singleton.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/debug.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic/pins_arduino.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic/common.h \
- C:\eclipse\EclipseCpp\zzzlibraries\Time/TimeLib.h \
+ C:\eclipse\arduino-1.6.12\libraries\Time/TimeLib.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/ESP8266WiFi.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/include/wl_definitions.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/IPAddress.h \
@@ -204,7 +204,7 @@ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic/pins_ardu
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic/common.h:
 
-C:\eclipse\EclipseCpp\zzzlibraries\Time/TimeLib.h:
+C:\eclipse\arduino-1.6.12\libraries\Time/TimeLib.h:
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/ESP8266WiFi.h:
 

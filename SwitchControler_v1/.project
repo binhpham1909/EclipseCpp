@@ -44,7 +44,7 @@
 		<link>
 			<name>libraries/ArduinoJson</name>
 			<type>2</type>
-			<location>C:/eclipse/EclipseCpp/zzzlibraries/ArduinoJson</location>
+			<location>C:/eclipse/arduino-1.6.12/libraries/ArduinoJson</location>
 		</link>
 		<link>
 			<name>libraries/EEPROM</name>
@@ -64,12 +64,12 @@
 		<link>
 			<name>libraries/Time</name>
 			<type>2</type>
-			<location>C:/eclipse/EclipseCpp/zzzlibraries/Time</location>
+			<location>C:/eclipse/arduino-1.6.12/libraries/Time</location>
 		</link>
 		<link>
 			<name>libraries/pubsubclient-master</name>
 			<type>2</type>
-			<location>C:/eclipse/EclipseCpp/zzzlibraries/pubsubclient-master</location>
+			<location>C:/eclipse/arduino-1.6.12/libraries/pubsubclient-master</location>
 		</link>
 	</linkedResources>
 </projectDescription>
