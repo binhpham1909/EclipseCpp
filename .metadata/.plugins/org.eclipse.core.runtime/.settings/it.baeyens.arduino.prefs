@@ -1,12 +1,31 @@
+<<<<<<< HEAD
 714=3
+=======
+714=1
+Arduino\ Board=
+Arduino\ Custom\ Option\ Selections=
+Arduino\ IDE\ Version=1.6.5-r5
+Arduino\ Path=C\:\\Program Files\\Arduino
+Arduino\ Port=
+Arduino\ boards\ file=
+>>>>>>> parent of 62967bf... bo sung eclipse setup file
 Automatically\ import\ libraries=true
-Board=Generic ESP8266 Module
-Board\ custom\ option\ selections=Flash Mode\=DIO\nProcessor\=\nFlash Size\=1M (64K SPIFFS)\nDebug port\=Serial\nlwIP Variant\=\nDebug Level\=All\nReset Method\=ck\nVariant\=\nFlash Frequency\=80MHz\nCPU Frequency\=160 MHz\nCPU Speed(MHz)\=\nModule\=\nUpload Speed\=115200\nUpload method\=\nBootloader version\=
-Boards\ file=C\:\\eclipse\\arduino-1.6.12\\hardware\\esp8266com\\esp8266\\boards.txt
+Board=Arduino Pro or Pro Mini
+Board\ custom\ option\ selections=Flash Mode\=\nProcessor\=ATmega328 (5V, 16 MHz)\nFlash Size\=\nDebug port\=\nlwIP Variant\=\nDebug Level\=\nReset Method\=\nVariant\=\nFlash Frequency\=\nCPU Frequency\=\nCPU Speed(MHz)\=\nModule\=\nUpload Speed\=\nUpload method\=\nBootloader version\=
+Boards\ file=C\:\\eclipse\\arduino-1.6.12\\hardware\\arduino\\avr\\boards.txt
 Build\ before\ upload\ option=ASK
+<<<<<<< HEAD
 FmStatus=1
 FuStatub=9
 FuStatus=1
+=======
+FmStatus=2
+FsStatus=3
+FuStatub=50
+FuStatus=1
+JANTJE.TEMPLATE_FOLDER=
+JANTJE.TEMPLATE_USE_DEFAULT=true
+>>>>>>> parent of 62967bf... bo sung eclipse setup file
 Open\ serial\ connections\ with\ the\ monitor=true
 Private\ Library\ Path=C\:\\eclipse\\EclipseCpp\\zzzlibraries
 Private\ hardware\ Path=C\:\\eclipse\\arduino-1.6.12\\hardware
@@ -16,3 +35,4 @@ Serial\ monitor\ last\ selected\ rate=115200
 UPLOAD.PROTOCOL=Default
 Upload\ port=COM3
 eclipse.preferences.version=1
+lFsStatus=51
