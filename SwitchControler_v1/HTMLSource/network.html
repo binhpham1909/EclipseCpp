@@ -7,18 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="stylesheet" href="css/bootstrap.min.css.gz">
-<link rel="stylesheet" href="css/bootstrap-theme.min.css.gz">
 <script src="js/jquery.min.js.gz"></script>
-<script src="js/bootstrap.min.js.gz"></script>
-<script src="js/md5.min.js.gz"></script>
 	
 <link rel="stylesheet" href="css/main.css">
-<script src="js/language-vi.js"></script>
+<script src="js/language.js"></script>
 <script src="js/configs.js"></script>
 <script src="js/main.js"></script>
 </head>
 <body>
-<div class="container">
+<div>
 	<div class="panel panel-primary">
 		<div class="panel-heading">
 			<div class="input-group">
@@ -107,6 +104,14 @@ function setFormContent(){
 	$.each(network, function(name, value) {
 		$("#"+name).val(value);
 	});
+	if(network["dhcp"]==1){
+		DisableStatic(true);
+		$('#dhcp').attr('checked', true);
+	}
+	else{
+		DisableStatic(false);
+		$('#fixed').attr('checked', true);
+	}
 }
 $('document').ready(function(){
 	updateLanguage();

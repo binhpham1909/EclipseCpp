@@ -15,17 +15,15 @@
 #include "Session.h"
 #include "HTMLPage.h"
 
-#include "HTML/js/jquery-3.1.0.min.js.gz.h"
-#include "HTML/js/bootstrap-3.3.7.min.js.gz.h"
-#include "HTML/js/md5.min.js.gz.h"
+#include "HTML/js/jquery.min.js.gz.h"
 #include "HTML/js/main.js.h"
 #include "HTML/js/language-vi.js.h"
 
-#include "HTML/css/bootstrap-3.3.7.min.css.gz.h"
-#include "HTML/css/bootstrap-theme-3.3.7.min.css.gz.h"
-#include "HTML/css/normalize.css.h"
-#include "HTML/css/skeleton.css.h"
+#include "HTML/css/bootstrap.min.css.gz.h"
 #include "HTML/css/main.css.h"
+
+#include "HTML/login.html.gz.h"
+#include "HTML/network.html.gz.h"
 
 #include "HTML/admin.html.h"
 #include "HTML/device.html.h"
@@ -33,8 +31,6 @@
 #include "HTML/favicon.png.h"
 #include "HTML/general.html.h"
 #include "HTML/gpio.html.h"
-#include "HTML/login.html.h"
-#include "HTML/network.html.h"
 #include "HTML/prog.html.h"
 #include "HTML/time.html.h"
 
@@ -50,13 +46,14 @@ static const char MimePNG[] = "image/png";
 #define LOGIN_REQUIRE	1
 #define LOGIN_UNREQUIRE	0
 
-class ServerManager : public ESP8266WebServer  {
+class ServerManager : public Singleton<ServerManager>  {
 public:
-	ServerManager(int port = 80);
+	ServerManager();
 	virtual ~ServerManager();
 	void loop();
 	int checkLogined();
-
+private:
+	ESP8266WebServer *server;
 	void handlerRoot();
 	void handlerFile(int code, const char* content_type, PGM_P data, size_t contentLength, bool bGzip, unsigned long expire);
 	void handlerFileLogined(int code, const char* content_type, PGM_P data, size_t contentLength, bool bGzip, bool needLogined);
@@ -70,7 +67,7 @@ public:
 	void handlerBootstrapJS();
 	void handlerMD5JS();
 	void handlerJqueryJS();
-private:
+
 	void handlerNetworkSettings();
 	void sendHeaderGzip(size_t contentLength, bool gzip, unsigned long expire);
 	void redirect(const char* path);
@@ -78,7 +75,6 @@ private:
 	void setSession(int role);
 	String getSession();
 	int getUserRole();
-
 };
 
 const char configs_language_js[] PROGMEM = "var lang = $cf1$;\n";

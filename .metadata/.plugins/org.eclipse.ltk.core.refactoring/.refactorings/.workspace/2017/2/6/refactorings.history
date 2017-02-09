@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;SwitchControler_v1/HTMLSource/login.html.gz&apos;" deleteContents="false" description="Delete resource &apos;SwitchControler_v1/HTMLSource/login.html.gz&apos;" element1="/SwitchControler_v1/HTMLSource/login.html.gz" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1486629960900"/>
+</session>

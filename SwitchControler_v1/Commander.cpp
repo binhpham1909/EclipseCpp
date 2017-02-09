@@ -20,10 +20,18 @@ String Commander::process(char* commandJson) {
 	DynamicJsonBuffer jsonBuffer;
 	JsonObject& root = jsonBuffer.parseObject(commandJson);
 	String cmd = root["cmd"];
+	DBG(root["cmd"].asString());
 	if(cmd=="control"){
 		DBG("control");
 	}
 	else if(cmd=="networkSetup") {
+		DBG(root["dhcp"].asString());
+		DBG(root["ssid"].asString());
+		DBG(root["wifiPassword"].asString());
+		DBG(root["port"].asString());
+		DBG(root["ip"].asString());
+		DBG(root["mask"].asString());
+		DBG(root["gw"].asString());
 		bool dhcp = root["dhcp"];
 		bool result;
 		if(dhcp){
@@ -57,28 +65,39 @@ String Commander::process(char* commandJson) {
 String Commander::process(String commandJson) {
 	DynamicJsonBuffer jsonBuffer;
 	JsonObject& root = jsonBuffer.parseObject(commandJson);
-	String cmd = root["cmd"];
+	String cmd = root["cmd"].asString();
+	DBG(root["cmd"].asString());
 	if(cmd=="control"){
 		DBG("control");
 	}
 	else if(cmd=="networkSetup") {
+		DBG(root["dhcp"].asString());
+		DBG(root["ssid"].asString());
+		DBG(root["wifiPassword"].asString());
+		DBG(root["port"].asString());
+		DBG(root["ip"].asString());
+		DBG(root["mask"].asString());
+		DBG(root["gw"].asString());
 		bool dhcp = root["dhcp"];
 		bool result;
 		if(dhcp){
-			result = ModuleSettings::getInstance()->setWifiSSID(root["ssid"])&
-					ModuleSettings::getInstance()->setWifiPassword(root["wifiPassword"])&
-					ModuleSettings::getInstance()->setServerPort(root["port"])&
-					ModuleSettings::getInstance()->setStaticIP(root["ip"])&
-					ModuleSettings::getInstance()->setMask(root["mask"])&
-					ModuleSettings::getInstance()->setGateway(root["gw"])&
+			result = ModuleSettings::getInstance()->setWifiSSID(root["ssid"].asString())&
+					ModuleSettings::getInstance()->setWifiPassword(root["wifiPassword"].asString())&
+					ModuleSettings::getInstance()->setServerPort(root["port"].as<int>())&
 					ModuleSettings::getInstance()->setDHCP(dhcp);
 		}else{
-			result = ModuleSettings::getInstance()->setWifiSSID(root["ssid"])&
-					ModuleSettings::getInstance()->setWifiPassword(root["wifiPassword"])&
-					ModuleSettings::getInstance()->setServerPort(root["port"])&
+			result = ModuleSettings::getInstance()->setWifiSSID(root["ssid"].asString())&
+					ModuleSettings::getInstance()->setWifiPassword(root["wifiPassword"].asString())&
+					ModuleSettings::getInstance()->setServerPort(root["port"].as<int>())&
+					ModuleSettings::getInstance()->setStaticIP(root["ip"].asString())&
+					ModuleSettings::getInstance()->setMask(root["mask"].asString())&
+					ModuleSettings::getInstance()->setGateway(root["gw"].asString())&
 					ModuleSettings::getInstance()->setDHCP(dhcp);
 		}
-		if(result)	return FPSTR(JsonTrue);
+		if(result){
+			ModuleSettings::getInstance()->saveSettings();
+			return FPSTR(JsonTrue);
+		}
 		else return FPSTR(JsonFalse);
 	}
 	else if(cmd=="debug") {
