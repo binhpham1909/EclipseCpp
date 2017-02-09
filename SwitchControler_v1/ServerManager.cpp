@@ -7,54 +7,14 @@
 
 #include "ServerManager.h"
 
-ServerManager::ServerManager() {
+ServerManager::ServerManager(int port) : ESP8266WebServer(port){
 	// TODO Auto-generated constructor stub
-	server = new ESP8266WebServer(ModuleSettings::getInstance()->getServerPort());
-	server->on("/favicon.png",[&](){ServerManager::handlerFile(200, MimePNG, favicon_png,  sizeof(favicon_png), GZIP_DISABLE,BROWSER_CACHE_DAYS);});
-	server->on("/js/jquery.min.js.gz", [&](){ServerManager::handlerFile(200, MimeCss, jquery_3_1_0_min_js_gz, sizeof(jquery_3_1_0_min_js_gz), GZIP_ENABLE, BROWSER_CACHE_DAYS);});
-	server->on("/js/md5.min.js.gz", [&](){ServerManager::handlerFile(200, MimeCss, md5_min_js_gz, sizeof(md5_min_js_gz), GZIP_ENABLE, BROWSER_CACHE_DAYS);});
-	server->on("/js/bootstrap.min.js.gz", [&](){ServerManager::handlerFile(200, MimeCss, bootstrap_min_js_gz, sizeof(bootstrap_min_js_gz), GZIP_ENABLE, BROWSER_CACHE_DAYS);});
-	server->on("/css/bootstrap.min.css.gz", [&](){ServerManager::handlerFile(200, MimeCss, bootstrap_min_css_gz, sizeof(bootstrap_min_css_gz), GZIP_ENABLE, BROWSER_CACHE_DAYS);});
-	server->on("/css/bootstrap-theme.min.css.gz", [&](){ServerManager::handlerFile(200, MimeCss, bootstrap_theme_min_css_gz, sizeof(bootstrap_theme_min_css_gz), GZIP_ENABLE, BROWSER_CACHE_DAYS);});
 
-	server->on("/login.html",[&](){ServerManager::handlerFileLogined(200, MimeHtml, login_html, sizeof(login_html), GZIP_ENABLE, LOGIN_UNREQUIRE);});
-
-	server->on("/js/language-vi.js",[&](){ServerManager::handlerFile(200, MimeTypeJS, language_vi, sizeof(language_vi), GZIP_DISABLE, BROWSER_CACHE_DAYS);});
-	server->on("/js/main.js",[&](){ServerManager::handlerFile(200, MimeTypeJS, main_js, sizeof(main_js), GZIP_DISABLE, BROWSER_CACHE_DAYS);});
-	server->on("/css/skeleton.css",[&](){ServerManager::handlerFile(200, MimeCss, skeleton_css, sizeof(skeleton_css), GZIP_DISABLE, BROWSER_CACHE_DAYS);});
-	server->on("/css/normalize.css",[&](){ServerManager::handlerFile(200, MimeCss, normalize_css, sizeof(normalize_css), GZIP_DISABLE, BROWSER_CACHE_DAYS);});
-	server->on("/css/main.css",[&](){ServerManager::handlerFile(200, MimeCss, main_css, sizeof(main_css), GZIP_DISABLE, BROWSER_CACHE_DAYS);});
-
-	server->on("/js/configs.js",std::bind(&ServerManager::handlerGetConfigs, this));
-
-
-	server->on("/network.html",[&](){ServerManager::handlerFileLogined(200, MimeHtml, network_html, sizeof(network_html), GZIP_DISABLE, LOGIN_REQUIRE);});
-
-	server->on("/admin.html",[&](){ServerManager::handlerFileLogined(200, MimeHtml, admin_html, sizeof(admin_html), GZIP_DISABLE, LOGIN_REQUIRE);});
-	server->on("/gpio.html",[&](){ServerManager::handlerFileLogined(200, MimeHtml, gpio_html, sizeof(gpio_html), GZIP_DISABLE, LOGIN_REQUIRE);});
-	server->on("/prog.html",[&](){ServerManager::handlerFileLogined(200, MimeHtml, prog_html, sizeof(prog_html), GZIP_DISABLE, LOGIN_REQUIRE);});
-	server->on("/general.html",[&](){ServerManager::handlerFileLogined(200, MimeHtml, general_html, sizeof(general_html), GZIP_DISABLE, LOGIN_REQUIRE);});
-	server->on("/time.html",[&](){ServerManager::handlerFileLogined(200, MimeHtml, time_html, sizeof(time_html), GZIP_DISABLE, LOGIN_REQUIRE);});
-	server->on("/email.html",[&](){ServerManager::handlerFileLogined(200, MimeHtml, email_html, sizeof(email_html), GZIP_DISABLE, LOGIN_REQUIRE);});
-	server->on("/device.html",[&](){ServerManager::handlerFileLogined(200, MimeHtml, device_html, sizeof(device_html), GZIP_DISABLE, LOGIN_REQUIRE);});
-
-
-
-	server->on("/",std::bind(&ServerManager::handlerRoot, this));
-	server->on("/command",std::bind(&ServerManager::handlerCommand, this));
-	server->on("/login",std::bind(&ServerManager::handlerLogin, this));
-	server->on("/logout.html",std::bind(&ServerManager::handlerLogout, this));
-	server->on("/logout",std::bind(&ServerManager::handlerLogout, this));
-	server->on("/ajax",std::bind(&ServerManager::handlerAjax, this));
-
-	server->onNotFound ( std::bind(&ServerManager::handlerNotFound, this) );
-	server->begin();
 	DBGF("HTTP Server Started");
 }
 
 ServerManager::~ServerManager() {
 	// TODO Auto-generated destructor stub
-	delete server;
 }
 
 void ServerManager::handlerRoot() {
@@ -70,7 +30,7 @@ void ServerManager::handlerRoot() {
 void ServerManager::handlerFile(int code, const char* content_type, PGM_P data, size_t contentLength, bool bGzip, unsigned long expire) {
 	getSession();
 	sendHeaderGzip(contentLength, bGzip, expire);
-	server->send_P(code, content_type, data, contentLength);
+	send_P(code, content_type, data, contentLength);
 }
 
 void ServerManager::handlerFileLogined(int code, const char* content_type,
@@ -81,11 +41,10 @@ void ServerManager::handlerFileLogined(int code, const char* content_type,
 		return;
 	}
 	sendHeaderGzip(contentLength, bGzip, 0);
-	server->send_P(code, content_type, data, contentLength);
+	send_P(code, content_type, data, contentLength);
 }
 
 void ServerManager::loop() {
-	server->handleClient();
 }
 
 void ServerManager::handlerNotFound() {
@@ -93,8 +52,8 @@ void ServerManager::handlerNotFound() {
 }
 
 void ServerManager::handlerCommand() {
-	server->sendHeader("Connection", "close");
-	server->send(200, MimeJson, Commander::getInstance()->process(server->arg("plain")));
+	sendHeader("Connection", "close");
+	send(200, MimeJson, Commander::getInstance()->process(arg("plain")));
 }
 
 int ServerManager::checkLogined() {
@@ -106,8 +65,8 @@ int ServerManager::checkLogined() {
 }
 
 void ServerManager::sendHeaderGzip(size_t contentLength, bool gzip, unsigned long expire) {
-	if(gzip) server->sendHeader("Content-Encoding", "gzip");
-	server->sendHeader("Connection", "close");
+	if(gzip) sendHeader("Content-Encoding", "gzip");
+	sendHeader("Connection", "close");
 	if(expire){
 		char buf[34];
 		time_t t = now();
@@ -117,12 +76,12 @@ void ServerManager::sendHeaderGzip(size_t contentLength, bool gzip, unsigned lon
 			strncpy(dow,dayShortStr(weekday(t)),4);
 			dow[3] = 0;
 			sprintf(buf,"%s, %02u %s %04u %02u:%02u:%02u GMT",dow,day(t),monthShortStr(month(t)),year(t),hour(t),minute(t),second(t));
-			server->sendHeader("Date",buf);
+			sendHeader("Date",buf);
 		}
 		sprintf(buf,"max-age=%lu",expire);
-		server->sendHeader("Cache-Control",buf);
+		sendHeader("Cache-Control",buf);
 		sprintf(buf,"%lu",(unsigned long)contentLength);
-		server->sendHeader("ETag",buf);
+		sendHeader("ETag",buf);
 	}
 }
 
@@ -136,23 +95,23 @@ void ServerManager::handlerLogin() {
 		redirect("/");
 		return;
 	}
-	if(!server->hasArg("userid")||!server->hasArg("password")){
-		server->sendHeader("Connection", "close");
-		server->send_P(200, MimeHtml, login_html);
+	if(!hasArg("userid")||!hasArg("password")){
+		sendHeader("Connection", "close");
+		send_P(200, MimeHtml, login_html);
 	}else{
-		String username = server->arg("userid");
-		String password = server->arg("password");
+		String username = arg("userid");
+		String password = arg("password");
 		if(username == ModuleSettings::getInstance()->getUserDevice()){
 			if(password == ModuleSettings::getInstance()->getPassDevice()){
 				setSession(USER_ROLE);
-				server->send(200, MimeHtml, "ok");
+				send(200, MimeHtml, "ok");
 			}else{
-				server->sendHeader("Connection", "close");
-				server->send(200, MimeHtml, "wrongp");
+				sendHeader("Connection", "close");
+				send(200, MimeHtml, "wrongp");
 			}
 		}else{
-			server->sendHeader("Connection", "close");
-			server->send(200, MimeHtml, "wrongu");
+			sendHeader("Connection", "close");
+			send(200, MimeHtml, "wrongu");
 		}
 	}
 }
@@ -181,17 +140,17 @@ void ServerManager::redirect(const char* path) {
 	content += url;
 	content += "';\">\n</body>\n</html>";
 
-	server->sendHeader("Location",url);
-	server->sendHeader("Cache-Control","no-cache");
-	server->sendHeader("Pragma","no-cache");
+	sendHeader("Location",url);
+	sendHeader("Cache-Control","no-cache");
+	sendHeader("Pragma","no-cache");
 	DBGF("Redirect...");
-	server->send(302,"text/html",content);
+	send(302,"text/html",content);
 }
 
 String ServerManager::getHost() {
 	String host;
 	host.reserve(24);
-	host = server->header("Host");
+	host = header("Host");
 	if ( host.length()<1 ) {
 	host=WiFi.localIP().toString();
 	if ( ModuleSettings::getInstance()->getServerPort()!=80 ) {
@@ -211,19 +170,19 @@ void ServerManager::setSession(int role) {
 	cookie += "; Path=/; Max-Age=";
 	cookie += SESSION_EXPIRE_TIME;
 	DBG2F("Set-Cookie: ", cookie);
-	server->sendHeader("Set-Cookie",cookie);
+	sendHeader("Set-Cookie",cookie);
 }
 
 String ServerManager::getSession() {
-	int numH = server->headers();
+	int numH = headers();
 	for(int i = 0; i<numH; i++){
 		DBG2F0("header ",i);
-		DBG2F0(" : ",server->headerName(i));
-		DBG2F(" == ",server->header(i));
+		DBG2F0(" : ",headerName(i));
+		DBG2F(" == ",header(i));
 	}
-	String cookie = server->header("Cookie");
+	String cookie = header("Cookie");
 	DBGF0("Client Cookie: ");
-	DBG(server->header("Cookie"));
+	DBG(header("Cookie"));
 	return cookie;
 }
 
@@ -241,7 +200,8 @@ void ServerManager::handlerGetConfigs() {
 	config.replace("$cf5$",ModuleSettings::getInstance()->getMask());
 	config.replace("$cf6$",ModuleSettings::getInstance()->getGateway());
 	config.replace("$cf7$",String(ModuleSettings::getInstance()->getServerPort()));
-	server->send(200, MimeTypeJS, config);
+	send(200, MimeTypeJS, config);
+
 }
 
 void ServerManager::handlerBootstrapTheme() {
@@ -259,11 +219,11 @@ void ServerManager::handlerJqueryJS() {
 void ServerManager::handlerAjax() {
 	getSession();
 	if(getUserRole()>0){
-		server->sendHeader("Connection", "close");
-		server->send(200, MimeJson, Commander::getInstance()->process(server->arg("plain")));
+		sendHeader("Connection", "close");
+		send(200, MimeJson, Commander::getInstance()->process(arg("plain")));
 	}else{
-		server->sendHeader("Connection", "close");
-		server->send_P(200, MimeJson, JsonFalse, sizeof(JsonFalse));
+		sendHeader("Connection", "close");
+		send_P(200, MimeJson, JsonFalse, sizeof(JsonFalse));
 	}
 }
 

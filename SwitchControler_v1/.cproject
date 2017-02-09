@@ -21,15 +21,15 @@
 								<option id="it.baeyens.arduino.compiler.cpp.sketch.option.incpath.2027927946" name="Include Paths (-I)" superClass="it.baeyens.arduino.compiler.cpp.sketch.option.incpath" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/core/core}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/core/variant}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/libraries/ArduinoJson}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/libraries/ESP8266WebServer}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/libraries/ESP8266WebServer/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/libraries/Time}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/libraries/ArduinoJson}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/libraries/pubsubclient-master}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/libraries/pubsubclient-master/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/libraries/ESP8266WiFi}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/libraries/ESP8266WiFi/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/libraries/EEPROM}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/libraries/Time}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/libraries/pubsubclient-master}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/libraries/pubsubclient-master/src}&quot;"/>
 								</option>
 								<inputType id="it.baeyens.arduino.compiler.cpp.sketch.input.633465218" name="CPP source files" superClass="it.baeyens.arduino.compiler.cpp.sketch.input"/>
 							</tool>
@@ -37,15 +37,15 @@
 								<option id="it.baeyens.arduino.compiler.c.sketch.option.incpath.823684585" name="Include Paths (-I)" superClass="it.baeyens.arduino.compiler.c.sketch.option.incpath" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/core/core}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/core/variant}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/libraries/ArduinoJson}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/libraries/ESP8266WebServer}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/libraries/ESP8266WebServer/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/libraries/Time}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/libraries/ArduinoJson}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/libraries/pubsubclient-master}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/libraries/pubsubclient-master/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/libraries/ESP8266WiFi}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/libraries/ESP8266WiFi/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/libraries/EEPROM}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/libraries/Time}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/libraries/pubsubclient-master}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SwitchControler_v1/libraries/pubsubclient-master/src}&quot;"/>
 								</option>
 								<inputType id="it.baeyens.arduino.compiler.c.sketch.input.87666430" name="C Source Files" superClass="it.baeyens.arduino.compiler.c.sketch.input"/>
 							</tool>
@@ -71,6 +71,10 @@
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
-	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/SwitchControler_v1"/>
+		</configuration>
+	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 </cproject>

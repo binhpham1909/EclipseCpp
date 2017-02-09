@@ -1,12 +1,18 @@
-714=1
+714=3
 Automatically\ import\ libraries=true
 Board=Generic ESP8266 Module
 Board\ custom\ option\ selections=Flash Mode\=DIO\nProcessor\=\nFlash Size\=1M (64K SPIFFS)\nDebug port\=Serial\nlwIP Variant\=\nDebug Level\=All\nReset Method\=ck\nVariant\=\nFlash Frequency\=80MHz\nCPU Frequency\=160 MHz\nCPU Speed(MHz)\=\nModule\=\nUpload Speed\=115200\nUpload method\=\nBootloader version\=
 Boards\ file=C\:\\eclipse\\arduino-1.6.12\\hardware\\esp8266com\\esp8266\\boards.txt
 Build\ before\ upload\ option=ASK
+FmStatus=1
+FuStatub=9
+FuStatus=1
 Open\ serial\ connections\ with\ the\ monitor=true
-Private\ Library\ Path=C\:\\eclipse\\EclipseCpp\\zzzlibraries;
-Private\ hardware\ Path=C\:\\eclipse\\arduino-1.6.12\\hardware;
+Private\ Library\ Path=C\:\\eclipse\\EclipseCpp\\zzzlibraries
+Private\ hardware\ Path=C\:\\eclipse\\arduino-1.6.12\\hardware
+Serial\ Monitor\ Last\ Used\ auto\ scroll\ setting=true
+Serial\ monitor\ last\ selected\ Port=COM3
+Serial\ monitor\ last\ selected\ rate=115200
 UPLOAD.PROTOCOL=Default
 Upload\ port=COM3
 eclipse.preferences.version=1

@@ -50,14 +50,13 @@ static const char MimePNG[] = "image/png";
 #define LOGIN_REQUIRE	1
 #define LOGIN_UNREQUIRE	0
 
-class ServerManager : public Singleton<ServerManager>  {
+class ServerManager : public ESP8266WebServer  {
 public:
-	ServerManager();
+	ServerManager(int port = 80);
 	virtual ~ServerManager();
 	void loop();
 	int checkLogined();
-private:
-	ESP8266WebServer *server;
+
 	void handlerRoot();
 	void handlerFile(int code, const char* content_type, PGM_P data, size_t contentLength, bool bGzip, unsigned long expire);
 	void handlerFileLogined(int code, const char* content_type, PGM_P data, size_t contentLength, bool bGzip, bool needLogined);
@@ -71,7 +70,7 @@ private:
 	void handlerBootstrapJS();
 	void handlerMD5JS();
 	void handlerJqueryJS();
-
+private:
 	void handlerNetworkSettings();
 	void sendHeaderGzip(size_t contentLength, bool gzip, unsigned long expire);
 	void redirect(const char* path);
@@ -79,6 +78,7 @@ private:
 	void setSession(int role);
 	String getSession();
 	int getUserRole();
+
 };
 
 const char configs_language_js[] PROGMEM = "var lang = $cf1$;\n";
