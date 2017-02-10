@@ -1,0 +1,26 @@
+/*
+ * Timer.cpp
+ *
+ *  Created on: 10 thg 2, 2017
+ *      Author: MyPC
+ */
+
+#include "Timer.h"
+
+Timer::Timer() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Timer::~Timer() {
+	// TODO Auto-generated destructor stub
+}
+
+void Timer::update() {
+}
+
+unsigned long Timer::delta() {
+}
+
+void Timer::resetTick() {
+}
