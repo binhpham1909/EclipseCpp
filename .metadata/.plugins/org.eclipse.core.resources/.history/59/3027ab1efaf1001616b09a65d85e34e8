@@ -1,0 +1,33 @@
+/*
+ * GPIOManager.h
+ *
+ *  Created on: 24 thg 1, 2017
+ *      Author: MyPC
+ */
+
+#ifndef GPIOMANAGER_H_
+#define GPIOMANAGER_H_
+#include "Arduino.h"
+#include "FirmwareSetting.h"
+#include "GlobalConfigs.h"
+#include "Singleton.h"
+
+typedef struct __attribute__((packed)){
+	int firstBoot;
+	char deviceSerial[DV_SERIAL_LEN + 1];
+	char adminUser[DV_USER_LEN + 1];
+	char adminPassword[DV_USER_LEN + 1];
+	GPIO_t gpio[MAX_GPIO_PIN];
+} GPIO_t;
+
+class GPIOManager : public Singleton<GPIOManager> {
+public:
+	GPIOManager();
+	~GPIOManager();
+	void init();
+	void update();
+private:
+	long lastUpdate[MAX_GPIO_PIN];
+
+};
+#endif /* GPIOMANAGER_H_ */

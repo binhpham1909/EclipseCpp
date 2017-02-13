@@ -69,7 +69,7 @@
 		<link>
 			<name>libraries/Timezone</name>
 			<type>2</type>
-			<location>C:/eclipse/EclipseCpp/zzzlibraries/Timezone</location>
+			<location>C:/eclipse/arduino-1.6.12/libraries/Timezone</location>
 		</link>
 	</linkedResources>
 </projectDescription>

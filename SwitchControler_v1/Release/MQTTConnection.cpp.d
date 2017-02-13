@@ -1,24 +1,10 @@
 MQTTConnection.cpp.o: ../MQTTConnection.cpp ../MQTTConnection.h \
- ../Singleton.h ../DebugSetting.h \
+ ../Singleton.h ../ModuleSettings.h \
+ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/FS.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Arduino.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/stdlib.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/machine/ieeefp.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/_ansi.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/newlib.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/config.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/features.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/xtensa/config/core-isa.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/reent.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/_ansi.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/_types.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/machine/_types.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/machine/_default_types.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/lock.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/cdefs.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/machine/stdlib.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/alloca.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/stdint.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/_intsup.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/stdio.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/types.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/machine/types.h \
@@ -40,7 +26,6 @@ MQTTConnection.cpp.o: ../MQTTConnection.cpp ../MQTTConnection.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include/osapi.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/user_config.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/WCharacter.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/ctype.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/WString.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/pgmspace.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/HardwareSerial.h \
@@ -59,8 +44,6 @@ MQTTConnection.cpp.o: ../MQTTConnection.cpp ../MQTTConnection.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/debug.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic/pins_arduino.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic/common.h \
- ../ModuleSettings.h \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/FS.h \
  C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/ArduinoJson.h \
  C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson.h \
  C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson.hpp \
@@ -134,7 +117,7 @@ MQTTConnection.cpp.o: ../MQTTConnection.cpp ../MQTTConnection.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/errno.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/errno.h \
  C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Serialization/JsonSerializerImpl.hpp \
- ../GPIOManager.h ../FirmwareSetting.h \
+ ../GlobalConfigs.h ../GPIOManager.h ../DeviceSetting.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM/EEPROM.h \
  ../Session.h C:\eclipse\EclipseCpp\zzzlibraries\Time/TimeLib.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/ESP8266WiFi.h \
@@ -162,45 +145,17 @@ MQTTConnection.cpp.o: ../MQTTConnection.cpp ../MQTTConnection.h \
 
 ../Singleton.h:
 
-../DebugSetting.h:
+../ModuleSettings.h:
+
+C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/FS.h:
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Arduino.h:
 
 C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/stdlib.h:
 
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/machine/ieeefp.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/_ansi.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/newlib.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/config.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/features.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/xtensa/config/core-isa.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/reent.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/_ansi.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/_types.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/machine/_types.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/machine/_default_types.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/lock.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/cdefs.h:
-
 C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/machine/stdlib.h:
 
 C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/alloca.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/stdint.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/_intsup.h:
 
 C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/stdio.h:
 
@@ -244,8 +199,6 @@ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/user_config.
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/WCharacter.h:
 
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/ctype.h:
-
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/WString.h:
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/pgmspace.h:
@@ -281,10 +234,6 @@ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/debug.h:
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic/pins_arduino.h:
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic/common.h:
-
-../ModuleSettings.h:
-
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/FS.h:
 
 C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/ArduinoJson.h:
 
@@ -432,9 +381,11 @@ C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx10
 
 C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Serialization/JsonSerializerImpl.hpp:
 
+../GlobalConfigs.h:
+
 ../GPIOManager.h:
 
-../FirmwareSetting.h:
+../DeviceSetting.h:
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM/EEPROM.h:
 

@@ -109,7 +109,7 @@ Commander.cpp.o: ../Commander.cpp ../Commander.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/errno.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/errno.h \
  C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Serialization/JsonSerializerImpl.hpp \
- ../Singleton.h ../DebugSetting.h \
+ ../GlobalConfigs.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Arduino.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/stdlib_noniso.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/binary.h \
@@ -131,9 +131,9 @@ Commander.cpp.o: ../Commander.cpp ../Commander.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/debug.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic/pins_arduino.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic/common.h \
- ../ModuleSettings.h \
+ ../Singleton.h ../ModuleSettings.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/FS.h \
- ../GPIOManager.h ../FirmwareSetting.h \
+ ../GPIOManager.h ../DeviceSetting.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM/EEPROM.h \
  ../Session.h C:\eclipse\EclipseCpp\zzzlibraries\Time/TimeLib.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/ESP8266WiFi.h \
@@ -377,9 +377,7 @@ C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx10
 
 C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Serialization/JsonSerializerImpl.hpp:
 
-../Singleton.h:
-
-../DebugSetting.h:
+../GlobalConfigs.h:
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Arduino.h:
 
@@ -423,13 +421,15 @@ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic/pins_ardu
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic/common.h:
 
+../Singleton.h:
+
 ../ModuleSettings.h:
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/FS.h:
 
 ../GPIOManager.h:
 
-../FirmwareSetting.h:
+../DeviceSetting.h:
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM/EEPROM.h:
 

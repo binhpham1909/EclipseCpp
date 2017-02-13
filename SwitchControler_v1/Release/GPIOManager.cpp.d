@@ -58,9 +58,9 @@ GPIOManager.cpp.o: ../GPIOManager.cpp ../GPIOManager.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/debug.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic/pins_arduino.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic/common.h \
- ../FirmwareSetting.h ../Singleton.h \
+ ../DeviceSetting.h ../Singleton.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM/EEPROM.h \
- ../DebugSetting.h
+ ../GlobalConfigs.h
 
 ../GPIOManager.h:
 
@@ -182,10 +182,10 @@ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic/pins_ardu
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic/common.h:
 
-../FirmwareSetting.h:
+../DeviceSetting.h:
 
 ../Singleton.h:
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM/EEPROM.h:
 
-../DebugSetting.h:
+../GlobalConfigs.h:

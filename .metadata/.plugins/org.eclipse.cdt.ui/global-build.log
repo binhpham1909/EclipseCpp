@@ -1,10 +1,9 @@
-15:53:29 **** Clean-only build of configuration Release for project SwitchControler_v1 ****
+20:28:42 **** Clean-only build of configuration Release for project SwitchControler_v1 ****
 "C:\\eclipse\\arduinoPlugin\\tools\\make\\make" clean 
 del   .\core\umm_malloc.c.d  .\core\spiffs_cache.c.d .\core\spiffs_check.c.d .\core\spiffs_gc.c.d .\core\spiffs_hydrogen.c.d .\core\spiffs_nucleus.c.d  .\core\cdecode.c.d .\core\cencode.c.d  .\core\cont_util.c.d .\core\core_esp8266_eboot_command.c.d .\core\core_esp8266_flash_utils.c.d .\core\core_esp8266_i2s.c.d .\core\core_esp8266_noniso.c.d .\core\core_esp8266_phy.c.d .\core\core_esp8266_postmortem.c.d .\core\core_esp8266_si2c.c.d .\core\core_esp8266_timer.c.d .\core\core_esp8266_wiring.c.d .\core\core_esp8266_wiring_analog.c.d .\core\core_esp8266_wiring_digital.c.d .\core\core_esp8266_wiring_pulse.c.d .\core\core_esp8266_wiring_pwm.c.d .\core\core_esp8266_wiring_shift.c.d .\core\heap.c.d .\core\libc_replacements.c.d .\core\time.c.d .\core\uart.c.d  arduino.ar  .\core\umm_malloc.c.o  .\core\spiffs_cache.c.o .\core\spiffs_check.c.o .\core\spiffs_gc.c.o .\core\spiffs_hydrogen.c.o .\core\spiffs_nucleus.c.o  .\core\cdecode.c.o .\core\cencode.c.o  .\core\Esp.cpp.o .\core\FS.cpp.o .\core\HardwareSerial.cpp.o .\core\IPAddress.cpp.o .\core\MD5Builder.cpp.o .\core\Print.cpp.o .\core\Schedule.cpp.o .\core\Stream.cpp.o .\core\StreamString.cpp.o .\core\Tone.cpp.o .\core\Updater.cpp.o .\core\WMath.cpp.o .\core\WString.cpp.o .\core\abi.cpp.o .\core\base64.cpp.o .\core\cbuf.cpp.o .\core\cont.S.o .\core\cont_util.c.o .\core\core_esp8266_eboot_command.c.o .\core\core_esp8266_flash_utils.c.o .\core\core_esp8266_i2s.c.o .\core\core_esp8266_main.cpp.o .\core\core_esp8266_noniso.c.o .\core\core_esp8266_phy.c.o .\core\core_esp8266_postmortem.c.o .\core\core_esp8266_si2c.c.o .\core\core_esp8266_timer.c.o .\core\core_esp8266_wiring.c.o .\core\core_esp8266_wiring_analog.c.o .\core\core_esp8266_wiring_digital.c.o .\core\core_esp8266_wiring_pulse.c.o .\core\core_esp8266_wiring_pwm.c.o .\core\core_esp8266_wiring_shift.c.o .\core\debug.cpp.o .\core\heap.c.o .\core\libc_replacements.c.o .\core\pgmspace.cpp.o .\core\spiffs_api.cpp.o .\core\spiffs_hal.cpp.o .\core\time.c.o .\core\uart.c.o  .\.ino.cpp.o .\Commander.cpp.o .\FirmwareSetting.cpp.o .\GPIOManager.cpp.o .\MQTTConnection.cpp.o .\ModuleSettings.cpp.o .\ServerManager.cpp.o .\Session.cpp.o .\TaskManager.cpp.o .\TimeManager.cpp.o .\TimerManager.cpp.o .\WifiManager.cpp.o  .\libraries\pubsubclient-master\src\PubSubClient.cpp.o  .\libraries\Time\DateStrings.cpp.o .\libraries\Time\Time.cpp.o  .\libraries\ESP8266WiFi\src\ESP8266WiFi.cpp.o .\libraries\ESP8266WiFi\src\ESP8266WiFiAP.cpp.o .\libraries\ESP8266WiFi\src\ESP8266WiFiGeneric.cpp.o .\libraries\ESP8266WiFi\src\ESP8266WiFiMulti.cpp.o .\libraries\ESP8266WiFi\src\ESP8266WiFiSTA.cpp.o .\libraries\ESP8266WiFi\src\ESP8266WiFiScan.cpp.o .\libraries\ESP8266WiFi\src\WiFiClient.cpp.o .\libraries\ESP8266WiFi\src\WiFiClientSecure.cpp.o .\libraries\ESP8266WiFi\src\WiFiServer.cpp.o .\libraries\ESP8266WiFi\src\WiFiUdp.cpp.o  .\libraries\ESP8266WebServer\src\ESP8266WebServer.cpp.o .\libraries\ESP8266WebServer\src\Parsing.cpp.o  .\libraries\EEPROM\EEPROM.cpp.o  .\libraries\DNSServer\src\DNSServer.cpp.o  SwitchControler_v1.hex  .\SwitchControler_v1.ino.d  .\core\cont.S.d  SwitchControler_v1.elf  .\.ino.cpp.d .\Commander.cpp.d .\FirmwareSetting.cpp.d .\GPIOManager.cpp.d .\MQTTConnection.cpp.d .\ModuleSettings.cpp.d .\ServerManager.cpp.d .\Session.cpp.d .\TaskManager.cpp.d .\TimeManager.cpp.d .\TimerManager.cpp.d .\WifiManager.cpp.d  .\libraries\pubsubclient-master\src\PubSubClient.cpp.d  .\libraries\Time\DateStrings.cpp.d .\libraries\Time\Time.cpp.d  .\libraries\ESP8266WiFi\src\ESP8266WiFi.cpp.d .\libraries\ESP8266WiFi\src\ESP8266WiFiAP.cpp.d .\libraries\ESP8266WiFi\src\ESP8266WiFiGeneric.cpp.d .\libraries\ESP8266WiFi\src\ESP8266WiFiMulti.cpp.d .\libraries\ESP8266WiFi\src\ESP8266WiFiSTA.cpp.d .\libraries\ESP8266WiFi\src\ESP8266WiFiScan.cpp.d .\libraries\ESP8266WiFi\src\WiFiClient.cpp.d .\libraries\ESP8266WiFi\src\WiFiClientSecure.cpp.d .\libraries\ESP8266WiFi\src\WiFiServer.cpp.d .\libraries\ESP8266WiFi\src\WiFiUdp.cpp.d  .\libraries\ESP8266WebServer\src\ESP8266WebServer.cpp.d .\libraries\ESP8266WebServer\src\Parsing.cpp.d  .\libraries\EEPROM\EEPROM.cpp.d  .\libraries\DNSServer\src\DNSServer.cpp.d  .\core\Esp.cpp.d .\core\FS.cpp.d .\core\HardwareSerial.cpp.d .\core\IPAddress.cpp.d .\core\MD5Builder.cpp.d .\core\Print.cpp.d .\core\Schedule.cpp.d .\core\Stream.cpp.d .\core\StreamString.cpp.d .\core\Tone.cpp.d .\core\Updater.cpp.d .\core\WMath.cpp.d .\core\WString.cpp.d .\core\abi.cpp.d .\core\base64.cpp.d .\core\cbuf.cpp.d .\core\core_esp8266_main.cpp.d .\core\debug.cpp.d .\core\pgmspace.cpp.d .\core\spiffs_api.cpp.d .\core\spiffs_hal.cpp.d 
 Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\core\umm_malloc.c.d
 Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\arduino.ar
 Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\core\umm_malloc.c.o
-Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\.ino.cpp.o
 Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\libraries\pubsubclient-master\src\PubSubClient.cpp.o
 Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\libraries\Time\DateStrings.cpp.o
 Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\libraries\ESP8266WiFi\src\ESP8266WiFi.cpp.o
@@ -13,7 +12,6 @@ Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\libraries\EEPROM
 Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\libraries\DNSServer\src\DNSServer.cpp.o
 Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\SwitchControler_v1.hex
 Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\core\cont.S.d
-Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\SwitchControler_v1.elf
 Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\libraries\pubsubclient-master\src\PubSubClient.cpp.d
 Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\libraries\Time\DateStrings.cpp.d
 Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\libraries\ESP8266WiFi\src\ESP8266WiFi.cpp.d
@@ -22,31 +20,7 @@ Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\libraries\EEPROM
 Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\libraries\DNSServer\src\DNSServer.cpp.d
 Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\core\Esp.cpp.d
 ' '
-15:53:31 **** Build of configuration Release for project SwitchControler_v1 ****
-"C:\\eclipse\\arduinoPlugin\\tools\\make\\make" all 
-'Building file: ../.ino.cpp'
-'Starting C++ compile'
-"C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/xtensa-lx106-elf/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/lwip/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include" "-IC:/eclipse/EclipseCpp/SwitchControler_v1/Release/core" -c -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections -DF_CPU=160000000L -DLWIP_OPEN_SRC -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_CORE -DDEBUG_ESP_SSL -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_TLS_MEM -DARDUINO=10609 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_ESP8266 "-DARDUINO_BOARD=\"ESP8266_ESP01\"" -DESP8266  -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic" -I"C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM" -I"C:\eclipse\EclipseCpp\zzzlibraries\Time" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer\src" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp" -o ".ino.cpp.o"  -Wall
-In file included from ../GPIOManager.h:11:0,
-                 from ../ModuleSettings.h:15,
-                 from ../.ino.cpp:9:
-../FirmwareSetting.h:25:2: error: 'GPIO_t' does not name a type
-  GPIO_t gpio[MAX_GPIO_PIN];
-  ^
-make: *** [subdir.mk:59: .ino.cpp.o] Error 1
-15:54:15 **** Incremental Build of configuration Release for project SwitchControler_v1 ****
-"C:\\eclipse\\arduinoPlugin\\tools\\make\\make" all 
-'Building file: ../.ino.cpp'
-'Starting C++ compile'
-"C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/xtensa-lx106-elf/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/lwip/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include" "-IC:/eclipse/EclipseCpp/SwitchControler_v1/Release/core" -c -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections -DF_CPU=160000000L -DLWIP_OPEN_SRC -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_CORE -DDEBUG_ESP_SSL -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_TLS_MEM -DARDUINO=10609 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_ESP8266 "-DARDUINO_BOARD=\"ESP8266_ESP01\"" -DESP8266  -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic" -I"C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM" -I"C:\eclipse\EclipseCpp\zzzlibraries\Time" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer\src" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp" -o ".ino.cpp.o"  -Wall
-In file included from ../GPIOManager.h:11:0,
-                 from ../ModuleSettings.h:15,
-                 from ../.ino.cpp:9:
-../FirmwareSetting.h:25:2: error: 'GPIO_t' does not name a type
-  GPIO_t gpio[MAX_GPIO_PIN];
-  ^
-make: *** [subdir.mk:59: .ino.cpp.o] Error 1
-15:55:11 **** Incremental Build of configuration Release for project SwitchControler_v1 ****
+20:28:44 **** Build of configuration Release for project SwitchControler_v1 ****
 "C:\\eclipse\\arduinoPlugin\\tools\\make\\make" all 
 'Building file: ../.ino.cpp'
 'Starting C++ compile'
@@ -65,49 +39,49 @@ In file included from ../Commander.h:13:0,
 ../Commander.cpp:23:27: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
   DBG(root["cmd"].asString());
                            ^
-../DebugSetting.h:18:31: note: in definition of macro 'DBG'
+../GlobalConfigs.h:18:31: note: in definition of macro 'DBG'
  #define DBG(x) Serial.println(x)
                                ^
 ../Commander.cpp:28:29: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
    DBG(root["dhcp"].asString());
                              ^
-../DebugSetting.h:18:31: note: in definition of macro 'DBG'
+../GlobalConfigs.h:18:31: note: in definition of macro 'DBG'
  #define DBG(x) Serial.println(x)
                                ^
 ../Commander.cpp:29:29: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
    DBG(root["ssid"].asString());
                              ^
-../DebugSetting.h:18:31: note: in definition of macro 'DBG'
+../GlobalConfigs.h:18:31: note: in definition of macro 'DBG'
  #define DBG(x) Serial.println(x)
                                ^
 ../Commander.cpp:30:37: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
    DBG(root["wifiPassword"].asString());
                                      ^
-../DebugSetting.h:18:31: note: in definition of macro 'DBG'
+../GlobalConfigs.h:18:31: note: in definition of macro 'DBG'
  #define DBG(x) Serial.println(x)
                                ^
 ../Commander.cpp:31:29: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
    DBG(root["port"].asString());
                              ^
-../DebugSetting.h:18:31: note: in definition of macro 'DBG'
+../GlobalConfigs.h:18:31: note: in definition of macro 'DBG'
  #define DBG(x) Serial.println(x)
                                ^
 ../Commander.cpp:32:27: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
    DBG(root["ip"].asString());
                            ^
-../DebugSetting.h:18:31: note: in definition of macro 'DBG'
+../GlobalConfigs.h:18:31: note: in definition of macro 'DBG'
  #define DBG(x) Serial.println(x)
                                ^
 ../Commander.cpp:33:29: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
    DBG(root["mask"].asString());
                              ^
-../DebugSetting.h:18:31: note: in definition of macro 'DBG'
+../GlobalConfigs.h:18:31: note: in definition of macro 'DBG'
  #define DBG(x) Serial.println(x)
                                ^
 ../Commander.cpp:34:27: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
    DBG(root["gw"].asString());
                            ^
-../DebugSetting.h:18:31: note: in definition of macro 'DBG'
+../GlobalConfigs.h:18:31: note: in definition of macro 'DBG'
  #define DBG(x) Serial.println(x)
                                ^
 ../Commander.cpp:38:78: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
@@ -136,130 +110,473 @@ In file included from ../Commander.h:13:0,
 'Building file: ../FirmwareSetting.cpp'
 'Starting C++ compile'
 "C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/xtensa-lx106-elf/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/lwip/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include" "-IC:/eclipse/EclipseCpp/SwitchControler_v1/Release/core" -c -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections -DF_CPU=160000000L -DLWIP_OPEN_SRC -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_CORE -DDEBUG_ESP_SSL -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_TLS_MEM -DARDUINO=10609 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_ESP8266 "-DARDUINO_BOARD=\"ESP8266_ESP01\"" -DESP8266  -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic" -I"C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM" -I"C:\eclipse\EclipseCpp\zzzlibraries\Time" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer\src" -MMD -MP -MF"FirmwareSetting.cpp.d" -MT"FirmwareSetting.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../FirmwareSetting.cpp" -o "FirmwareSetting.cpp.o"  -Wall
-In file included from ../FirmwareSetting.h:13:0,
-                 from ../FirmwareSetting.cpp:8:
-../GPIOManager.h:24:18: error: 'MAX_GPIO_PIN' was not declared in this scope
-  long lastUpdate[MAX_GPIO_PIN];
-                  ^
+../FirmwareSetting.cpp: In member function 'bool FirmwareSetting::resetSettings()':
+../FirmwareSetting.cpp:35:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../FirmwareSetting.cpp: In member function 'GPIO_t FirmwareSetting::getGPIOConfig(int)':
+../FirmwareSetting.cpp:38:13: error: request for member 'gpio' in '((FirmwareSetting*)this)->FirmwareSetting::_fw', which is of pointer type 'FirmwareSetting_t*' (maybe you meant to use '->' ?)
+  return _fw.gpio[index];
+             ^
+../FirmwareSetting.cpp: In member function 'bool FirmwareSetting::setGPIOConfig(int, GPIO_t)':
+../FirmwareSetting.cpp:42:6: error: request for member 'gpio' in '((FirmwareSetting*)this)->FirmwareSetting::_fw', which is of pointer type 'FirmwareSetting_t*' (maybe you meant to use '->' ?)
+  _fw.gpio[index] = gpio;
+      ^
+../FirmwareSetting.cpp: In member function 'GPIO_t FirmwareSetting::getGPIOConfig(int)':
+../FirmwareSetting.cpp:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
 make: *** [subdir.mk:73: FirmwareSetting.cpp.o] Error 1
-15:55:48 **** Incremental Build of configuration Release for project SwitchControler_v1 ****
+20:29:14 **** Incremental Build of configuration Release for project SwitchControler_v1 ****
 "C:\\eclipse\\arduinoPlugin\\tools\\make\\make" all 
-'Building file: ../.ino.cpp'
-'Starting C++ compile'
-"C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/xtensa-lx106-elf/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/lwip/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include" "-IC:/eclipse/EclipseCpp/SwitchControler_v1/Release/core" -c -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections -DF_CPU=160000000L -DLWIP_OPEN_SRC -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_CORE -DDEBUG_ESP_SSL -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_TLS_MEM -DARDUINO=10609 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_ESP8266 "-DARDUINO_BOARD=\"ESP8266_ESP01\"" -DESP8266  -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic" -I"C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM" -I"C:\eclipse\EclipseCpp\zzzlibraries\Time" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer\src" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp" -o ".ino.cpp.o"  -Wall
-In file included from ../ModuleSettings.h:13:0,
-                 from ../.ino.cpp:9:
-../DebugSetting.h:51:20: error: 'DV_SERIAL_LEN' was not declared in this scope
-  char deviceSerial[DV_SERIAL_LEN + 1];
-                    ^
-../DebugSetting.h:52:17: error: 'DV_USER_LEN' was not declared in this scope
-  char adminUser[DV_USER_LEN + 1];
-                 ^
-../DebugSetting.h:53:21: error: 'DV_USER_LEN' was not declared in this scope
-  char adminPassword[DV_USER_LEN + 1];
-                     ^
-make: *** [subdir.mk:59: .ino.cpp.o] Error 1
-15:56:04 **** Incremental Build of configuration Release for project SwitchControler_v1 ****
-"C:\\eclipse\\arduinoPlugin\\tools\\make\\make" all 
-'Building file: ../.ino.cpp'
-'Starting C++ compile'
-"C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/xtensa-lx106-elf/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/lwip/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include" "-IC:/eclipse/EclipseCpp/SwitchControler_v1/Release/core" -c -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections -DF_CPU=160000000L -DLWIP_OPEN_SRC -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_CORE -DDEBUG_ESP_SSL -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_TLS_MEM -DARDUINO=10609 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_ESP8266 "-DARDUINO_BOARD=\"ESP8266_ESP01\"" -DESP8266  -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic" -I"C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM" -I"C:\eclipse\EclipseCpp\zzzlibraries\Time" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer\src" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp" -o ".ino.cpp.o"  -Wall
-'Finished building: ../.ino.cpp'
-' '
-'Building file: ../Commander.cpp'
-'Starting C++ compile'
-"C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/xtensa-lx106-elf/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/lwip/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include" "-IC:/eclipse/EclipseCpp/SwitchControler_v1/Release/core" -c -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections -DF_CPU=160000000L -DLWIP_OPEN_SRC -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_CORE -DDEBUG_ESP_SSL -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_TLS_MEM -DARDUINO=10609 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_ESP8266 "-DARDUINO_BOARD=\"ESP8266_ESP01\"" -DESP8266  -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic" -I"C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM" -I"C:\eclipse\EclipseCpp\zzzlibraries\Time" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer\src" -MMD -MP -MF"Commander.cpp.d" -MT"Commander.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Commander.cpp" -o "Commander.cpp.o"  -Wall
-../Commander.cpp: In member function 'String Commander::process(String)':
-../Commander.cpp:22:36: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
-  String cmd = root["cmd"].asString();
-                                    ^
-In file included from ../Commander.h:13:0,
-                 from ../Commander.cpp:8:
-../Commander.cpp:23:27: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
-  DBG(root["cmd"].asString());
-                           ^
-../DebugSetting.h:18:31: note: in definition of macro 'DBG'
- #define DBG(x) Serial.println(x)
-                               ^
-../Commander.cpp:28:29: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
-   DBG(root["dhcp"].asString());
-                             ^
-../DebugSetting.h:18:31: note: in definition of macro 'DBG'
- #define DBG(x) Serial.println(x)
-                               ^
-../Commander.cpp:29:29: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
-   DBG(root["ssid"].asString());
-                             ^
-../DebugSetting.h:18:31: note: in definition of macro 'DBG'
- #define DBG(x) Serial.println(x)
-                               ^
-../Commander.cpp:30:37: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
-   DBG(root["wifiPassword"].asString());
-                                     ^
-../DebugSetting.h:18:31: note: in definition of macro 'DBG'
- #define DBG(x) Serial.println(x)
-                               ^
-../Commander.cpp:31:29: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
-   DBG(root["port"].asString());
-                             ^
-../DebugSetting.h:18:31: note: in definition of macro 'DBG'
- #define DBG(x) Serial.println(x)
-                               ^
-../Commander.cpp:32:27: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
-   DBG(root["ip"].asString());
-                           ^
-../DebugSetting.h:18:31: note: in definition of macro 'DBG'
- #define DBG(x) Serial.println(x)
-                               ^
-../Commander.cpp:33:29: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
-   DBG(root["mask"].asString());
-                             ^
-../DebugSetting.h:18:31: note: in definition of macro 'DBG'
- #define DBG(x) Serial.println(x)
-                               ^
-../Commander.cpp:34:27: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
-   DBG(root["gw"].asString());
-                           ^
-../DebugSetting.h:18:31: note: in definition of macro 'DBG'
- #define DBG(x) Serial.println(x)
-                               ^
-../Commander.cpp:38:78: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
-    result = ModuleSettings::getInstance()->setWifiSSID(root["ssid"].asString())&
-                                                                              ^
-../Commander.cpp:39:83: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
-      ModuleSettings::getInstance()->setWifiPassword(root["wifiPassword"].asString())&
-                                                                                   ^
-../Commander.cpp:43:78: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
-    result = ModuleSettings::getInstance()->setWifiSSID(root["ssid"].asString())&
-                                                                              ^
-../Commander.cpp:44:83: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
-      ModuleSettings::getInstance()->setWifiPassword(root["wifiPassword"].asString())&
-                                                                                   ^
-../Commander.cpp:46:69: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
-      ModuleSettings::getInstance()->setStaticIP(root["ip"].asString())&
-                                                                     ^
-../Commander.cpp:47:67: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
-      ModuleSettings::getInstance()->setMask(root["mask"].asString())&
-                                                                   ^
-../Commander.cpp:48:68: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
-      ModuleSettings::getInstance()->setGateway(root["gw"].asString())&
-                                                                    ^
-'Finished building: ../Commander.cpp'
-' '
 'Building file: ../FirmwareSetting.cpp'
 'Starting C++ compile'
 "C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/xtensa-lx106-elf/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/lwip/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include" "-IC:/eclipse/EclipseCpp/SwitchControler_v1/Release/core" -c -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections -DF_CPU=160000000L -DLWIP_OPEN_SRC -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_CORE -DDEBUG_ESP_SSL -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_TLS_MEM -DARDUINO=10609 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_ESP8266 "-DARDUINO_BOARD=\"ESP8266_ESP01\"" -DESP8266  -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic" -I"C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM" -I"C:\eclipse\EclipseCpp\zzzlibraries\Time" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer\src" -MMD -MP -MF"FirmwareSetting.cpp.d" -MT"FirmwareSetting.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../FirmwareSetting.cpp" -o "FirmwareSetting.cpp.o"  -Wall
+../FirmwareSetting.cpp: In member function 'bool FirmwareSetting::resetSettings()':
+../FirmwareSetting.cpp:35:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
 'Finished building: ../FirmwareSetting.cpp'
 ' '
 'Building file: ../GPIOManager.cpp'
 'Starting C++ compile'
 "C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/xtensa-lx106-elf/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/lwip/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include" "-IC:/eclipse/EclipseCpp/SwitchControler_v1/Release/core" -c -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections -DF_CPU=160000000L -DLWIP_OPEN_SRC -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_CORE -DDEBUG_ESP_SSL -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_TLS_MEM -DARDUINO=10609 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_ESP8266 "-DARDUINO_BOARD=\"ESP8266_ESP01\"" -DESP8266  -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic" -I"C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM" -I"C:\eclipse\EclipseCpp\zzzlibraries\Time" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer\src" -MMD -MP -MF"GPIOManager.cpp.d" -MT"GPIOManager.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../GPIOManager.cpp" -o "GPIOManager.cpp.o"  -Wall
-../GPIOManager.cpp: In member function 'void GPIOManager::init()':
-../GPIOManager.cpp:46:39: error: 'class FirmwareSetting' has no member named 'fw'
-   if (FirmwareSetting::getInstance()->fw.gpio[i].type == IN) {
+../GPIOManager.cpp: In member function 'void GPIOManager::update()':
+../GPIOManager.cpp:17:54: error: request for member 'gpio' in 'Singleton<T>::getInstance<FirmwareSetting>()->FirmwareSetting::_fw', which is of pointer type 'FirmwareSetting_t*' (maybe you meant to use '->' ?)
+   GPIO_t _gpio = FirmwareSetting::getInstance()->_fw.gpio[i];
+                                                      ^
+../GPIOManager.cpp:24:14: error: 'struct GPIO_t' has no member named 'FlipState'
+     if(_gpio.FlipState){
+              ^
+../GPIOManager.cpp:25:39: error: 'struct GPIO_t' has no member named 'FlipON'
+      if((_curr-lastUpdate[i]) > _gpio.FlipON){
                                        ^
+../GPIOManager.cpp:26:13: error: 'struct GPIO_t' has no member named 'FlipState'
+       _gpio.FlipState = LOW;
+             ^
+../GPIOManager.cpp:29:39: error: 'struct GPIO_t' has no member named 'FlipOff'
+      if((_curr-lastUpdate[i]) > _gpio.FlipOff){
+                                       ^
+../GPIOManager.cpp:30:13: error: 'struct GPIO_t' has no member named 'FlipState'
+       _gpio.FlipState = HIGH;
+             ^
+../GPIOManager.cpp:34:11: error: 'struct GPIO_t' has no member named 'FlipState'
+     _gpio.FlipState = LOW;
+           ^
+../GPIOManager.cpp:36:29: error: 'struct GPIO_t' has no member named 'FlipState'
+    digitalWrite(_pin, _gpio.FlipState);
+                             ^
+../GPIOManager.cpp: In member function 'void GPIOManager::init()':
+../GPIOManager.cpp:46:43: error: request for member 'gpio' in 'Singleton<T>::getInstance<FirmwareSetting>()->FirmwareSetting::_fw', which is of pointer type 'FirmwareSetting_t*' (maybe you meant to use '->' ?)
+   if (FirmwareSetting::getInstance()->_fw.gpio[i].type == IN) {
+                                           ^
 make: *** [subdir.mk:80: GPIOManager.cpp.o] Error 1
-15:56:16 **** Incremental Build of configuration Release for project SwitchControler_v1 ****
+21:52:04 **** Incremental Build of configuration Release for project SwitchControler_v1 ****
+"C:\\eclipse\\arduinoPlugin\\tools\\make\\make" all 
+'Building file: ../.ino.cpp'
+'Starting C++ compile'
+"C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/xtensa-lx106-elf/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/lwip/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include" "-IC:/eclipse/EclipseCpp/SwitchControler_v1/Release/core" -c -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections -DF_CPU=160000000L -DLWIP_OPEN_SRC -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_CORE -DDEBUG_ESP_SSL -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_TLS_MEM -DARDUINO=10609 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_ESP8266 "-DARDUINO_BOARD=\"ESP8266_ESP01\"" -DESP8266  -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic" -I"C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM" -I"C:\eclipse\EclipseCpp\zzzlibraries\Time" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer\src" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp" -o ".ino.cpp.o"  -Wall
+'Finished building: ../.ino.cpp'
+' '
+'Building file: ../Commander.cpp'
+'Starting C++ compile'
+"C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/xtensa-lx106-elf/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/lwip/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include" "-IC:/eclipse/EclipseCpp/SwitchControler_v1/Release/core" -c -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections -DF_CPU=160000000L -DLWIP_OPEN_SRC -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_CORE -DDEBUG_ESP_SSL -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_TLS_MEM -DARDUINO=10609 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_ESP8266 "-DARDUINO_BOARD=\"ESP8266_ESP01\"" -DESP8266  -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic" -I"C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM" -I"C:\eclipse\EclipseCpp\zzzlibraries\Time" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer\src" -MMD -MP -MF"Commander.cpp.d" -MT"Commander.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Commander.cpp" -o "Commander.cpp.o"  -Wall
+../Commander.cpp: In member function 'String Commander::process(String)':
+../Commander.cpp:22:36: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+  String cmd = root["cmd"].asString();
+                                    ^
+In file included from ../Commander.h:13:0,
+                 from ../Commander.cpp:8:
+../Commander.cpp:23:27: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+  DBG(root["cmd"].asString());
+                           ^
+../GlobalConfigs.h:18:31: note: in definition of macro 'DBG'
+ #define DBG(x) Serial.println(x)
+                               ^
+../Commander.cpp:28:29: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+   DBG(root["dhcp"].asString());
+                             ^
+../GlobalConfigs.h:18:31: note: in definition of macro 'DBG'
+ #define DBG(x) Serial.println(x)
+                               ^
+../Commander.cpp:29:29: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+   DBG(root["ssid"].asString());
+                             ^
+../GlobalConfigs.h:18:31: note: in definition of macro 'DBG'
+ #define DBG(x) Serial.println(x)
+                               ^
+../Commander.cpp:30:37: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+   DBG(root["wifiPassword"].asString());
+                                     ^
+../GlobalConfigs.h:18:31: note: in definition of macro 'DBG'
+ #define DBG(x) Serial.println(x)
+                               ^
+../Commander.cpp:31:29: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+   DBG(root["port"].asString());
+                             ^
+../GlobalConfigs.h:18:31: note: in definition of macro 'DBG'
+ #define DBG(x) Serial.println(x)
+                               ^
+../Commander.cpp:32:27: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+   DBG(root["ip"].asString());
+                           ^
+../GlobalConfigs.h:18:31: note: in definition of macro 'DBG'
+ #define DBG(x) Serial.println(x)
+                               ^
+../Commander.cpp:33:29: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+   DBG(root["mask"].asString());
+                             ^
+../GlobalConfigs.h:18:31: note: in definition of macro 'DBG'
+ #define DBG(x) Serial.println(x)
+                               ^
+../Commander.cpp:34:27: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+   DBG(root["gw"].asString());
+                           ^
+../GlobalConfigs.h:18:31: note: in definition of macro 'DBG'
+ #define DBG(x) Serial.println(x)
+                               ^
+../Commander.cpp:38:78: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+    result = ModuleSettings::getInstance()->setWifiSSID(root["ssid"].asString())&
+                                                                              ^
+../Commander.cpp:39:83: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+      ModuleSettings::getInstance()->setWifiPassword(root["wifiPassword"].asString())&
+                                                                                   ^
+../Commander.cpp:43:78: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+    result = ModuleSettings::getInstance()->setWifiSSID(root["ssid"].asString())&
+                                                                              ^
+../Commander.cpp:44:83: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+      ModuleSettings::getInstance()->setWifiPassword(root["wifiPassword"].asString())&
+                                                                                   ^
+../Commander.cpp:46:69: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+      ModuleSettings::getInstance()->setStaticIP(root["ip"].asString())&
+                                                                     ^
+../Commander.cpp:47:67: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+      ModuleSettings::getInstance()->setMask(root["mask"].asString())&
+                                                                   ^
+../Commander.cpp:48:68: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+      ModuleSettings::getInstance()->setGateway(root["gw"].asString())&
+                                                                    ^
+'Finished building: ../Commander.cpp'
+' '
+'Building file: ../DeviceSetting.cpp'
+'Starting C++ compile'
+"C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/xtensa-lx106-elf/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/lwip/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include" "-IC:/eclipse/EclipseCpp/SwitchControler_v1/Release/core" -c -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections -DF_CPU=160000000L -DLWIP_OPEN_SRC -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_CORE -DDEBUG_ESP_SSL -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_TLS_MEM -DARDUINO=10609 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_ESP8266 "-DARDUINO_BOARD=\"ESP8266_ESP01\"" -DESP8266  -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic" -I"C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM" -I"C:\eclipse\EclipseCpp\zzzlibraries\Time" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer\src" -MMD -MP -MF"DeviceSetting.cpp.d" -MT"DeviceSetting.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../DeviceSetting.cpp" -o "DeviceSetting.cpp.o"  -Wall
+../DeviceSetting.cpp: In member function 'bool DeviceSetting::resetSettings()':
+../DeviceSetting.cpp:35:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+'Finished building: ../DeviceSetting.cpp'
+' '
+'Building file: ../GPIOManager.cpp'
+'Starting C++ compile'
+"C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/xtensa-lx106-elf/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/lwip/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include" "-IC:/eclipse/EclipseCpp/SwitchControler_v1/Release/core" -c -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections -DF_CPU=160000000L -DLWIP_OPEN_SRC -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_CORE -DDEBUG_ESP_SSL -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_TLS_MEM -DARDUINO=10609 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_ESP8266 "-DARDUINO_BOARD=\"ESP8266_ESP01\"" -DESP8266  -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic" -I"C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM" -I"C:\eclipse\EclipseCpp\zzzlibraries\Time" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer\src" -MMD -MP -MF"GPIOManager.cpp.d" -MT"GPIOManager.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../GPIOManager.cpp" -o "GPIOManager.cpp.o"  -Wall
+../GPIOManager.cpp: In member function 'void GPIOManager::update()':
+../GPIOManager.cpp:17:52: error: request for member 'gpio' in 'Singleton<T>::getInstance<DeviceSetting>()->DeviceSetting::_dv', which is of pointer type 'DeviceSetting_t*' (maybe you meant to use '->' ?)
+   GPIO_t _gpio = DeviceSetting::getInstance()->_dv.gpio[i];
+                                                    ^
+../GPIOManager.cpp:24:14: error: 'struct GPIO_t' has no member named 'FlipState'
+     if(_gpio.FlipState){
+              ^
+../GPIOManager.cpp:25:39: error: 'struct GPIO_t' has no member named 'FlipON'
+      if((_curr-lastUpdate[i]) > _gpio.FlipON){
+                                       ^
+../GPIOManager.cpp:26:13: error: 'struct GPIO_t' has no member named 'FlipState'
+       _gpio.FlipState = LOW;
+             ^
+../GPIOManager.cpp:29:39: error: 'struct GPIO_t' has no member named 'FlipOff'
+      if((_curr-lastUpdate[i]) > _gpio.FlipOff){
+                                       ^
+../GPIOManager.cpp:30:13: error: 'struct GPIO_t' has no member named 'FlipState'
+       _gpio.FlipState = HIGH;
+             ^
+../GPIOManager.cpp:34:11: error: 'struct GPIO_t' has no member named 'FlipState'
+     _gpio.FlipState = LOW;
+           ^
+../GPIOManager.cpp:36:29: error: 'struct GPIO_t' has no member named 'FlipState'
+    digitalWrite(_pin, _gpio.FlipState);
+                             ^
+../GPIOManager.cpp: In member function 'void GPIOManager::init()':
+../GPIOManager.cpp:46:41: error: request for member 'gpio' in 'Singleton<T>::getInstance<DeviceSetting>()->DeviceSetting::_dv', which is of pointer type 'DeviceSetting_t*' (maybe you meant to use '->' ?)
+   if (DeviceSetting::getInstance()->_dv.gpio[i].type == IN) {
+                                         ^
+../GPIOManager.cpp: In member function 'GPIO_t GPIOManager::getGPIOConfig(int)':
+../GPIOManager.cpp:55:9: error: '_dv' was not declared in this scope
+  return _dv->gpio[index];
+         ^
+../GPIOManager.cpp: In member function 'bool GPIOManager::setGPIOConfig(int, GPIO_t)':
+../GPIOManager.cpp:59:2: error: '_dv' was not declared in this scope
+  _dv->gpio[index] = gpio;
+  ^
+../GPIOManager.cpp: In member function 'GPIO_t GPIOManager::getGPIOConfig(int)':
+../GPIOManager.cpp:56:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [subdir.mk:80: GPIOManager.cpp.o] Error 1
+21:57:32 **** Incremental Build of configuration Release for project SwitchControler_v1 ****
+"C:\\eclipse\\arduinoPlugin\\tools\\make\\make" all 
+'Building file: ../.ino.cpp'
+'Starting C++ compile'
+"C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/xtensa-lx106-elf/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/lwip/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include" "-IC:/eclipse/EclipseCpp/SwitchControler_v1/Release/core" -c -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections -DF_CPU=160000000L -DLWIP_OPEN_SRC -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_CORE -DDEBUG_ESP_SSL -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_TLS_MEM -DARDUINO=10609 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_ESP8266 "-DARDUINO_BOARD=\"ESP8266_ESP01\"" -DESP8266  -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic" -I"C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM" -I"C:\eclipse\EclipseCpp\zzzlibraries\Time" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer\src" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp" -o ".ino.cpp.o"  -Wall
+'Finished building: ../.ino.cpp'
+' '
+'Building file: ../Commander.cpp'
+'Starting C++ compile'
+"C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/xtensa-lx106-elf/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/lwip/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include" "-IC:/eclipse/EclipseCpp/SwitchControler_v1/Release/core" -c -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections -DF_CPU=160000000L -DLWIP_OPEN_SRC -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_CORE -DDEBUG_ESP_SSL -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_TLS_MEM -DARDUINO=10609 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_ESP8266 "-DARDUINO_BOARD=\"ESP8266_ESP01\"" -DESP8266  -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic" -I"C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM" -I"C:\eclipse\EclipseCpp\zzzlibraries\Time" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer\src" -MMD -MP -MF"Commander.cpp.d" -MT"Commander.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Commander.cpp" -o "Commander.cpp.o"  -Wall
+../Commander.cpp: In member function 'String Commander::process(String)':
+../Commander.cpp:22:36: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+  String cmd = root["cmd"].asString();
+                                    ^
+In file included from ../Commander.h:13:0,
+                 from ../Commander.cpp:8:
+../Commander.cpp:23:27: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+  DBG(root["cmd"].asString());
+                           ^
+../GlobalConfigs.h:18:31: note: in definition of macro 'DBG'
+ #define DBG(x) Serial.println(x)
+                               ^
+../Commander.cpp:28:29: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+   DBG(root["dhcp"].asString());
+                             ^
+../GlobalConfigs.h:18:31: note: in definition of macro 'DBG'
+ #define DBG(x) Serial.println(x)
+                               ^
+../Commander.cpp:29:29: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+   DBG(root["ssid"].asString());
+                             ^
+../GlobalConfigs.h:18:31: note: in definition of macro 'DBG'
+ #define DBG(x) Serial.println(x)
+                               ^
+../Commander.cpp:30:37: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+   DBG(root["wifiPassword"].asString());
+                                     ^
+../GlobalConfigs.h:18:31: note: in definition of macro 'DBG'
+ #define DBG(x) Serial.println(x)
+                               ^
+../Commander.cpp:31:29: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+   DBG(root["port"].asString());
+                             ^
+../GlobalConfigs.h:18:31: note: in definition of macro 'DBG'
+ #define DBG(x) Serial.println(x)
+                               ^
+../Commander.cpp:32:27: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+   DBG(root["ip"].asString());
+                           ^
+../GlobalConfigs.h:18:31: note: in definition of macro 'DBG'
+ #define DBG(x) Serial.println(x)
+                               ^
+../Commander.cpp:33:29: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+   DBG(root["mask"].asString());
+                             ^
+../GlobalConfigs.h:18:31: note: in definition of macro 'DBG'
+ #define DBG(x) Serial.println(x)
+                               ^
+../Commander.cpp:34:27: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+   DBG(root["gw"].asString());
+                           ^
+../GlobalConfigs.h:18:31: note: in definition of macro 'DBG'
+ #define DBG(x) Serial.println(x)
+                               ^
+../Commander.cpp:38:78: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+    result = ModuleSettings::getInstance()->setWifiSSID(root["ssid"].asString())&
+                                                                              ^
+../Commander.cpp:39:83: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+      ModuleSettings::getInstance()->setWifiPassword(root["wifiPassword"].asString())&
+                                                                                   ^
+../Commander.cpp:43:78: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+    result = ModuleSettings::getInstance()->setWifiSSID(root["ssid"].asString())&
+                                                                              ^
+../Commander.cpp:44:83: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+      ModuleSettings::getInstance()->setWifiPassword(root["wifiPassword"].asString())&
+                                                                                   ^
+../Commander.cpp:46:69: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+      ModuleSettings::getInstance()->setStaticIP(root["ip"].asString())&
+                                                                     ^
+../Commander.cpp:47:67: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+      ModuleSettings::getInstance()->setMask(root["mask"].asString())&
+                                                                   ^
+../Commander.cpp:48:68: warning: 'const char* ArduinoJson::JsonVariantBase<TImpl>::asString() const [with TImpl = ArduinoJson::JsonObjectSubscript<const char*>]' is deprecated (declared at C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../JsonVariantBase.hpp:36): use as<char*>() instead [-Wdeprecated-declarations]
+      ModuleSettings::getInstance()->setGateway(root["gw"].asString())&
+                                                                    ^
+'Finished building: ../Commander.cpp'
+' '
+'Building file: ../DeviceSetting.cpp'
+'Starting C++ compile'
+"C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/xtensa-lx106-elf/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/lwip/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include" "-IC:/eclipse/EclipseCpp/SwitchControler_v1/Release/core" -c -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections -DF_CPU=160000000L -DLWIP_OPEN_SRC -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_CORE -DDEBUG_ESP_SSL -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_TLS_MEM -DARDUINO=10609 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_ESP8266 "-DARDUINO_BOARD=\"ESP8266_ESP01\"" -DESP8266  -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic" -I"C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM" -I"C:\eclipse\EclipseCpp\zzzlibraries\Time" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer\src" -MMD -MP -MF"DeviceSetting.cpp.d" -MT"DeviceSetting.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../DeviceSetting.cpp" -o "DeviceSetting.cpp.o"  -Wall
+../DeviceSetting.cpp: In member function 'bool DeviceSetting::resetSettings()':
+../DeviceSetting.cpp:35:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+'Finished building: ../DeviceSetting.cpp'
+' '
+'Building file: ../GPIOManager.cpp'
+'Starting C++ compile'
+"C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/xtensa-lx106-elf/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/lwip/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include" "-IC:/eclipse/EclipseCpp/SwitchControler_v1/Release/core" -c -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections -DF_CPU=160000000L -DLWIP_OPEN_SRC -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_CORE -DDEBUG_ESP_SSL -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_TLS_MEM -DARDUINO=10609 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_ESP8266 "-DARDUINO_BOARD=\"ESP8266_ESP01\"" -DESP8266  -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic" -I"C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM" -I"C:\eclipse\EclipseCpp\zzzlibraries\Time" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer\src" -MMD -MP -MF"GPIOManager.cpp.d" -MT"GPIOManager.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../GPIOManager.cpp" -o "GPIOManager.cpp.o"  -Wall
+../GPIOManager.cpp: In member function 'void GPIOManager::update()':
+../GPIOManager.cpp:23:13: error: 'struct GPIOSetting_t' has no member named 'type'
+   if (_gpio.type == IN) {
+             ^
+../GPIOManager.cpp:24:10: error: 'struct GPIOSetting_t' has no member named 'value'
+    _gpio.value = digitalRead(_pin);
+          ^
+../GPIOManager.cpp:25:18: error: 'struct GPIOSetting_t' has no member named 'type'
+   }else if(_gpio.type == FLIP){
+                  ^
+../GPIOManager.cpp:26:13: error: 'struct GPIOSetting_t' has no member named 'value'
+    if(_gpio.value){
+             ^
+../GPIOManager.cpp:28:14: error: 'struct GPIOSetting_t' has no member named 'FlipState'
+     if(_gpio.FlipState){
+              ^
+../GPIOManager.cpp:29:39: error: 'struct GPIOSetting_t' has no member named 'FlipON'
+      if((_curr-lastUpdate[i]) > _gpio.FlipON){
+                                       ^
+../GPIOManager.cpp:30:13: error: 'struct GPIOSetting_t' has no member named 'FlipState'
+       _gpio.FlipState = LOW;
+             ^
+../GPIOManager.cpp:33:39: error: 'struct GPIOSetting_t' has no member named 'FlipOff'
+      if((_curr-lastUpdate[i]) > _gpio.FlipOff){
+                                       ^
+../GPIOManager.cpp:34:13: error: 'struct GPIOSetting_t' has no member named 'FlipState'
+       _gpio.FlipState = HIGH;
+             ^
+../GPIOManager.cpp:38:11: error: 'struct GPIOSetting_t' has no member named 'FlipState'
+     _gpio.FlipState = LOW;
+           ^
+../GPIOManager.cpp:40:29: error: 'struct GPIOSetting_t' has no member named 'FlipState'
+    digitalWrite(_pin, _gpio.FlipState);
+                             ^
+../GPIOManager.cpp:42:29: error: 'struct GPIOSetting_t' has no member named 'value'
+    digitalWrite(_pin, _gpio.value);
+                             ^
+../GPIOManager.cpp: In member function 'void GPIOManager::init()':
+../GPIOManager.cpp:50:41: error: request for member 'gpio' in 'Singleton<T>::getInstance<DeviceSetting>()->DeviceSetting::_dv', which is of pointer type 'DeviceSetting_t*' (maybe you meant to use '->' ?)
+   if (DeviceSetting::getInstance()->_dv.gpio[i].type == IN) {
+                                         ^
+../GPIOManager.cpp: In member function 'GPIO_t GPIOManager::getGPIOConfig(int)':
+../GPIOManager.cpp:59:9: error: '_dv' was not declared in this scope
+  return _dv->gpio[index];
+         ^
+../GPIOManager.cpp: In member function 'bool GPIOManager::setGPIOConfig(int, GPIO_t)':
+../GPIOManager.cpp:63:2: error: '_dv' was not declared in this scope
+  _dv->gpio[index] = gpio;
+  ^
+../GPIOManager.cpp: In member function 'GPIO_t GPIOManager::getGPIOConfig(int)':
+../GPIOManager.cpp:60:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [subdir.mk:80: GPIOManager.cpp.o] Error 1
+21:58:14 **** Incremental Build of configuration Release for project SwitchControler_v1 ****
+"C:\\eclipse\\arduinoPlugin\\tools\\make\\make" all 
+'Building file: ../GPIOManager.cpp'
+'Starting C++ compile'
+"C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/xtensa-lx106-elf/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/lwip/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include" "-IC:/eclipse/EclipseCpp/SwitchControler_v1/Release/core" -c -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections -DF_CPU=160000000L -DLWIP_OPEN_SRC -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_CORE -DDEBUG_ESP_SSL -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_TLS_MEM -DARDUINO=10609 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_ESP8266 "-DARDUINO_BOARD=\"ESP8266_ESP01\"" -DESP8266  -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic" -I"C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM" -I"C:\eclipse\EclipseCpp\zzzlibraries\Time" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer\src" -MMD -MP -MF"GPIOManager.cpp.d" -MT"GPIOManager.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../GPIOManager.cpp" -o "GPIOManager.cpp.o"  -Wall
+../GPIOManager.cpp: In member function 'void GPIOManager::update()':
+../GPIOManager.cpp:24:29: error: '_pin' was not declared in this scope
+    gpio.value = digitalRead(_pin);
+                             ^
+../GPIOManager.cpp:28:13: error: 'struct GPIO_t' has no member named 'FlipState'
+     if(gpio.FlipState){
+             ^
+../GPIOManager.cpp:29:38: error: 'struct GPIO_t' has no member named 'FlipON'
+      if((_curr-lastUpdate[i]) > gpio.FlipON){
+                                      ^
+../GPIOManager.cpp:30:12: error: 'struct GPIO_t' has no member named 'FlipState'
+       gpio.FlipState = LOW;
+            ^
+../GPIOManager.cpp:33:38: error: 'struct GPIO_t' has no member named 'FlipOff'
+      if((_curr-lastUpdate[i]) > gpio.FlipOff){
+                                      ^
+../GPIOManager.cpp:34:12: error: 'struct GPIO_t' has no member named 'FlipState'
+       gpio.FlipState = HIGH;
+            ^
+../GPIOManager.cpp:38:10: error: 'struct GPIO_t' has no member named 'FlipState'
+     gpio.FlipState = LOW;
+          ^
+../GPIOManager.cpp:40:17: error: '_pin' was not declared in this scope
+    digitalWrite(_pin, gpio.FlipState);
+                 ^
+../GPIOManager.cpp:40:28: error: 'struct GPIO_t' has no member named 'FlipState'
+    digitalWrite(_pin, gpio.FlipState);
+                            ^
+../GPIOManager.cpp:42:17: error: '_pin' was not declared in this scope
+    digitalWrite(_pin, gpio.value);
+                 ^
+../GPIOManager.cpp:22:7: warning: unused variable 'pin' [-Wunused-variable]
+   int pin = GPIOList[i];
+       ^
+../GPIOManager.cpp: In member function 'void GPIOManager::init()':
+../GPIOManager.cpp:50:41: error: request for member 'gpio' in 'Singleton<T>::getInstance<DeviceSetting>()->DeviceSetting::_dv', which is of pointer type 'DeviceSetting_t*' (maybe you meant to use '->' ?)
+   if (DeviceSetting::getInstance()->_dv.gpio[i].type == IN) {
+                                         ^
+../GPIOManager.cpp: In member function 'GPIO_t GPIOManager::getGPIOConfig(int)':
+../GPIOManager.cpp:59:9: error: '_dv' was not declared in this scope
+  return _dv->gpio[index];
+         ^
+../GPIOManager.cpp: In member function 'bool GPIOManager::setGPIOConfig(int, GPIO_t)':
+../GPIOManager.cpp:63:2: error: '_dv' was not declared in this scope
+  _dv->gpio[index] = gpio;
+  ^
+../GPIOManager.cpp: In member function 'GPIO_t GPIOManager::getGPIOConfig(int)':
+../GPIOManager.cpp:60:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [subdir.mk:80: GPIOManager.cpp.o] Error 1
+22:00:39 **** Incremental Build of configuration Release for project SwitchControler_v1 ****
+"C:\\eclipse\\arduinoPlugin\\tools\\make\\make" all 
+'Building file: ../GPIOManager.cpp'
+'Starting C++ compile'
+"C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/xtensa-lx106-elf/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/lwip/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include" "-IC:/eclipse/EclipseCpp/SwitchControler_v1/Release/core" -c -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections -DF_CPU=160000000L -DLWIP_OPEN_SRC -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_CORE -DDEBUG_ESP_SSL -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_TLS_MEM -DARDUINO=10609 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_ESP8266 "-DARDUINO_BOARD=\"ESP8266_ESP01\"" -DESP8266  -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic" -I"C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM" -I"C:\eclipse\EclipseCpp\zzzlibraries\Time" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer\src" -MMD -MP -MF"GPIOManager.cpp.d" -MT"GPIOManager.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../GPIOManager.cpp" -o "GPIOManager.cpp.o"  -Wall
+../GPIOManager.cpp: In member function 'void GPIOManager::update()':
+../GPIOManager.cpp:28:13: error: 'struct GPIO_t' has no member named 'FlipState'
+     if(gpio.FlipState){
+             ^
+../GPIOManager.cpp:29:38: error: 'struct GPIO_t' has no member named 'FlipON'
+      if((_curr-lastUpdate[i]) > gpio.FlipON){
+                                      ^
+../GPIOManager.cpp:30:12: error: 'struct GPIO_t' has no member named 'FlipState'
+       gpio.FlipState = LOW;
+            ^
+../GPIOManager.cpp:33:38: error: 'struct GPIO_t' has no member named 'FlipOff'
+      if((_curr-lastUpdate[i]) > gpio.FlipOff){
+                                      ^
+../GPIOManager.cpp:34:12: error: 'struct GPIO_t' has no member named 'FlipState'
+       gpio.FlipState = HIGH;
+            ^
+../GPIOManager.cpp:38:10: error: 'struct GPIO_t' has no member named 'FlipState'
+     gpio.FlipState = LOW;
+          ^
+../GPIOManager.cpp:40:17: error: '_pin' was not declared in this scope
+    digitalWrite(_pin, gpio.FlipState);
+                 ^
+../GPIOManager.cpp:40:28: error: 'struct GPIO_t' has no member named 'FlipState'
+    digitalWrite(_pin, gpio.FlipState);
+                            ^
+../GPIOManager.cpp:42:17: error: '_pin' was not declared in this scope
+    digitalWrite(_pin, gpio.value);
+                 ^
+../GPIOManager.cpp: In member function 'void GPIOManager::init()':
+../GPIOManager.cpp:50:41: error: request for member 'gpio' in 'Singleton<T>::getInstance<DeviceSetting>()->DeviceSetting::_dv', which is of pointer type 'DeviceSetting_t*' (maybe you meant to use '->' ?)
+   if (DeviceSetting::getInstance()->_dv.gpio[i].type == IN) {
+                                         ^
+make: *** [subdir.mk:80: GPIOManager.cpp.o] Error 1
+22:02:19 **** Incremental Build of configuration Release for project SwitchControler_v1 ****
+"C:\\eclipse\\arduinoPlugin\\tools\\make\\make" all 
+'Building file: ../GPIOManager.cpp'
+'Starting C++ compile'
+"C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/xtensa-lx106-elf/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/lwip/include" "-IC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include" "-IC:/eclipse/EclipseCpp/SwitchControler_v1/Release/core" -c -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections -DF_CPU=160000000L -DLWIP_OPEN_SRC -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_CORE -DDEBUG_ESP_SSL -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_TLS_MEM -DARDUINO=10609 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_ESP8266 "-DARDUINO_BOARD=\"ESP8266_ESP01\"" -DESP8266  -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic" -I"C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM" -I"C:\eclipse\EclipseCpp\zzzlibraries\Time" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master" -I"C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master\src" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer" -I"C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer\src" -MMD -MP -MF"GPIOManager.cpp.d" -MT"GPIOManager.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../GPIOManager.cpp" -o "GPIOManager.cpp.o"  -Wall
+../GPIOManager.cpp: In member function 'void GPIOManager::update()':
+../GPIOManager.cpp:40:17: error: '_pin' was not declared in this scope
+    digitalWrite(_pin, gpio.lastValue);
+                 ^
+../GPIOManager.cpp:42:17: error: '_pin' was not declared in this scope
+    digitalWrite(_pin, gpio.value);
+                 ^
+../GPIOManager.cpp: In member function 'void GPIOManager::init()':
+../GPIOManager.cpp:50:41: error: request for member 'gpio' in 'Singleton<T>::getInstance<DeviceSetting>()->DeviceSetting::_dv', which is of pointer type 'DeviceSetting_t*' (maybe you meant to use '->' ?)
+   if (DeviceSetting::getInstance()->_dv.gpio[i].type == IN) {
+                                         ^
+make: *** [subdir.mk:80: GPIOManager.cpp.o] Error 1
+22:02:47 **** Incremental Build of configuration Release for project SwitchControler_v1 ****
 "C:\\eclipse\\arduinoPlugin\\tools\\make\\make" all 
 'Building file: ../GPIOManager.cpp'
 'Starting C++ compile'
@@ -769,7 +1086,7 @@ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266\core_esp8266
 'Finished building: arduino.ar'
 ' '
 'Starting combiner'
-"C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/xtensa-lx106-elf/bin/xtensa-lx106-elf-gcc" -g -Os -nostdlib -Wl,--no-check-sections -u call_user_start -u _printf_float -u _scanf_float -Wl,-static "-LC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/lib" "-LC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/ld" "-LC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/lib" "-Teagle.flash.1m64.ld" -Wl,--gc-sections -Wl,-wrap,system_restart_local -Wl,-wrap,register_chipv6_phy -o "C:/eclipse/EclipseCpp/SwitchControler_v1/Release/SwitchControler_v1.elf" -Wl,--start-group   .\.ino.cpp.o .\Commander.cpp.o .\FirmwareSetting.cpp.o .\GPIOManager.cpp.o .\MQTTConnection.cpp.o .\ModuleSettings.cpp.o .\ServerManager.cpp.o .\Session.cpp.o .\TaskManager.cpp.o .\TimeManager.cpp.o .\TimerManager.cpp.o .\WifiManager.cpp.o  .\libraries\pubsubclient-master\src\PubSubClient.cpp.o  .\libraries\Time\DateStrings.cpp.o .\libraries\Time\Time.cpp.o  .\libraries\ESP8266WiFi\src\ESP8266WiFi.cpp.o .\libraries\ESP8266WiFi\src\ESP8266WiFiAP.cpp.o .\libraries\ESP8266WiFi\src\ESP8266WiFiGeneric.cpp.o .\libraries\ESP8266WiFi\src\ESP8266WiFiMulti.cpp.o .\libraries\ESP8266WiFi\src\ESP8266WiFiSTA.cpp.o .\libraries\ESP8266WiFi\src\ESP8266WiFiScan.cpp.o .\libraries\ESP8266WiFi\src\WiFiClient.cpp.o .\libraries\ESP8266WiFi\src\WiFiClientSecure.cpp.o .\libraries\ESP8266WiFi\src\WiFiServer.cpp.o .\libraries\ESP8266WiFi\src\WiFiUdp.cpp.o  .\libraries\ESP8266WebServer\src\ESP8266WebServer.cpp.o .\libraries\ESP8266WebServer\src\Parsing.cpp.o  .\libraries\EEPROM\EEPROM.cpp.o  .\libraries\DNSServer\src\DNSServer.cpp.o   arduino.ar  "C:/eclipse/EclipseCpp/SwitchControler_v1/Release/arduino.ar" -lhal -lphy -lpp -lnet80211 -llwip_gcc -lwpa -lcrypto -lmain -lwps -laxtls -lespnow -lsmartconfig -lmesh -lwpa2 -lstdc++ -lm -lc -lgcc -Wl,--end-group "-LC:/eclipse/EclipseCpp/SwitchControler_v1/Release"
+"C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/xtensa-lx106-elf/bin/xtensa-lx106-elf-gcc" -g -Os -nostdlib -Wl,--no-check-sections -u call_user_start -u _printf_float -u _scanf_float -Wl,-static "-LC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/lib" "-LC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/ld" "-LC:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/lib" "-Teagle.flash.1m64.ld" -Wl,--gc-sections -Wl,-wrap,system_restart_local -Wl,-wrap,register_chipv6_phy -o "C:/eclipse/EclipseCpp/SwitchControler_v1/Release/SwitchControler_v1.elf" -Wl,--start-group   .\.ino.cpp.o .\Commander.cpp.o .\DeviceSetting.cpp.o .\GPIOManager.cpp.o .\MQTTConnection.cpp.o .\ModuleSettings.cpp.o .\ServerManager.cpp.o .\Session.cpp.o .\TaskManager.cpp.o .\TimeManager.cpp.o .\TimerManager.cpp.o .\WifiManager.cpp.o  .\libraries\pubsubclient-master\src\PubSubClient.cpp.o  .\libraries\Time\DateStrings.cpp.o .\libraries\Time\Time.cpp.o  .\libraries\ESP8266WiFi\src\ESP8266WiFi.cpp.o .\libraries\ESP8266WiFi\src\ESP8266WiFiAP.cpp.o .\libraries\ESP8266WiFi\src\ESP8266WiFiGeneric.cpp.o .\libraries\ESP8266WiFi\src\ESP8266WiFiMulti.cpp.o .\libraries\ESP8266WiFi\src\ESP8266WiFiSTA.cpp.o .\libraries\ESP8266WiFi\src\ESP8266WiFiScan.cpp.o .\libraries\ESP8266WiFi\src\WiFiClient.cpp.o .\libraries\ESP8266WiFi\src\WiFiClientSecure.cpp.o .\libraries\ESP8266WiFi\src\WiFiServer.cpp.o .\libraries\ESP8266WiFi\src\WiFiUdp.cpp.o  .\libraries\ESP8266WebServer\src\ESP8266WebServer.cpp.o .\libraries\ESP8266WebServer\src\Parsing.cpp.o  .\libraries\EEPROM\EEPROM.cpp.o  .\libraries\DNSServer\src\DNSServer.cpp.o   arduino.ar  "C:/eclipse/EclipseCpp/SwitchControler_v1/Release/arduino.ar" -lhal -lphy -lpp -lnet80211 -llwip_gcc -lwpa -lcrypto -lmain -lwps -laxtls -lespnow -lsmartconfig -lmesh -lwpa2 -lstdc++ -lm -lc -lgcc -Wl,--end-group "-LC:/eclipse/EclipseCpp/SwitchControler_v1/Release"
 'Finished building: SwitchControler_v1.elf'
 ' '
 'Create eeprom image'
@@ -786,13 +1103,13 @@ section                                                                         
 .bss                                                                                                                                                                                                                          30040   1073655240
 .irom0.text                                                                                                                                                                                                                  401792   1075843088
 .text                                                                                                                                                                                                                         32185   1074790400
-.debug_frame                                                                                                                                                                                                                  62524            0
-.debug_info                                                                                                                                                                                                                 1340518            0
-.debug_abbrev                                                                                                                                                                                                                153877            0
-.debug_aranges                                                                                                                                                                                                                18896            0
+.debug_frame                                                                                                                                                                                                                  62652            0
+.debug_info                                                                                                                                                                                                                 1342484            0
+.debug_abbrev                                                                                                                                                                                                                154257            0
+.debug_aranges                                                                                                                                                                                                                18920            0
 .debug_ranges                                                                                                                                                                                                                 43224            0
-.debug_line                                                                                                                                                                                                                  390061            0
-.debug_str                                                                                                                                                                                                                   247719            0
+.debug_line                                                                                                                                                                                                                  390873            0
+.debug_str                                                                                                                                                                                                                   247847            0
 .comment                                                                                                                                                                                                                       7142            0
 .xtensa.info                                                                                                                                                                                                                     56            0
 .xt.lit._ZN9SingletonI11TaskManagerE11getInstanceEv                                                                                                                                                                               8            0
@@ -1111,8 +1428,8 @@ section                                                                         
 .xt.prop._ZTVSt19_Sp_counted_deleterIP14SPIFFSFileImplNSt12__shared_ptrIS0_LN9__gnu_cxx12_Lock_policyE0EE8_DeleterISaIS0_EEES7_LS4_0EE                                                                                           12            0
 .xt.prop._ZTVSt19_Sp_counted_deleterIP13SPIFFSDirImplNSt12__shared_ptrIS0_LN9__gnu_cxx12_Lock_policyE0EE8_DeleterISaIS0_EEES7_LS4_0EE                                                                                            12            0
 .xt.prop._ZNSt8functionIFvvEE4swapERS1_                                                                                                                                                                                          36            0
-.debug_loc                                                                                                                                                                                                                   412600            0
-Total                                                                                                                                                                                                                       3161666
+.debug_loc                                                                                                                                                                                                                   412951            0
+Total                                                                                                                                                                                                                       3165455
 
 
 'Finished building target: SwitchControler_v1'

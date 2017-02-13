@@ -13,6 +13,9 @@
 					<entry kind="includePath" name="C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
+					<entry kind="includePath" name="C:/eclipse/EclipseCpp/GarageWithCam_v1/Release/core">
+						<flag value="BUILTIN|READONLY"/>
+					</entry>
 					<entry kind="includePath" name="C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/xtensa-lx106-elf/lib/gcc/xtensa-lx106-elf/4.8.2/include">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
@@ -729,6 +732,9 @@
 					<entry kind="includePath" name="C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
+					<entry kind="includePath" name="C:/eclipse/EclipseCpp/GarageWithCam_v1/Release/core">
+						<flag value="BUILTIN|READONLY"/>
+					</entry>
 					<entry kind="includePath" name="C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/xtensa-lx106-elf/xtensa-lx106-elf/include/c++/4.8.2">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
@@ -855,9 +861,6 @@
 					<entry kind="macro" name="__DBL_HAS_INFINITY__" value="1">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="macro" name="__DBL_HAS_QUIET_NAN__" value="1">
-						<flag value="BUILTIN|READONLY"/>
-					</entry>
 					<entry kind="macro" name="__DBL_MANT_DIG__" value="53">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
@@ -877,6 +880,9 @@
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__DBL_MIN__" value="double(2.2250738585072014e-308L)">
+						<flag value="BUILTIN|READONLY"/>
+					</entry>
+					<entry kind="macro" name="__DEC128_EPSILON__" value="1">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__DEC128_EPSILON__" value="1E-33DL">
@@ -916,6 +922,9 @@
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__DEC32_MIN__" value="1E-95DF">
+						<flag value="BUILTIN|READONLY"/>
+					</entry>
+					<entry kind="macro" name="__DEC32_SUBNORMAL_MIN__" value="1">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__DEC32_SUBNORMAL_MIN__" value="0.000001E-95DF">
@@ -973,9 +982,6 @@
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__FLT_EVAL_METHOD__" value="0">
-						<flag value="BUILTIN|READONLY"/>
-					</entry>
-					<entry kind="macro" name="__FLT_HAS_DENORM__" value="1">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__FLT_HAS_INFINITY__" value="1">
@@ -1036,9 +1042,6 @@
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__GCC_ATOMIC_TEST_AND_SET_TRUEVAL" value="1">
-						<flag value="BUILTIN|READONLY"/>
-					</entry>
-					<entry kind="macro" name="__GCC_ATOMIC_WCHAR_T_LOCK_FREE" value="1">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__GNUC_MINOR__" value="8">
@@ -1177,9 +1180,6 @@
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__LDBL_EPSILON__" value="2.2204460492503131e-16L">
-						<flag value="BUILTIN|READONLY"/>
-					</entry>
-					<entry kind="macro" name="__LDBL_HAS_DENORM__" value="1">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__LDBL_HAS_INFINITY__" value="1">

@@ -1,29 +1,50 @@
-TimeManager.cpp.o: ../TimeManager.cpp ../TimeManager.h ../DebugSetting.h \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Arduino.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/stdlib.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/machine/ieeefp.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/_ansi.h \
+TimeManager.cpp.o: ../TimeManager.cpp ../TimeManager.h \
+ C:\eclipse\EclipseCpp\zzzlibraries\Time/TimeLib.h \
+ C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/inttypes.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/newlib.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/config.h \
+ C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/_intsup.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/features.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/xtensa/config/core-isa.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/reent.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/_ansi.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/_types.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/machine/_types.h \
+ C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/stdint.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/machine/_default_types.h \
+ C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/types.h \
+ C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/_ansi.h \
+ C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/config.h \
+ C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/machine/ieeefp.h \
+ C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/xtensa/config/core-isa.h \
+ C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/machine/_types.h \
+ C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/_types.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/lock.h \
+ C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/machine/types.h \
+ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer\src/DNSServer.h \
+ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/WiFiUdp.h \
+ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Udp.h \
+ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Stream.h \
+ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Print.h \
+ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/WString.h \
+ C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/stdlib.h \
+ C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/_ansi.h \
+ C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/reent.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/cdefs.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/machine/stdlib.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/alloca.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/stdint.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/_intsup.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/stdio.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/types.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/machine/types.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/stdio.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/string.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/string.h \
+ C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/ctype.h \
+ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/pgmspace.h \
+ C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/stdio.h \
+ C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/stdio.h \
+ C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include/ets_sys.h \
+ C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include/c_types.h \
+ C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include/eagle_soc.h \
+ C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include/osapi.h \
+ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/user_config.h \
+ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Printable.h \
+ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/IPAddress.h \
+ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/WString.h \
+ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Printable.h \
+ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/include/slist.h \
+ ../GlobalConfigs.h \
+ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Arduino.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/math.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/stdlib_noniso.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/binary.h \
@@ -33,38 +54,18 @@ TimeManager.cpp.o: ../TimeManager.cpp ../TimeManager.h ../DebugSetting.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Arduino.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/core_esp8266_features.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/pgmspace.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include/ets_sys.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include/c_types.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include/eagle_soc.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include/osapi.h \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/user_config.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/WCharacter.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/ctype.h \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/WString.h \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/pgmspace.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/HardwareSerial.h \
- C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/inttypes.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Stream.h \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Print.h \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Printable.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/uart.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Esp.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Updater.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/flash_utils.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/MD5Builder.h \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/WString.h \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Stream.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/md5.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/debug.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic/pins_arduino.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic/common.h \
- C:\eclipse\EclipseCpp\zzzlibraries\Time/TimeLib.h \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer\src/DNSServer.h \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/WiFiUdp.h \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Udp.h \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/IPAddress.h \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Printable.h \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/include/slist.h \
  ../Singleton.h ../ModuleSettings.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/FS.h \
  C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/ArduinoJson.h \
@@ -140,7 +141,7 @@ TimeManager.cpp.o: ../TimeManager.cpp ../TimeManager.h ../DebugSetting.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/errno.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/errno.h \
  C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Serialization/JsonSerializerImpl.hpp \
- ../GPIOManager.h ../FirmwareSetting.h \
+ ../GPIOManager.h ../DeviceSetting.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM/EEPROM.h \
  ../Session.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/ESP8266WiFi.h \
@@ -162,35 +163,55 @@ TimeManager.cpp.o: ../TimeManager.cpp ../TimeManager.h ../DebugSetting.h \
 
 ../TimeManager.h:
 
-../DebugSetting.h:
+C:\eclipse\EclipseCpp\zzzlibraries\Time/TimeLib.h:
 
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Arduino.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/stdlib.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/machine/ieeefp.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/_ansi.h:
+C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/inttypes.h:
 
 C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/newlib.h:
 
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/config.h:
+C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/_intsup.h:
 
 C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/features.h:
 
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/xtensa/config/core-isa.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/reent.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/_ansi.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/_types.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/machine/_types.h:
+C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/stdint.h:
 
 C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/machine/_default_types.h:
 
+C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/types.h:
+
+C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/_ansi.h:
+
+C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/config.h:
+
+C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/machine/ieeefp.h:
+
+C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/xtensa/config/core-isa.h:
+
+C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/machine/_types.h:
+
+C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/_types.h:
+
 C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/lock.h:
+
+C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/machine/types.h:
+
+C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer\src/DNSServer.h:
+
+C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/WiFiUdp.h:
+
+C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Udp.h:
+
+C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Stream.h:
+
+C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Print.h:
+
+C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/WString.h:
+
+C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/stdlib.h:
+
+C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/_ansi.h:
+
+C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/reent.h:
 
 C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/cdefs.h:
 
@@ -198,21 +219,41 @@ C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx10
 
 C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/alloca.h:
 
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/stdint.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/_intsup.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/stdio.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/types.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/machine/types.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/stdio.h:
-
 C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/string.h:
 
 C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/string.h:
+
+C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/ctype.h:
+
+C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/pgmspace.h:
+
+C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/stdio.h:
+
+C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/stdio.h:
+
+C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include/ets_sys.h:
+
+C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include/c_types.h:
+
+C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include/eagle_soc.h:
+
+C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include/osapi.h:
+
+C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/user_config.h:
+
+C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Printable.h:
+
+C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/IPAddress.h:
+
+C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/WString.h:
+
+C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Printable.h:
+
+C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/include/slist.h:
+
+../GlobalConfigs.h:
+
+C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Arduino.h:
 
 C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/math.h:
 
@@ -232,33 +273,11 @@ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/core_esp8266
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/pgmspace.h:
 
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include/ets_sys.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include/c_types.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include/eagle_soc.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/include/osapi.h:
-
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/user_config.h:
-
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/WCharacter.h:
-
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/ctype.h:
-
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/WString.h:
-
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/pgmspace.h:
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/HardwareSerial.h:
 
-C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/inttypes.h:
-
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Stream.h:
-
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Print.h:
-
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Printable.h:
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/uart.h:
 
@@ -270,10 +289,6 @@ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/flash_utils.
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/MD5Builder.h:
 
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/WString.h:
-
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Stream.h:
-
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/md5.h:
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/debug.h:
@@ -281,20 +296,6 @@ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/debug.h:
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic/pins_arduino.h:
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic/common.h:
-
-C:\eclipse\EclipseCpp\zzzlibraries\Time/TimeLib.h:
-
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer\src/DNSServer.h:
-
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/WiFiUdp.h:
-
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Udp.h:
-
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/IPAddress.h:
-
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Printable.h:
-
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/include/slist.h:
 
 ../Singleton.h:
 
@@ -450,7 +451,7 @@ C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Serialization
 
 ../GPIOManager.h:
 
-../FirmwareSetting.h:
+../DeviceSetting.h:
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM/EEPROM.h:
 

@@ -1,5 +1,5 @@
 /*
- * DebugSetting.h
+ * GlobalConfigs.h
  *
  *  Created on: 24 thg 1, 2017
  *      Author: MyPC
@@ -31,20 +31,24 @@
 #define DBG2F0(x,y)
 #endif
 
-#define MAX_GPIO_PIN	9
+/*
+ * Global define - Nhung thiet lap di theo ban build
+ */
 
-static const int GPIOList[MAX_GPIO_PIN] = { 16, 14, 12, 13, 15, 2, 0, 4, 5};
+#define HBOS_Version	"1.000.000"
+#define	HBOS_Super_User	"admin"
+#define	HBOS_Super_Password	"TNENVIBH@9091+"
 
-typedef enum { IN, TOGGLE, HOLD, FLIP } GPIOType_t;
+/* Cau truc vung nho EEPROM:
+ * 0 - 128: Device setting chua du lieu truy xuat nguon goc:
+ * 			xem class DeviceSetting.h
+ * 129 - 1xx: GPIO setting( xem class GPIOManager)
+ *
+ *
+ */
 
-typedef struct __attribute__((packed)){
-	int index;
-	GPIOType_t type;
-	long ONTime;	// ms turn on
-	long OFFTime; // ms turn off
-	bool nowState;
-	int value;
-} GPIO_t;
-
+/* Cau truc file setting luu tren FS (xem class ModuleSetting.h):
+ *
+ */
 
 #endif /* GLOBALCONFIGS_H_ */

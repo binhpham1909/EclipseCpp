@@ -65,7 +65,6 @@ ServerManager.cpp.o: ../ServerManager.cpp ../ServerManager.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer\src/detail/RequestHandler.h \
  ../ModuleSettings.h ../Singleton.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/FS.h \
- ../DebugSetting.h \
  C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/ArduinoJson.h \
  C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson.h \
  C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson.hpp \
@@ -138,7 +137,7 @@ ServerManager.cpp.o: ../ServerManager.cpp ../ServerManager.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/errno.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/errno.h \
  C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Serialization/JsonSerializerImpl.hpp \
- ../GPIOManager.h ../FirmwareSetting.h \
+ ../GlobalConfigs.h ../GPIOManager.h ../DeviceSetting.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM/EEPROM.h \
  ../Session.h C:\eclipse\EclipseCpp\zzzlibraries\Time/TimeLib.h \
  ../Commander.h ../HTMLPage.h ../HTML/js/jquery.min.js.gz.h \
@@ -285,8 +284,6 @@ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WebServer
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/FS.h:
 
-../DebugSetting.h:
-
 C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/ArduinoJson.h:
 
 C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson.h:
@@ -431,9 +428,11 @@ C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx10
 
 C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Serialization/JsonSerializerImpl.hpp:
 
+../GlobalConfigs.h:
+
 ../GPIOManager.h:
 
-../FirmwareSetting.h:
+../DeviceSetting.h:
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM/EEPROM.h:
 

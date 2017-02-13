@@ -4584,3 +4584,1031 @@ org.eclipse.core.runtime.CoreException: No property tester contributes a propert
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
 !SUBENTRY 1 org.eclipse.core.expressions 4 201 2017-02-13 15:57:21.542
 !MESSAGE No property tester contributes a property org.eclipse.wst.jsdt.chromium.debug.core.isJsFile to type class org.eclipse.cdt.internal.core.model.TranslationUnit
+!SESSION 2017-02-13 20:17:51.411 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-02-13 20:18:13.055
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\MyPC'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:18.006
+!MESSAGE Error: Cannot run program "\bin\avr-gcc": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\avr-gcc": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:18.188
+!MESSAGE Error: Cannot run program "\bin\xtensa-lx106-elf-gcc": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\xtensa-lx106-elf-gcc": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:21.072
+!MESSAGE Error: Cannot run program "\bin\xtensa-lx106-elf-g++": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\xtensa-lx106-elf-g++": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:21.081
+!MESSAGE Error: Cannot run program "\bin\avr-g++": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\avr-g++": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:21.768
+!MESSAGE Error: Cannot run program "\bin\avr-gcc": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\avr-gcc": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:22.012
+!MESSAGE Error: Cannot run program "\bin\avr-g++": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\avr-g++": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 4 2017-02-13 20:18:27.125
+!MESSAGE Exception occurred while saving project preferences: /GarageWithCam_v1/.settings/org.eclipse.cdt.core.prefs.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/GarageWithCam_v1/.settings/org.eclipse.cdt.core.prefs'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.write(FileSystemResourceManager.java:1125)
+	at org.eclipse.core.internal.resources.File.internalSetContents(File.java:303)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:339)
+	at org.eclipse.core.internal.resources.ProjectPreferences$1.run(ProjectPreferences.java:627)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:660)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:431)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:365)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:368)
+	at org.eclipse.cdt.utils.envvar.PrefsStorableEnvironment.serialize(PrefsStorableEnvironment.java:436)
+	at org.eclipse.cdt.utils.envvar.StorableEnvironmentLoader.storeEnvironment(StorableEnvironmentLoader.java:125)
+	at org.eclipse.cdt.internal.core.envvar.UserDefinedEnvironmentSupplier.storeEnvironment(UserDefinedEnvironmentSupplier.java:229)
+	at org.eclipse.cdt.internal.core.envvar.UserDefinedEnvironmentSupplier.storeProjectEnvironment(UserDefinedEnvironmentSupplier.java:215)
+	at org.eclipse.cdt.internal.core.envvar.ContributedEnvironment.serialize(ContributedEnvironment.java:174)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage$DesSerializationRunnable.run(XmlProjectDescriptionStorage.java:178)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$CompositeWorkspaceRunnable.run(CProjectDescriptionManager.java:199)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$CompositeWorkspaceRunnable.run(CProjectDescriptionManager.java:199)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$5.run(CProjectDescriptionManager.java:505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.runAtomic(CProjectDescriptionManager.java:501)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.runWspModification(CProjectDescriptionManager.java:470)
+	at org.eclipse.cdt.internal.core.settings.model.SetCProjectDescriptionOperation.executeOperation(SetCProjectDescriptionOperation.java:154)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:638)
+	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:203)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionStorageManager.setProjectDescription(CProjectDescriptionStorageManager.java:149)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:853)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:814)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$6.run(CProjectDescriptionManager.java:548)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$5.run(CProjectDescriptionManager.java:505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.runAtomic(CProjectDescriptionManager.java:501)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.access$4(CProjectDescriptionManager.java:499)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$4.run(CProjectDescriptionManager.java:482)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2017-02-13 20:18:27.126
+!MESSAGE Resource is out of sync with the file system: '/GarageWithCam_v1/.settings/org.eclipse.cdt.core.prefs'.
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:27.135
+!MESSAGE Error: Exception occurred while saving project preferences: /GarageWithCam_v1/.settings/org.eclipse.cdt.core.prefs.
+!STACK 0
+org.osgi.service.prefs.BackingStoreException: Exception occurred while saving project preferences: /GarageWithCam_v1/.settings/org.eclipse.cdt.core.prefs.
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:670)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:431)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:365)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:368)
+	at org.eclipse.cdt.utils.envvar.PrefsStorableEnvironment.serialize(PrefsStorableEnvironment.java:436)
+	at org.eclipse.cdt.utils.envvar.StorableEnvironmentLoader.storeEnvironment(StorableEnvironmentLoader.java:125)
+	at org.eclipse.cdt.internal.core.envvar.UserDefinedEnvironmentSupplier.storeEnvironment(UserDefinedEnvironmentSupplier.java:229)
+	at org.eclipse.cdt.internal.core.envvar.UserDefinedEnvironmentSupplier.storeProjectEnvironment(UserDefinedEnvironmentSupplier.java:215)
+	at org.eclipse.cdt.internal.core.envvar.ContributedEnvironment.serialize(ContributedEnvironment.java:174)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage$DesSerializationRunnable.run(XmlProjectDescriptionStorage.java:178)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$CompositeWorkspaceRunnable.run(CProjectDescriptionManager.java:199)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$CompositeWorkspaceRunnable.run(CProjectDescriptionManager.java:199)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$5.run(CProjectDescriptionManager.java:505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.runAtomic(CProjectDescriptionManager.java:501)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.runWspModification(CProjectDescriptionManager.java:470)
+	at org.eclipse.cdt.internal.core.settings.model.SetCProjectDescriptionOperation.executeOperation(SetCProjectDescriptionOperation.java:154)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:638)
+	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:203)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionStorageManager.setProjectDescription(CProjectDescriptionStorageManager.java:149)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:853)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:814)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$6.run(CProjectDescriptionManager.java:548)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$5.run(CProjectDescriptionManager.java:505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.runAtomic(CProjectDescriptionManager.java:501)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.access$4(CProjectDescriptionManager.java:499)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$4.run(CProjectDescriptionManager.java:482)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 4 2017-02-13 20:18:27.304
+!MESSAGE Exception occurred while saving project preferences: /GarageWithCam_v1/.settings/org.eclipse.cdt.core.prefs.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/GarageWithCam_v1/.settings/org.eclipse.cdt.core.prefs'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.write(FileSystemResourceManager.java:1125)
+	at org.eclipse.core.internal.resources.File.internalSetContents(File.java:303)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:339)
+	at org.eclipse.core.internal.resources.ProjectPreferences$1.run(ProjectPreferences.java:627)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:660)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:431)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:365)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:368)
+	at org.eclipse.cdt.internal.core.envvar.UserDefinedEnvironmentSupplier.storeProjectEnvironment(UserDefinedEnvironmentSupplier.java:220)
+	at org.eclipse.cdt.internal.core.envvar.ContributedEnvironment.serialize(ContributedEnvironment.java:174)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage$DesSerializationRunnable.run(XmlProjectDescriptionStorage.java:178)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$CompositeWorkspaceRunnable.run(CProjectDescriptionManager.java:199)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$CompositeWorkspaceRunnable.run(CProjectDescriptionManager.java:199)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$5.run(CProjectDescriptionManager.java:505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.runAtomic(CProjectDescriptionManager.java:501)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.runWspModification(CProjectDescriptionManager.java:470)
+	at org.eclipse.cdt.internal.core.settings.model.SetCProjectDescriptionOperation.executeOperation(SetCProjectDescriptionOperation.java:154)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:638)
+	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:203)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionStorageManager.setProjectDescription(CProjectDescriptionStorageManager.java:149)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:853)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:814)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$6.run(CProjectDescriptionManager.java:548)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$5.run(CProjectDescriptionManager.java:505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.runAtomic(CProjectDescriptionManager.java:501)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.access$4(CProjectDescriptionManager.java:499)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$4.run(CProjectDescriptionManager.java:482)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2017-02-13 20:18:27.304
+!MESSAGE Resource is out of sync with the file system: '/GarageWithCam_v1/.settings/org.eclipse.cdt.core.prefs'.
+
+!ENTRY org.eclipse.core.resources 4 4 2017-02-13 20:18:28.419
+!MESSAGE Exception occurred while saving project preferences: /SwitchControler_v1/.settings/org.eclipse.cdt.core.prefs.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/SwitchControler_v1/.settings/org.eclipse.cdt.core.prefs'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.write(FileSystemResourceManager.java:1125)
+	at org.eclipse.core.internal.resources.File.internalSetContents(File.java:303)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:339)
+	at org.eclipse.core.internal.resources.ProjectPreferences$1.run(ProjectPreferences.java:627)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:660)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:431)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:365)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:368)
+	at org.eclipse.cdt.utils.envvar.PrefsStorableEnvironment.serialize(PrefsStorableEnvironment.java:436)
+	at org.eclipse.cdt.utils.envvar.StorableEnvironmentLoader.storeEnvironment(StorableEnvironmentLoader.java:125)
+	at org.eclipse.cdt.internal.core.envvar.UserDefinedEnvironmentSupplier.storeEnvironment(UserDefinedEnvironmentSupplier.java:229)
+	at org.eclipse.cdt.internal.core.envvar.UserDefinedEnvironmentSupplier.storeProjectEnvironment(UserDefinedEnvironmentSupplier.java:215)
+	at org.eclipse.cdt.internal.core.envvar.ContributedEnvironment.serialize(ContributedEnvironment.java:174)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage$DesSerializationRunnable.run(XmlProjectDescriptionStorage.java:178)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$CompositeWorkspaceRunnable.run(CProjectDescriptionManager.java:199)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$CompositeWorkspaceRunnable.run(CProjectDescriptionManager.java:199)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$5.run(CProjectDescriptionManager.java:505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.runAtomic(CProjectDescriptionManager.java:501)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.runWspModification(CProjectDescriptionManager.java:470)
+	at org.eclipse.cdt.internal.core.settings.model.SetCProjectDescriptionOperation.executeOperation(SetCProjectDescriptionOperation.java:154)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:638)
+	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:203)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionStorageManager.setProjectDescription(CProjectDescriptionStorageManager.java:149)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:853)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:814)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$6.run(CProjectDescriptionManager.java:548)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$5.run(CProjectDescriptionManager.java:505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.runAtomic(CProjectDescriptionManager.java:501)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.access$4(CProjectDescriptionManager.java:499)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$4.run(CProjectDescriptionManager.java:482)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2017-02-13 20:18:28.421
+!MESSAGE Resource is out of sync with the file system: '/SwitchControler_v1/.settings/org.eclipse.cdt.core.prefs'.
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:28.431
+!MESSAGE Error: Exception occurred while saving project preferences: /SwitchControler_v1/.settings/org.eclipse.cdt.core.prefs.
+!STACK 0
+org.osgi.service.prefs.BackingStoreException: Exception occurred while saving project preferences: /SwitchControler_v1/.settings/org.eclipse.cdt.core.prefs.
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:670)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:431)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:365)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:368)
+	at org.eclipse.cdt.utils.envvar.PrefsStorableEnvironment.serialize(PrefsStorableEnvironment.java:436)
+	at org.eclipse.cdt.utils.envvar.StorableEnvironmentLoader.storeEnvironment(StorableEnvironmentLoader.java:125)
+	at org.eclipse.cdt.internal.core.envvar.UserDefinedEnvironmentSupplier.storeEnvironment(UserDefinedEnvironmentSupplier.java:229)
+	at org.eclipse.cdt.internal.core.envvar.UserDefinedEnvironmentSupplier.storeProjectEnvironment(UserDefinedEnvironmentSupplier.java:215)
+	at org.eclipse.cdt.internal.core.envvar.ContributedEnvironment.serialize(ContributedEnvironment.java:174)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage$DesSerializationRunnable.run(XmlProjectDescriptionStorage.java:178)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$CompositeWorkspaceRunnable.run(CProjectDescriptionManager.java:199)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$CompositeWorkspaceRunnable.run(CProjectDescriptionManager.java:199)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$5.run(CProjectDescriptionManager.java:505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.runAtomic(CProjectDescriptionManager.java:501)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.runWspModification(CProjectDescriptionManager.java:470)
+	at org.eclipse.cdt.internal.core.settings.model.SetCProjectDescriptionOperation.executeOperation(SetCProjectDescriptionOperation.java:154)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:638)
+	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:203)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionStorageManager.setProjectDescription(CProjectDescriptionStorageManager.java:149)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:853)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:814)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$6.run(CProjectDescriptionManager.java:548)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$5.run(CProjectDescriptionManager.java:505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.runAtomic(CProjectDescriptionManager.java:501)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.access$4(CProjectDescriptionManager.java:499)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$4.run(CProjectDescriptionManager.java:482)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 4 2017-02-13 20:18:28.651
+!MESSAGE Exception occurred while saving project preferences: /SwitchControler_v1/.settings/org.eclipse.cdt.core.prefs.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/SwitchControler_v1/.settings/org.eclipse.cdt.core.prefs'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.write(FileSystemResourceManager.java:1125)
+	at org.eclipse.core.internal.resources.File.internalSetContents(File.java:303)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:339)
+	at org.eclipse.core.internal.resources.ProjectPreferences$1.run(ProjectPreferences.java:627)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:660)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:431)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:365)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:368)
+	at org.eclipse.cdt.internal.core.envvar.UserDefinedEnvironmentSupplier.storeProjectEnvironment(UserDefinedEnvironmentSupplier.java:220)
+	at org.eclipse.cdt.internal.core.envvar.ContributedEnvironment.serialize(ContributedEnvironment.java:174)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage$DesSerializationRunnable.run(XmlProjectDescriptionStorage.java:178)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$CompositeWorkspaceRunnable.run(CProjectDescriptionManager.java:199)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$CompositeWorkspaceRunnable.run(CProjectDescriptionManager.java:199)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$5.run(CProjectDescriptionManager.java:505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.runAtomic(CProjectDescriptionManager.java:501)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.runWspModification(CProjectDescriptionManager.java:470)
+	at org.eclipse.cdt.internal.core.settings.model.SetCProjectDescriptionOperation.executeOperation(SetCProjectDescriptionOperation.java:154)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:638)
+	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:203)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionStorageManager.setProjectDescription(CProjectDescriptionStorageManager.java:149)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:853)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:814)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$6.run(CProjectDescriptionManager.java:548)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$5.run(CProjectDescriptionManager.java:505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.runAtomic(CProjectDescriptionManager.java:501)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.access$4(CProjectDescriptionManager.java:499)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager$4.run(CProjectDescriptionManager.java:482)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2017-02-13 20:18:28.672
+!MESSAGE Resource is out of sync with the file system: '/SwitchControler_v1/.settings/org.eclipse.cdt.core.prefs'.
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:29.361
+!MESSAGE Error: Cannot run program "\bin\xtensa-lx106-elf-gcc": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\xtensa-lx106-elf-gcc": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:29.432
+!MESSAGE Error: Cannot run program "\bin\avr-gcc": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\avr-gcc": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:29.496
+!MESSAGE Error: Cannot run program "\bin\xtensa-lx106-elf-g++": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\xtensa-lx106-elf-g++": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:29.536
+!MESSAGE Error: Cannot run program "\bin\avr-g++": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\avr-g++": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:30.148
+!MESSAGE Error: Cannot run program "\bin\avr-gcc": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\avr-gcc": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:30.254
+!MESSAGE Error: Cannot run program "\bin\avr-g++": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\avr-g++": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:33.264
+!MESSAGE Error: Cannot run program "\bin\avr-gcc": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\avr-gcc": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:33.311
+!MESSAGE Error: Cannot run program "\bin\xtensa-lx106-elf-gcc": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\xtensa-lx106-elf-gcc": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:33.364
+!MESSAGE Error: Cannot run program "\bin\avr-g++": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\avr-g++": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:33.476
+!MESSAGE Error: Cannot run program "\bin\xtensa-lx106-elf-g++": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\xtensa-lx106-elf-g++": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:33.570
+!MESSAGE Error: Cannot run program "\bin\avr-gcc": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\avr-gcc": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:33.639
+!MESSAGE Error: Cannot run program "\bin\avr-g++": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\avr-g++": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:33.837
+!MESSAGE Error: Cannot run program "\bin\avr-gcc": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\avr-gcc": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:33.845
+!MESSAGE Error: Cannot run program "\bin\xtensa-lx106-elf-gcc": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\xtensa-lx106-elf-gcc": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:33.879
+!MESSAGE Error: Cannot run program "\bin\avr-g++": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\avr-g++": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:33.909
+!MESSAGE Error: Cannot run program "\bin\xtensa-lx106-elf-g++": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\xtensa-lx106-elf-g++": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:33.938
+!MESSAGE Error: Cannot run program "\bin\avr-gcc": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\avr-gcc": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:33.980
+!MESSAGE Error: Cannot run program "\bin\avr-g++": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\avr-g++": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:34.059
+!MESSAGE Error: Cannot run program "\bin\xtensa-lx106-elf-gcc": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\xtensa-lx106-elf-gcc": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:34.104
+!MESSAGE Error: Cannot run program "\bin\avr-gcc": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\avr-gcc": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:34.151
+!MESSAGE Error: Cannot run program "\bin\xtensa-lx106-elf-g++": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\xtensa-lx106-elf-g++": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:34.210
+!MESSAGE Error: Cannot run program "\bin\avr-g++": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\avr-g++": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:34.294
+!MESSAGE Error: Cannot run program "\bin\avr-gcc": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\avr-gcc": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:18:34.357
+!MESSAGE Error: Cannot run program "\bin\avr-g++": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\avr-g++": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:28:43.466
+!MESSAGE Error: Cannot run program "\bin\xtensa-lx106-elf-gcc": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\xtensa-lx106-elf-gcc": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:28:43.506
+!MESSAGE Error: Cannot run program "\bin\avr-gcc": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\avr-gcc": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:28:43.555
+!MESSAGE Error: Cannot run program "\bin\xtensa-lx106-elf-g++": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\xtensa-lx106-elf-g++": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:28:43.589
+!MESSAGE Error: Cannot run program "\bin\avr-g++": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\avr-g++": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:28:43.644
+!MESSAGE Error: Cannot run program "\bin\avr-gcc": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\avr-gcc": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-02-13 20:28:43.683
+!MESSAGE Error: Cannot run program "\bin\avr-g++": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "\bin\avr-g++": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.expressions 4 201 2017-02-13 21:41:24.133
+!MESSAGE No property tester contributes a property org.eclipse.wst.jsdt.chromium.debug.core.isJsFile to type class org.eclipse.cdt.internal.core.model.TranslationUnit
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property org.eclipse.wst.jsdt.chromium.debug.core.isJsFile to type class org.eclipse.cdt.internal.core.model.TranslationUnit
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:127)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:97)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.AndExpression.evaluate(AndExpression.java:31)
+	at org.eclipse.ui.internal.dialogs.RegistryPageContributor.failsEnablement(RegistryPageContributor.java:306)
+	at org.eclipse.ui.internal.dialogs.RegistryPageContributor.isApplicableTo(RegistryPageContributor.java:248)
+	at org.eclipse.ui.internal.dialogs.PropertyPageContributorManager.getApplicableContributors(PropertyPageContributorManager.java:216)
+	at org.eclipse.ui.internal.dialogs.PropertyPageContributorManager.getApplicableContributors(PropertyPageContributorManager.java:235)
+	at org.eclipse.ui.dialogs.PropertyDialogAction.hasPropertyPagesFor(PropertyDialogAction.java:106)
+	at org.eclipse.ui.dialogs.PropertyDialogAction.isApplicableForSelection(PropertyDialogAction.java:148)
+	at org.eclipse.ui.dialogs.PropertyDialogAction.isApplicableForSelection(PropertyDialogAction.java:128)
+	at org.eclipse.ui.internal.navigator.resources.actions.PropertiesActionProvider.fillContextMenu(PropertiesActionProvider.java:63)
+	at org.eclipse.ui.navigator.NavigatorActionService$2.run(NavigatorActionService.java:225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.navigator.NavigatorActionService.addCommonActionProviderMenu(NavigatorActionService.java:219)
+	at org.eclipse.ui.navigator.NavigatorActionService.fillContextMenu(NavigatorActionService.java:174)
+	at org.eclipse.ui.navigator.CommonNavigatorManager.fillContextMenu(CommonNavigatorManager.java:267)
+	at org.eclipse.ui.navigator.CommonNavigatorManager$3.menuAboutToShow(CommonNavigatorManager.java:283)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:339)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:470)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1084)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5160)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4828)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:262)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4277)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3818)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2017-02-13 21:41:24.133
+!MESSAGE No property tester contributes a property org.eclipse.wst.jsdt.chromium.debug.core.isJsFile to type class org.eclipse.cdt.internal.core.model.TranslationUnit
+
+!ENTRY org.eclipse.core.expressions 4 201 2017-02-13 21:41:56.099
+!MESSAGE No property tester contributes a property org.eclipse.wst.jsdt.chromium.debug.core.isJsFile to type class org.eclipse.cdt.internal.core.model.TranslationUnit
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property org.eclipse.wst.jsdt.chromium.debug.core.isJsFile to type class org.eclipse.cdt.internal.core.model.TranslationUnit
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:127)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:97)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.AndExpression.evaluate(AndExpression.java:31)
+	at org.eclipse.ui.internal.dialogs.RegistryPageContributor.failsEnablement(RegistryPageContributor.java:306)
+	at org.eclipse.ui.internal.dialogs.RegistryPageContributor.isApplicableTo(RegistryPageContributor.java:248)
+	at org.eclipse.ui.internal.dialogs.PropertyPageContributorManager.getApplicableContributors(PropertyPageContributorManager.java:216)
+	at org.eclipse.ui.internal.dialogs.PropertyPageContributorManager.getApplicableContributors(PropertyPageContributorManager.java:235)
+	at org.eclipse.ui.dialogs.PropertyDialogAction.hasPropertyPagesFor(PropertyDialogAction.java:106)
+	at org.eclipse.ui.dialogs.PropertyDialogAction.isApplicableForSelection(PropertyDialogAction.java:148)
+	at org.eclipse.ui.dialogs.PropertyDialogAction.isApplicableForSelection(PropertyDialogAction.java:128)
+	at org.eclipse.ui.internal.navigator.resources.actions.PropertiesActionProvider.fillContextMenu(PropertiesActionProvider.java:63)
+	at org.eclipse.ui.navigator.NavigatorActionService$2.run(NavigatorActionService.java:225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.navigator.NavigatorActionService.addCommonActionProviderMenu(NavigatorActionService.java:219)
+	at org.eclipse.ui.navigator.NavigatorActionService.fillContextMenu(NavigatorActionService.java:174)
+	at org.eclipse.ui.navigator.CommonNavigatorManager.fillContextMenu(CommonNavigatorManager.java:267)
+	at org.eclipse.ui.navigator.CommonNavigatorManager$3.menuAboutToShow(CommonNavigatorManager.java:283)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:339)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:470)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1084)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5160)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4828)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:262)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4277)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3818)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2017-02-13 21:41:56.099
+!MESSAGE No property tester contributes a property org.eclipse.wst.jsdt.chromium.debug.core.isJsFile to type class org.eclipse.cdt.internal.core.model.TranslationUnit
+
+!ENTRY org.eclipse.ui 4 0 2017-02-13 22:00:41.228
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.IllegalArgumentException: Argument cannot be null)
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4211)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3827)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+Caused by: java.lang.IllegalArgumentException: Argument cannot be null
+	at org.eclipse.swt.SWT.error(SWT.java:4514)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.custom.StyledText.setText(StyledText.java:10131)
+	at org.eclipse.cdt.internal.ui.text.c.hover.AbstractAnnotationHover$AnnotationInformationControl.createAnnotationInformation(AbstractAnnotationHover.java:320)
+	at org.eclipse.cdt.internal.ui.text.c.hover.AbstractAnnotationHover$AnnotationInformationControl.deferredCreateContent(AbstractAnnotationHover.java:272)
+	at org.eclipse.cdt.internal.ui.text.c.hover.AbstractAnnotationHover$AnnotationInformationControl.setInput(AbstractAnnotationHover.java:176)
+	at org.eclipse.jface.internal.text.InformationControlReplacer.showInformationControl(InformationControlReplacer.java:154)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1177)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1163)
+	at org.eclipse.jface.text.AbstractInformationControlManager.setInformation(AbstractInformationControlManager.java:428)
+	at org.eclipse.jface.internal.text.InformationControlReplacer.computeInformation(InformationControlReplacer.java:113)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1144)
+	at org.eclipse.jface.text.AbstractInformationControlManager.showInformation(AbstractInformationControlManager.java:1134)
+	at org.eclipse.jface.internal.text.InformationControlReplacer.replaceInformationControl(InformationControlReplacer.java:100)
+	at org.eclipse.jface.text.AbstractInformationControlManager.replaceInformationControl(AbstractInformationControlManager.java:1311)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.replaceInformationControl(AbstractHoverInformationControlManager.java:801)
+	at org.eclipse.jface.text.TextViewerHoverManager.replaceInformationControl(TextViewerHoverManager.java:303)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$1$1.run(AbstractHoverInformationControlManager.java:865)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:162)
+	at org.eclipse.ui.internal.UISynchronizer$3.run(UISynchronizer.java:154)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	... 23 more

@@ -1,0 +1,63 @@
+/*
+ * GPIOManager.cpp
+ *
+ *  Created on: 24 thg 1, 2017
+ *      Author: MyPC
+ */
+#include "GPIOManager.h"
+
+GPIOManager::GPIOManager() {
+	EEPROM.begin(sizeof(DeviceSetting_t));
+	EEPROM.get(EEPROM_DEVICE_SETTING, _dv );
+	EEPROM.end();
+}
+
+GPIOManager::~GPIOManager() {
+}
+void GPIOManager::update() {
+	for (int i = 0; i < MAX_GPIO_PIN; ++i) {
+		GPIO_t _gpio = DeviceSetting::getInstance()->_dv.gpio[i];
+		int _pin = GPIOList[i];
+		if (_gpio.type == IN) {
+			_gpio.value = digitalRead(_pin);
+		}else if(_gpio.type == FLIP){
+			if(_gpio.value){
+				long _curr = millis();
+				if(_gpio.FlipState){
+					if((_curr-lastUpdate[i]) > _gpio.FlipON){
+						_gpio.FlipState = LOW;
+					}
+				}else{
+					if((_curr-lastUpdate[i]) > _gpio.FlipOff){
+						_gpio.FlipState = HIGH;
+					}
+				}
+			}else{
+				_gpio.FlipState = LOW;
+			}
+			digitalWrite(_pin, _gpio.FlipState);
+		} else {
+			digitalWrite(_pin, _gpio.value);
+		}
+	}
+}
+
+void GPIOManager::init() {
+	for (int i = 0; i < MAX_GPIO_PIN; ++i) {
+		int _pin = GPIOList[i];
+		if (DeviceSetting::getInstance()->_dv.gpio[i].type == IN) {
+			pinMode(_pin, INPUT);
+		} else{
+			pinMode(_pin, OUTPUT);
+		}
+	}
+}
+
+GPIO_t GPIOManager::getGPIOConfig(int index) {
+	return _dv->gpio[index];
+}
+
+bool GPIOManager::setGPIOConfig(int index, GPIO_t gpio) {
+	_dv->gpio[index] = gpio;
+	return true;
+}

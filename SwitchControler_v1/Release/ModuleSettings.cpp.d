@@ -44,7 +44,6 @@ ModuleSettings.cpp.o: ../ModuleSettings.cpp ../ModuleSettings.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/debug.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic/pins_arduino.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic/common.h \
- ../DebugSetting.h \
  C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/ArduinoJson.h \
  C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson.h \
  C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson.hpp \
@@ -118,7 +117,7 @@ ModuleSettings.cpp.o: ../ModuleSettings.cpp ../ModuleSettings.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/errno.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/errno.h \
  C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Serialization/JsonSerializerImpl.hpp \
- ../GPIOManager.h ../FirmwareSetting.h \
+ ../GlobalConfigs.h ../GPIOManager.h ../DeviceSetting.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM/EEPROM.h \
  ../Session.h C:\eclipse\EclipseCpp\zzzlibraries\Time/TimeLib.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/ESP8266WiFi.h \
@@ -231,8 +230,6 @@ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/debug.h:
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic/pins_arduino.h:
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic/common.h:
-
-../DebugSetting.h:
 
 C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/ArduinoJson.h:
 
@@ -380,9 +377,11 @@ C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx10
 
 C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Serialization/JsonSerializerImpl.hpp:
 
+../GlobalConfigs.h:
+
 ../GPIOManager.h:
 
-../FirmwareSetting.h:
+../DeviceSetting.h:
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM/EEPROM.h:
 
