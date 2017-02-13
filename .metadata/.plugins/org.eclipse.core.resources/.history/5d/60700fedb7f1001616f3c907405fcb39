@@ -1,0 +1,37 @@
+/*
+ * TaskManager.h
+ *
+ *  Created on: 13 thg 2, 2017
+ *      Author: MyPC
+ */
+
+#ifndef TASKMANAGER_H_
+#define TASKMANAGER_H_
+
+#include "DebugSetting.h"
+#include "TimeLib.h"
+#include "DNSServer.h"
+#include "Singleton.h"
+
+#define MAX_TASKS	50;
+
+typedef enum TimerMode_t { Repeat, Timer} TMode;
+typedef struct __attribute__((packed)){
+	char name[16];
+	TMode mode;
+	void (*func)();
+	bool (*conditionFunc)();
+	int priority;
+	unsigned long timer;
+	unsigned long nextTime;
+	time_t time;
+	bool isRun;
+} TJob;
+
+class TaskManager : public Singleton<TaskManager> {
+public:
+	TaskManager();
+	virtual ~TaskManager();
+};
+
+#endif /* TASKMANAGER_H_ */

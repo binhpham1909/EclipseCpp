@@ -10,8 +10,9 @@
 
 #include "Singleton.h"
 #include "FS.h"
-#include "DebugSetting.h"
 #include "ArduinoJson.h"
+
+#include "GlobalConfigs.h"
 #include "GPIOManager.h"
 #include "Session.h"
 

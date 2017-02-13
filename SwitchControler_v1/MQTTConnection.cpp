@@ -34,11 +34,12 @@ void MQTTConnection::loop() {
 }
 
 void MQTTConnection::callback(char* topic, uint8_t* payload, unsigned int length){
-		char msg[length];
+		String msg;
+		//char msg[length];
 		DBG0(topic);
 		DBG0(" => ");
 		for (unsigned int i = 0; i < length; i++) {
-			msg[i] = (char)(payload[i]);
+			msg += (char)(payload[i]);
 		}
 		DBG(msg);
 		Commander::getInstance()->process(msg);

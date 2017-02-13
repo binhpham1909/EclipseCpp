@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SwitchControler_v1/DebugSetting.h&apos; to &apos;GlobalConfigs.h&apos;" description="Rename resource &apos;DebugSetting.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="DebugSetting.h" name="GlobalConfigs.h" stamp="1486976262154" updateReferences="true"/>
+</session>

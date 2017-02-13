@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 2 resources" deleteContents="false" description="Delete 2 resources" element1="/SwitchControler_v1/Timer.cpp" element2="/SwitchControler_v1/Timer.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="2" stamp="1486952146824"/>
+</session>

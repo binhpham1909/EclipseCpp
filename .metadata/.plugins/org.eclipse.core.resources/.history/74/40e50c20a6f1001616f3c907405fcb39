@@ -1,0 +1,119 @@
+/*
+ * TimerManager.cpp
+ *
+ *  Created on: 10 thg 2, 2017
+ *      Author: MyPC
+ */
+
+#include "TimerManager.h"
+
+bool true_condition() {
+	return true;
+}
+
+TimerManager::TimerManager() {
+	// TODO Auto-generated constructor stub
+	_jobs = new TJob[1];
+	_runJobs = new int[1];
+	_count = 0;
+}
+
+TimerManager::~TimerManager() {
+	// TODO Auto-generated destructor stub
+
+}
+
+void TimerManager::addJob(String name, void (*func)(), bool (*conditionFunc)(), TMode mode, time_t time, unsigned long timer, int priority) {
+	TJob job;
+	strncpy(job.name,name.c_str(),16);
+	job.func = func;
+	job.conditionFunc = conditionFunc;
+	job.mode = Repeat;
+	job.timer = timer;
+	job.time = now();
+	job.priority = priority;
+	job.isRun = true;
+	DBG2F("Add job: ", name);
+	insertJob(job);
+}
+
+void TimerManager::addJob(String name, void (*func)(), bool (*conditionFunc)(), unsigned long timer) {
+	TJob job;
+	strncpy(job.name,name.c_str(),16);
+	job.func = func;
+	job.conditionFunc = conditionFunc;
+	job.mode = Repeat;
+	job.timer = timer;
+	job.time = now();
+	job.priority = 1;
+	job.isRun = true;
+	DBG2F("Add job: ", name);
+	insertJob(job);
+}
+
+void TimerManager::addJob(String name, void (*func)(), unsigned long timer) {
+	TJob job;
+	strncpy(job.name,name.c_str(),16);
+	job.func = func;
+	job.conditionFunc = true_condition;
+	job.mode = Repeat;
+	job.timer = timer;
+	job.time = now();
+	job.priority = 1;
+	job.isRun = true;
+	DBG2F0("Add job: ", name);
+	insertJob(job);
+}
+
+void TimerManager::insertJob(TJob& job) {
+	_count++;
+	TJob *jobs = new TJob[_count];
+	int *runJobs = new int[_count];
+	if (_count > 1)
+		for (long long i = 0; i < _count - 1; i++){
+			jobs[i] = _jobs[i];
+			runJobs[i] = _runJobs[i];
+		}
+	jobs[_count - 1] = job;
+	runJobs[_count - 1] = _runJobs[_count - 1];
+	delete _jobs;
+	delete _runJobs;
+	_jobs = jobs;
+	_runJobs = runJobs;
+	DBGF(".>> done");
+	sortRunJobs();
+}
+
+void TimerManager::sortRunJobs(){
+	int temp;
+	for(int i = 0;i < _count - 1; i++)
+		for(int j=i+1; j<= _count; j++)
+			if(_runJobs[i] >= _runJobs[j]){
+				temp = _runJobs[i];
+				_runJobs[i] = _runJobs[j];
+				_runJobs[j] = temp;
+			}
+	DBG2F0("Fetch done: ", _count);
+	DBGF("jobs");
+}
+
+void TimerManager::update() {
+	for ( int i = 0;  i < _count; i++) {
+		TJob job = _jobs[_runJobs[i]];
+		unsigned long curr = millis();
+		time_t curT = now();
+		if(job.isRun){
+			if((job.mode == Repeat)&&(curr >= job.nextTime)){
+				if(job.conditionFunc()){
+					job.func();
+					job.nextTime = curr + job.timer;
+				}
+			}else if((job.mode == Timer) && hour(curT)==hour(job.time) && minute(curT)==minute(job.time)){
+				if(job.conditionFunc()){
+					job.func();
+				}
+			}
+		}
+	}
+}
+

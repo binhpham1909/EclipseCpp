@@ -9,8 +9,9 @@
 #define COMMANDER_H_
 
 #include "ArduinoJson.h"
+
+#include "GlobalConfigs.h"
 #include "Singleton.h"
-#include "DebugSetting.h"
 #include "ModuleSettings.h"
 
 #define COMM_COM	"cmd"
@@ -20,7 +21,6 @@ class Commander : public Singleton<Commander> {
 	public:
 		Commander();
 		virtual ~Commander();
-		String process(char* commandJson);
 		String process(String commandJson);
 	private:
 };

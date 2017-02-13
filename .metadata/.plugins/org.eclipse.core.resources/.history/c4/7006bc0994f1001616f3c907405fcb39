@@ -1,0 +1,18 @@
+/*
+ * TimeManager.cpp
+ *
+ *  Created on: 13 thg 2, 2017
+ *      Author: MyPC
+ */
+
+#include "TimeManager.h"
+
+TimeManager::TimeManager() {
+	// TODO Auto-generated constructor stub
+
+}
+
+TimeManager::~TimeManager() {
+	// TODO Auto-generated destructor stub
+}
+

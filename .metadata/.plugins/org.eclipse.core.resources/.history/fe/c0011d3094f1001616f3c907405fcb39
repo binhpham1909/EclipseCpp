@@ -1,0 +1,31 @@
+/*
+ * TimeManager.h
+ *
+ *  Created on: 13 thg 2, 2017
+ *      Author: MyPC
+ */
+
+#ifndef TIMEMANAGER_H_
+#define TIMEMANAGER_H_
+
+#include "DebugSetting.h"
+#include "TimeLib.h"
+#include "DNSServer.h"
+#include "Singleton.h"
+
+class TimeManager {
+public:
+	TimeManager();
+	virtual ~TimeManager();
+	bool autoSync(time_t ifSyncOK = 14400, time_t ifSyncFailed = 300);
+	void setNTPServer(const char *server);
+	bool sync();
+	bool sendNTPpacket(WiFiUDP& udp);
+protected:
+	String NtpServerName;
+	byte* PacketBuffer;
+	time_t LastSync;
+	time_t ResyncPeriod;
+};
+
+#endif /* TIMEMANAGER_H_ */

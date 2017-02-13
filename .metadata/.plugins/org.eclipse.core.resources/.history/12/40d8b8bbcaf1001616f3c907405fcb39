@@ -1,0 +1,19 @@
+/*
+ * FirmwareSetting.cpp
+ *
+ *  Created on: 24 thg 1, 2017
+ *      Author: MyPC
+ */
+
+#include "FirmwareSetting.h"
+
+FirmwareSetting::FirmwareSetting() {
+	// TODO Auto-generated constructor stub
+	MyObject customVar; //Variable to store custom object read from EEPROM.
+	EEPROM.get( eeAddress, customVar );
+}
+
+FirmwareSetting::~FirmwareSetting() {
+	// TODO Auto-generated destructor stub
+}
+

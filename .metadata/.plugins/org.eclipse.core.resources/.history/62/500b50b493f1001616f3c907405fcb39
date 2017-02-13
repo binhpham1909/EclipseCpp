@@ -1,0 +1,22 @@
+/*
+ * TimeManager.h
+ *
+ *  Created on: 13 thg 2, 2017
+ *      Author: MyPC
+ */
+
+#ifndef TIMEMANAGER_H_
+#define TIMEMANAGER_H_
+
+#include "DebugSetting.h"
+#include "TimeLib.h"
+#include "DNSServer.h"
+#include "Singleton.h"
+
+class TimeManager {
+public:
+	TimeManager();
+	virtual ~TimeManager();
+};
+
+#endif /* TIMEMANAGER_H_ */

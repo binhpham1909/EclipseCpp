@@ -1,0 +1,21 @@
+/*
+ * TimerManager.cpp
+ *
+ *  Created on: 10 thg 2, 2017
+ *      Author: MyPC
+ */
+
+#include "TimerManager.h"
+
+TimerManager::TimerManager() {
+	// TODO Auto-generated constructor stub
+	_jobs = new TJob[1];
+	_runJobs = new int[1];
+	_count = 0;
+}
+
+TimerManager::~TimerManager() {
+	// TODO Auto-generated destructor stub
+
+}
+

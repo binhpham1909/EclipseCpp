@@ -16,52 +16,6 @@ Commander::~Commander() {
 	// TODO Auto-generated destructor stub
 }
 
-String Commander::process(char* commandJson) {
-	DynamicJsonBuffer jsonBuffer;
-	JsonObject& root = jsonBuffer.parseObject(commandJson);
-	String cmd = root["cmd"];
-	DBG(root["cmd"].asString());
-	if(cmd=="control"){
-		DBG("control");
-	}
-	else if(cmd=="networkSetup") {
-		DBG(root["dhcp"].asString());
-		DBG(root["ssid"].asString());
-		DBG(root["wifiPassword"].asString());
-		DBG(root["port"].asString());
-		DBG(root["ip"].asString());
-		DBG(root["mask"].asString());
-		DBG(root["gw"].asString());
-		bool dhcp = root["dhcp"];
-		bool result;
-		if(dhcp){
-			result = ModuleSettings::getInstance()->setWifiSSID(root["ssid"])&
-					ModuleSettings::getInstance()->setWifiPassword(root["wifiPassword"])&
-					ModuleSettings::getInstance()->setServerPort(root["port"])&
-					ModuleSettings::getInstance()->setStaticIP(root["ip"])&
-					ModuleSettings::getInstance()->setMask(root["mask"])&
-					ModuleSettings::getInstance()->setGateway(root["gw"])&
-					ModuleSettings::getInstance()->setDHCP(dhcp);
-		}else{
-			result = ModuleSettings::getInstance()->setWifiSSID(root["ssid"])&
-					ModuleSettings::getInstance()->setWifiPassword(root["wifiPassword"])&
-					ModuleSettings::getInstance()->setServerPort(root["port"])&
-					ModuleSettings::getInstance()->setDHCP(dhcp);
-		}
-		if(result){
-			ModuleSettings::getInstance()->saveSettings();
-			return FPSTR(JsonTrue);
-		}
-		else return FPSTR(JsonFalse);
-	}
-	else if(cmd=="debug") {
-		DBG("debug");
-	}else {
-		DBG("exit");
-	}
-	return FPSTR(JsonFalse);
-}
-
 String Commander::process(String commandJson) {
 	DynamicJsonBuffer jsonBuffer;
 	JsonObject& root = jsonBuffer.parseObject(commandJson);

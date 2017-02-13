@@ -3,14 +3,40 @@
 #include "MQTTConnection.h"
 #include "WifiManager.h"
 #include "ServerManager.h"
+#include "TimeManager.h"
+#include "TimerManager.h"
+#include "TaskManager.h"
 
-
+void loadSetting();
+void wifiTask();
+void mqttTask();
+bool checkInternetTask();
+void httpServerTask();
+void timeSyncTask();
 //The setup function is called once at startup of the sketch
 void setup()
 {
 // Add your initialization code here
 	INIT_SERIAL_DEBUG();
 	delay(100);
+	loadSetting();
+	//	TaskManager::getInstance()->addTask("Load Settings", loadSetting, Once); test chay mot lan
+	TaskManager::getInstance()->addTask("Wifi Man", wifiTask);
+	TaskManager::getInstance()->addTask("HTTP Serv", httpServerTask);
+	TaskManager::getInstance()->addTask("MQTT Client", mqttTask, checkInternetTask);
+	TaskManager::getInstance()->addTask("Time sync", timeSyncTask, checkInternetTask, (unsigned long) 300000);
+	TaskManager::getInstance()->startTasks();
+}
+
+// The loop function is called in an endless loop
+void loop()
+{
+//Add your repeated code here
+
+	TaskManager::getInstance()->loop();
+}
+
+void loadSetting() {
 	//ModuleSettings::getInstance()->resetSetting();
 	ModuleSettings::getInstance()->loadSettings();
 	//DBG(ModuleSettings::getInstance()->setDeviceName("Wifi Device"));
@@ -26,13 +52,19 @@ void setup()
 	DBG2F("GPIO 0 name: ", ModuleSettings::getInstance()->getGPIOName(0));
 	DBG2F("GPIO 1 name: ", ModuleSettings::getInstance()->getGPIOName(1));
 }
-
-// The loop function is called in an endless loop
-void loop()
-{
-//Add your repeated code here
+void wifiTask(){
 	WifiManager::getInstance()->loop();
-	ServerManager::getInstance()->loop();
+}
+void mqttTask(){
 	MQTTConnection::getInstance()->loop();
-	//Session::getInstance()->checkExpireTime();
+}
+bool checkInternetTask(){
+	return WiFi.status() == WL_CONNECTED;
+}
+void httpServerTask(){
+	ServerManager::getInstance()->loop();
+}
+
+void timeSyncTask(){
+	TimeManager::getInstance()->autoSync();
 }

@@ -9,11 +9,11 @@
 #define MQTTCONNECTION_H_
 
 #include "Singleton.h"
-#include "DebugSetting.h"
 #include "ModuleSettings.h"
 #include "Commander.h"
 #include "WifiManager.h"
 #include <PubSubClient.h>
+#include "GlobalConfigs.h"
 
 
 class MQTTConnection : public Singleton<MQTTConnection>{

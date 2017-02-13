@@ -9,14 +9,14 @@
 #define GPIOMANAGER_H_
 #include "Arduino.h"
 #include "FirmwareSetting.h"
+#include "GlobalConfigs.h"
 #include "Singleton.h"
-#include "DebugSetting.h"
 
 
-class GPIO_m : public Singleton<GPIO_m> {
+class GPIOManager : public Singleton<GPIOManager> {
 public:
-	GPIO_m();
-	~GPIO_m();
+	GPIOManager();
+	~GPIOManager();
 	void init();
 	void update();
 private:

@@ -2,16 +2,26 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="login_html" key="selection"/>
-		<item value="false" key="casesensitive"/>
+		<item value="_totalTasks" key="selection"/>
+		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="_count"/>
+			<item value="jobs"/>
+			<item value="TJob"/>
+			<item value="_jobs"/>
+			<item value="_workTime"/>
+			<item value="_lastEndTime"/>
+			<item value="lastSync"/>
 			<item value="login_html"/>
-			<item value="header"/>
 		</list>
 		<list key="replacehistory">
+			<item value="_totalTasks"/>
+			<item value="tasks"/>
+			<item value="TTask"/>
+			<item value="_tasks"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

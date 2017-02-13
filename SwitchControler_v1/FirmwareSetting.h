@@ -9,7 +9,8 @@
 #define FIRMWARESETTING_H_
 #include "Singleton.h"
 #include <EEPROM.h>
-#include "DebugSetting.h"
+
+#include "GlobalConfigs.h"
 #include "GPIOManager.h"
 
 #define DV_SERIAL_LEN	16
@@ -24,12 +25,19 @@ typedef struct __attribute__((packed)){
 	char adminPassword[DV_USER_LEN + 1];
 	GPIO_t gpio[MAX_GPIO_PIN];
 } FirmwareSetting_t;
+
 class FirmwareSetting : public Singleton<FirmwareSetting> {
 	public:
 		FirmwareSetting();
 		virtual ~FirmwareSetting();
-		FirmwareSetting_t fw;
+		FirmwareSetting_t *_fw;
+		bool saveSetting();
+		bool resetSettings();
 	private:
+		GPIO_t getGPIOConfig(int index);
+		bool setGPIOConfig(int index, GPIO_t gpio);
 };
 
+const char admin_user[] PROGMEM = "admin";
+const char admin_password[] PROGMEM = "TNENVIBH1+";
 #endif /* FIRMWARESETTING_H_ */

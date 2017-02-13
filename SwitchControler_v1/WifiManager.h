@@ -9,9 +9,9 @@
 #define WIFIMANAGER_H_
 
 #include "Singleton.h"
-#include "DebugSetting.h"
 #include "ModuleSettings.h"
 #include "Commander.h"
+#include "GlobalConfigs.h"
 
 #define MAX_LIST_AP	20
 typedef struct {

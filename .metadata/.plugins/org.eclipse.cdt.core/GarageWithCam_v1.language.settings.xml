@@ -25,9 +25,6 @@
 					<entry kind="macro" name="ARDUINO" value="10609">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="macro" name="ARDUINO_ARCH_ESP8266" value="((double)4.9406564584124654e-324L)">
-						<flag value="BUILTIN|READONLY"/>
-					</entry>
 					<entry kind="macro" name="ARDUINO_ARCH_ESP8266" value="1">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
@@ -82,9 +79,6 @@
 					<entry kind="macro" name="__ATOMIC_ACQUIRE" value="2">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="macro" name="__ATOMIC_ACQ_REL" value="5">
-						<flag value="BUILTIN|READONLY"/>
-					</entry>
 					<entry kind="macro" name="__ATOMIC_ACQ_REL" value="4">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
@@ -95,6 +89,9 @@
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__ATOMIC_RELEASE" value="3">
+						<flag value="BUILTIN|READONLY"/>
+					</entry>
+					<entry kind="macro" name="__ATOMIC_SEQ_CST" value="5">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__BIGGEST_ALIGNMENT__" value="16">
@@ -116,6 +113,9 @@
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__DBL_DECIMAL_DIG__" value="17">
+						<flag value="BUILTIN|READONLY"/>
+					</entry>
+					<entry kind="macro" name="__DBL_DENORM_MIN__" value="((double)4.9406564584124654e-324L)">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__DBL_DIG__" value="15">
@@ -864,7 +864,7 @@
 					<entry kind="macro" name="__DBL_MAX_10_EXP__" value="308">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="macro" name="__DBL_MAX_EXP__" value="1">
+					<entry kind="macro" name="__DBL_MAX_EXP__" value="1024">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__DBL_MAX__" value="double(1.7976931348623157e+308L)">

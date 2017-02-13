@@ -40,6 +40,7 @@ core\core \
 core\core\libb64 \
 core\core\spiffs \
 core\core\umm_malloc \
+libraries\DNSServer\src \
 libraries\EEPROM \
 libraries\ESP8266WebServer\src \
 libraries\ESP8266WiFi\src \

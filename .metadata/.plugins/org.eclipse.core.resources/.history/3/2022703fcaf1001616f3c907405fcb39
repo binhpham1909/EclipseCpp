@@ -1,0 +1,30 @@
+/*
+ * FirmwareSetting.h
+ *
+ *  Created on: 24 thg 1, 2017
+ *      Author: MyPC
+ */
+
+#ifndef FIRMWARESETTING_H_
+#define FIRMWARESETTING_H_
+#include "Singleton.h"
+#include <EEPROM.h>
+#include "DebugSetting.h"
+#include "GPIOManager.h"
+
+#define DV_SERIAL_LEN	16
+#define DV_USER_LEN		16
+#define DV_GPIO_MAX		9
+
+
+class FirmwareSetting : public Singleton<FirmwareSetting> {
+	public:
+		FirmwareSetting();
+		virtual ~FirmwareSetting();
+		FirmwareSetting_t _fw;
+		bool saveSetting(FirmwareSetting_t& fw);
+		bool resetSettings();
+	private:
+};
+
+#endif /* FIRMWARESETTING_H_ */

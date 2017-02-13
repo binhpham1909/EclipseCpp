@@ -6,15 +6,15 @@
  */
 #include "GPIOManager.h"
 
-GPIO_m::GPIO_m() {
+GPIOManager::GPIOManager() {
 
 }
 
-GPIO_m::~GPIO_m() {
+GPIOManager::~GPIOManager() {
 }
-void GPIO_m::update() {
+void GPIOManager::update() {
 	for (int i = 0; i < MAX_GPIO_PIN; ++i) {
-		GPIO_t _gpio = FirmwareSetting::getInstance()->fw.gpio[i];
+		GPIO_t _gpio = FirmwareSetting::getInstance()->_fw.gpio[i];
 		int _pin = GPIOList[i];
 		if (_gpio.type == IN) {
 			_gpio.value = digitalRead(_pin);
@@ -40,10 +40,10 @@ void GPIO_m::update() {
 	}
 }
 
-void GPIO_m::init() {
+void GPIOManager::init() {
 	for (int i = 0; i < MAX_GPIO_PIN; ++i) {
 		int _pin = GPIOList[i];
-		if (FirmwareSetting::getInstance()->fw.gpio[i].type == IN) {
+		if (FirmwareSetting::getInstance()->_fw.gpio[i].type == IN) {
 			pinMode(_pin, INPUT);
 		} else{
 			pinMode(_pin, OUTPUT);

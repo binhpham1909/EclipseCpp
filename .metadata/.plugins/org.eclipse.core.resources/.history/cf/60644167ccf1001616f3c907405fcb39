@@ -1,0 +1,26 @@
+/*
+ * FirmwareSetting.cpp
+ *
+ *  Created on: 24 thg 1, 2017
+ *      Author: MyPC
+ */
+
+#include "FirmwareSetting.h"
+
+FirmwareSetting::FirmwareSetting() {
+	// TODO Auto-generated constructor stub
+	EEPROM.get( sizeof(FirmwareSetting_t), _fw );
+}
+
+FirmwareSetting::~FirmwareSetting() {
+	// TODO Auto-generated destructor stub
+}
+
+bool FirmwareSetting::saveSetting(FirmwareSetting_t& fw) {
+
+}
+
+bool FirmwareSetting::resetSettings() {
+	strncpy(_fw.adminUser, admin_user, 16);
+	strncpy(_fw.adminPassword, admin_password, 16);
+}

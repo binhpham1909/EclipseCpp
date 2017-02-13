@@ -1,0 +1,44 @@
+/*
+ * TimeManager.cpp
+ *
+ *  Created on: 13 thg 2, 2017
+ *      Author: MyPC
+ */
+
+#include "TimeManager.h"
+
+TimeManager::TimeManager() {
+	// TODO Auto-generated constructor stub
+	NtpServerName = "pool.ntp.org";
+	PacketBuffer = (byte*)malloc(NTP_PACKET_SIZE);
+	LastSync = 0;
+	ResyncPeriod = 0;
+}
+
+TimeManager::~TimeManager() {
+	// TODO Auto-generated destructor stub
+}
+
+bool TimeManager::autoSync(time_t ifSyncOK, time_t ifSyncFailed) {
+	if ( now() > ResyncPeriod ) {
+	if ( sync() ) {
+	ResyncPeriod = now() + ifSyncOK;
+	}
+	else {
+	ResyncPeriod = now() + ifSyncFailed;
+	return false;
+	}
+	}
+	return true;
+}
+
+void TimeManager::setNTPServer(const char* server) {
+	if ( server==NULL || !server[0]) return;
+	NtpServerName = server;
+}
+
+bool TimeManager::sync() {
+}
+
+bool TimeManager::sendNTPpacket(WiFiUDP& udp) {
+}

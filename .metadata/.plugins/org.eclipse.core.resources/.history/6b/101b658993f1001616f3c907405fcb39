@@ -1,0 +1,17 @@
+/*
+ * TimeManager.h
+ *
+ *  Created on: 13 thg 2, 2017
+ *      Author: MyPC
+ */
+
+#ifndef TIMEMANAGER_H_
+#define TIMEMANAGER_H_
+
+class TimeManager {
+public:
+	TimeManager();
+	virtual ~TimeManager();
+};
+
+#endif /* TIMEMANAGER_H_ */

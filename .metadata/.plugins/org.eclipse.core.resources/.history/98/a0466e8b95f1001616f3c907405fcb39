@@ -1,0 +1,139 @@
+/*
+ * TimeManager.cpp
+ *
+ *  Created on: 13 thg 2, 2017
+ *      Author: MyPC
+ */
+
+#include "TimeManager.h"
+
+TimeManager::TimeManager() {
+	// TODO Auto-generated constructor stub
+	_NtpServerName = "pool.ntp.org";
+	_packetBuffer = (byte*)malloc(NTP_PACKET_SIZE);
+	_lastSync = 0;
+	_resyncPeriod = 0;
+}
+
+TimeManager::~TimeManager() {
+	// TODO Auto-generated destructor stub
+	if ( _packetBuffer ) free(_packetBuffer);
+}
+
+bool TimeManager::autoSync(time_t ifSyncOK, time_t ifSyncFailed) {
+	if ( now() > _resyncPeriod ) {
+	if ( sync() ) {
+		_resyncPeriod = now() + ifSyncOK;
+	}
+	else {
+		_resyncPeriod = now() + ifSyncFailed;
+	return false;
+	}
+	}
+	return true;
+}
+
+void TimeManager::setNTPServer(const char* server) {
+	if ( server==NULL || !server[0]) return;
+	_NtpServerName = server;
+}
+
+bool TimeManager::sync() {
+	  WiFiUDP udp;
+
+	  if ( !udp.begin(NTP_LOCAL_PORT) ) {
+	    DBGF("Cannot listen for UDP");
+	    return false;
+	  }
+
+	  // discard any previously received packets
+	  while (udp.parsePacket() > 0) delay(0);
+
+	  if ( !sendNTPpacket(udp) ) {
+	    udp.stop();
+	    DBGF("Cannot send NTP packet");
+	    return false;
+	  }
+
+	  uint32_t beginWait = millis();
+	  int size = 0;
+	  while (millis() - beginWait < 1500) {
+
+	    size = udp.parsePacket();
+
+	    if (size >= NTP_PACKET_SIZE) {
+	    	DBGF("-- Receive NTP Response");
+	      udp.read(_packetBuffer, NTP_PACKET_SIZE);  // read packet into the buffer
+	      break;
+	    }
+	    delay(1);
+	  }
+	  udp.stop();
+
+	  if (size < NTP_PACKET_SIZE) {
+		  DBGF("no packet yet");
+		  return false;
+	  }
+
+	  DBG2F("packet received, length=",size);
+
+	  //the timestamp starts at byte 40 of the received packet and is four bytes,
+	  // or two words, long. First, esxtract the two words:
+
+	  unsigned long highWord = word(_packetBuffer[40], _packetBuffer[41]);
+	  unsigned long lowWord = word(_packetBuffer[42], _packetBuffer[43]);
+	  // combine the four bytes (two words) into a long integer
+	  // this is NTP time (seconds since Jan 1 1900):
+	  unsigned long secsSince1900 = highWord << 16 | lowWord;
+	  DBG2F("Seconds since Jan 1 1900 = ", secsSince1900);
+
+	  // now convert NTP time into everyday time:
+	  // Unix time starts on Jan 1 1970. In seconds, that's 2208988800:
+	  const unsigned long seventyYears = 2208988800UL;
+	  // subtract seventy years:
+
+	  _lastSync = secsSince1900 - seventyYears;
+
+	  setTime(lastSync);
+
+	  // print Unix time:
+	  DBG2F("Unix time = ",lastSync);
+	  return true;
+}
+
+bool TimeManager::sendNTPpacket(WiFiUDP& udp) {
+	  if ( !_packetBuffer ) {
+		  DBGF("Error: Cannot allocate memory");
+	    return false;
+	  }
+
+	  // resolve NTP server name.
+	  IPAddress address;
+	  if ( WiFi.hostByName(_NtpServerName.c_str(), address)!=1 ) {
+		  DBG2F("Cannot resolve host: ",_NtpServerName);
+	    return false;
+	  }
+
+	  DBG2F("sending NTP packet...",_NtpServerName);
+	  // set all bytes in the buffer to 0
+	  memset(_packetBuffer, 0, NTP_PACKET_SIZE);
+	  // Initialize values needed to form NTP request
+	  // (see URL above for details on the packets)
+	  _packetBuffer[0] = 0b11100011;   // LI, Version, Mode
+	  _packetBuffer[1] = 0;     // Stratum, or type of clock
+	  _packetBuffer[2] = 6;     // Polling Interval
+	  _packetBuffer[3] = 0xEC;  // Peer Clock Precision
+	  // 8 bytes of zero for Root Delay & Root Dispersion
+	  _packetBuffer[12]  = 49;
+	  _packetBuffer[13]  = 0x4E;
+	  _packetBuffer[14]  = 49;
+	  _packetBuffer[15]  = 52;
+
+	  // all NTP fields have been given values, now
+	  // you can send a packet requesting a timestamp:
+	  udp.beginPacket(address, 123); //NTP requests are to port 123
+	  udp.write(_packetBuffer, NTP_PACKET_SIZE);
+	  udp.endPacket();
+
+	  return true;
+}

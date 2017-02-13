@@ -1,0 +1,34 @@
+/*
+ * TimeManager.h
+ *
+ *  Created on: 13 thg 2, 2017
+ *      Author: MyPC
+ */
+
+#ifndef TIMEMANAGER_H_
+#define TIMEMANAGER_H_
+
+#include "DebugSetting.h"
+#include "TimeLib.h"
+#include "DNSServer.h"
+#include "Singleton.h"
+
+#define NTP_LOCAL_PORT 2395      // local port to listen for UDP packets
+#define NTP_PACKET_SIZE 48 // NTP time stamp is in the first 48 bytes of the message
+
+class TimeManager {
+	public:
+		TimeManager();
+		virtual ~TimeManager();
+		bool autoSync(time_t ifSyncOK = 14400, time_t ifSyncFailed = 300);
+		void setNTPServer(const char *server);
+		bool sync();
+		bool sendNTPpacket(WiFiUDP& udp);
+	protected:
+		String _NtpServerName;
+		byte* _packetBuffer;
+		time_t _lastSync;
+		time_t _resyncPeriod;
+};
+
+#endif /* TIMEMANAGER_H_ */
