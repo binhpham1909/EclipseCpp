@@ -8,9 +8,8 @@
 #ifndef TIMERMANAGER_H_
 #define TIMERMANAGER_H_
 
-#include "TimeLib.h"
-
 #include "GlobalConfigs.h"
+#include "SysTime.h"
 #include "Singleton.h"
 
 class TimerManager : public Singleton<TimerManager>{

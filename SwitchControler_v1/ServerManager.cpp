@@ -126,13 +126,19 @@ void ServerManager::sendHeaderGzip(size_t contentLength, bool gzip, unsigned lon
 	server->sendHeader("Connection", "close");
 	if(expire){
 		char buf[34];
-		time_t t = now();
+		time_t t = SysTime::getInstance()->now();
 		// if time is accurate, then try to send a Date header Wed, 15 Nov 1995 06:25:24 GMT
-		if ( year(t)>2015 ) {
+		if ( SysTime::getInstance()->year(t)>2015 ) {
 			char dow[5];
-			strncpy(dow,dayShortStr(weekday(t)),4);
+			strncpy(dow,SysTime::getInstance()->dayShortStr(SysTime::getInstance()->weekday(t)),4);
 			dow[3] = 0;
-			sprintf(buf,"%s, %02u %s %04u %02u:%02u:%02u GMT",dow,day(t),monthShortStr(month(t)),year(t),hour(t),minute(t),second(t));
+			sprintf(buf,"%s, %02u %s %04u %02u:%02u:%02u GMT",dow,
+					SysTime::getInstance()->day(t),
+					SysTime::getInstance()->monthShortStr(SysTime::getInstance()->month(t)),
+					SysTime::getInstance()->year(t),
+					SysTime::getInstance()->hour(t),
+					SysTime::getInstance()->minute(t),
+					SysTime::getInstance()->second(t));
 			server->sendHeader("Date",buf);
 		}
 		sprintf(buf,"max-age=%lu",expire);

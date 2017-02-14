@@ -3,7 +3,7 @@
 #include "MQTTConnection.h"
 #include "WifiManager.h"
 #include "ServerManager.h"
-#include "TimeManager.h"
+#include "SysTime.h"
 #include "TimerManager.h"
 #include "TaskManager.h"
 
@@ -24,7 +24,7 @@ void setup()
 	TaskManager::getInstance()->addTask("Wifi Man", wifiTask);
 	TaskManager::getInstance()->addTask("HTTP Serv", httpServerTask);
 	TaskManager::getInstance()->addTask("MQTT Client", mqttTask, checkInternetTask);
-	TaskManager::getInstance()->addTask("Time sync", timeSyncTask, checkInternetTask, (unsigned long) 300000);
+	TaskManager::getInstance()->addTask("Time sync", timeSyncTask, checkInternetTask, 300000UL);	// 5*60*1000 ms
 	TaskManager::getInstance()->startTasks();
 }
 
@@ -37,7 +37,7 @@ void loop()
 }
 
 void loadSetting() {
-	//ModuleSettings::getInstance()->resetSetting();
+	ModuleSettings::getInstance()->resetSetting();
 	ModuleSettings::getInstance()->loadSettings();
 	//DBG(ModuleSettings::getInstance()->setDeviceName("Wifi Device"));
 	//DBG(ModuleSettings::getInstance()->saveSettings());
@@ -66,5 +66,5 @@ void httpServerTask(){
 }
 
 void timeSyncTask(){
-	TimeManager::getInstance()->autoSync();
+	SysTime::getInstance()->syncNTP();
 }

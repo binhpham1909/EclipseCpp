@@ -1,0 +1,224 @@
+/*
+ * ModuleSettings.cpp
+ *
+ *  Created on: 24 thg 1, 2017
+ *      Author: MyPC
+ */
+
+#include "ModuleSettings.h"
+
+ModuleSettings::ModuleSettings() {
+	// TODO Auto-generated constructor stub
+	loadSettings();
+}
+
+ModuleSettings::~ModuleSettings() {
+	// TODO Auto-generated destructor stub
+}
+
+bool ModuleSettings::resetSetting() {
+	Settings = "";
+	Settings = FPSTR(DEF_SETTING);
+	return saveSettings();
+}
+
+bool ModuleSettings::loadSettings() {
+	SPIFFS.begin();
+	File f = SPIFFS.open(SETTINGS_FILE, "r");
+	if (!f) {
+		DBGF("File open failed");
+		f.close();
+		SPIFFS.end();
+		return 0;
+	}
+	DBGF("Read setting file:");
+	Settings = f.readString();
+	f.close();
+	SPIFFS.end();
+	DBG(Settings);
+	return 1;
+}
+
+bool ModuleSettings::saveSettings() {
+	SPIFFS.begin();
+	File f = SPIFFS.open(SETTINGS_FILE, "w");
+	if (!f) {
+		DBGF("File open failed");
+		f.close();
+		SPIFFS.end();
+		return 0;
+	}
+	DBGF("Write setting file:");
+	f.println(Settings);
+	f.close();
+	SPIFFS.end();
+	DBG(Settings);
+	return 1;
+}
+
+String ModuleSettings::readSettings(char* key) {
+	DynamicJsonBuffer jsonBuffer;
+	JsonObject& root = jsonBuffer.parseObject(Settings);
+	return root[key];
+}
+
+bool ModuleSettings::writeSettings(char* key, String& value) {
+	DynamicJsonBuffer jsonBuffer;
+	JsonObject& root = jsonBuffer.parseObject(Settings);
+	root[key] = value;
+	String newSettings = "";
+	root.printTo(newSettings);
+	Settings = newSettings;
+	return 1;
+}
+
+bool ModuleSettings::writeSettings(char* key, int& value) {
+	DynamicJsonBuffer jsonBuffer;
+	JsonObject& root = jsonBuffer.parseObject(Settings);
+	root[key] = value;
+	String newSettings = "";
+	root.printTo(newSettings);
+	Settings = newSettings;
+	return true;
+}
+
+bool ModuleSettings::setDeviceName(String value) {
+	if(value.length() < 5||value.length() > 48)	return 0;
+	return writeSettings(ST_DEVICE_NAME, value);
+}
+
+String ModuleSettings::getDeviceName() {
+	return readSettings(ST_DEVICE_NAME);
+}
+bool ModuleSettings::setPassDevice(String value) {
+	if(value.length() < 5||value.length() > 32)	return 0;
+	return writeSettings(ST_DEVICE_PASS, value);
+}
+
+String ModuleSettings::getPassDevice() {
+	return readSettings(ST_DEVICE_PASS);
+}
+
+bool ModuleSettings::setUserDevice(String value) {
+	if(value.length() < 5||value.length() > 32)	return 0;
+	return writeSettings(ST_DEVICE_USER, value);
+}
+
+String ModuleSettings::getUserDevice() {
+	return readSettings(ST_DEVICE_USER);
+}
+
+bool ModuleSettings::setWifiSSID(String value) {
+	if(value.length() < 5||value.length() > 31)	return 0;
+	return writeSettings(ST_STA_SSID, value);
+}
+
+String ModuleSettings::getWifiSSID() {
+	return readSettings(ST_STA_SSID);
+}
+
+bool ModuleSettings::setWifiPassword(String value) {
+	if(value.length() < 5||value.length() > 31)	return 0;
+	return writeSettings(ST_STA_PASSWORD, value);
+}
+
+String ModuleSettings::getWifiPassword() {
+	return readSettings(ST_STA_PASSWORD);
+}
+
+bool ModuleSettings::setMqttAPI(String value) {
+	if(value.length() < 5||value.length() > 33)	return 0;
+	return writeSettings(ST_MQTT_API, value);
+}
+
+String ModuleSettings::getMqttAPI() {
+	return readSettings(ST_MQTT_API);
+}
+
+bool ModuleSettings::setMqttUser(String value) {
+	if(value.length() < 5||value.length() > 33)	return 0;
+	return writeSettings(ST_MQTT_USER, value);
+}
+
+String ModuleSettings::getMqttUser() {
+	return readSettings(ST_MQTT_USER);
+}
+
+bool ModuleSettings::setServerPort(int value) {
+	if(value<80) return false;
+	return writeSettings(ST_SERVER_PORT, value);
+}
+
+int ModuleSettings::getServerPort() {
+	return readSettings(ST_SERVER_PORT).toInt();
+}
+
+String ModuleSettings::readArrSettings(char* key, int index) {
+	DynamicJsonBuffer jsonBuffer;
+	JsonObject& root = jsonBuffer.parseObject(Settings);
+	return root[key][index];
+}
+
+
+bool ModuleSettings::writeArrSettings(char* key, int index, String& value) {
+	DynamicJsonBuffer jsonBuffer;
+	JsonObject& root = jsonBuffer.parseObject(Settings);
+	root[key][index] = value;
+	String newSettings = "";
+	root.printTo(newSettings);
+	Settings = newSettings;
+	return 1;
+}
+
+String ModuleSettings::getGPIOName(int index) {
+	return readArrSettings(ST_GPIO_NAME, index);
+}
+
+bool ModuleSettings::setGPIOName(int index, String value) {
+	if(value.length() > 48)	return 0;
+	return writeArrSettings(ST_GPIO_NAME, index, value);
+}
+
+bool ModuleSettings::setDHCP(bool value) {
+	String val = String(value);
+	return writeSettings(ST_STA_DHCP, val);
+}
+
+bool ModuleSettings::getDHCP() {
+	return readSettings(ST_STA_DHCP);
+}
+
+bool ModuleSettings::setStaticIP(String value) {
+	if(value.length() > 15)	return 0;
+	return writeSettings(ST_STA_IP, value);
+}
+
+String ModuleSettings::getStaticIP() {
+	return readSettings(ST_STA_IP);
+}
+
+bool ModuleSettings::setMask(String value) {
+	if(value.length() > 15)	return 0;
+	return writeSettings(ST_STA_MASK, value);
+}
+
+String ModuleSettings::getMask() {
+	return readSettings(ST_STA_MASK);
+}
+
+bool ModuleSettings::setGateway(String value) {
+	if(value.length() > 15)	return 0;
+	return writeSettings(ST_STA_GATEWAY, value);
+}
+
+String ModuleSettings::getGateway() {
+	return readSettings(ST_STA_GATEWAY);
+}
+
+bool ModuleSettings::setTimezone(int value) {
+	return writeSettings(ST_TIMEZONE, value);
+}
+
+int ModuleSettings::getTimezone() {
+	return readSettings(ST_TIMEZONE).toInt();
+}

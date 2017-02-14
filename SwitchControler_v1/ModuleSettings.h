@@ -30,6 +30,7 @@
 #define ST_MQTT_USER "mqttUser"
 #define ST_MQTT_API "mqttAPI"
 #define ST_SERVER_PORT "serverPort"
+#define ST_TIMEZONE	"timezone"
 
 
 class ModuleSettings : public Singleton<ModuleSettings> {
@@ -57,6 +58,8 @@ public:
 	String getGPIOName(int index);
 	bool setServerPort(int value);
 	int getServerPort();
+	bool setTimezone(int value);
+	int getTimezone();
 	bool setDHCP(bool value);
 	bool getDHCP();
 	bool setStaticIP(String value);
@@ -74,5 +77,5 @@ private:
 	bool writeArrSettings(char* key, int index, String& value);
 };
 
-const char DEF_SETTING[] PROGMEM  = "{\"name\":\"Wifiswitch\", \"userDevice\":\"user\", \"passDevice\":\"12345678\", \"ssid\":\"Tang_2_nha_moi\", \"password\":\"0313837124\", \"dhcp\":false, \"ip\":\"10.0.0.100\", \"mask\":\"255.0.0.0\", \"gw\":\"10.0.0.1\", \"serverPort\":80, \"mqttUser\":\"binhpham\", \"mqttAPI\":\"19D5E9D6E86834E05CB27D7D0703E30C\", \"gpioName\":[\"a\",\"b\"]}";
+const char DEF_SETTING[] PROGMEM  = "{\"name\":\"Wifiswitch\", \"userDevice\":\"user\", \"passDevice\":\"12345678\", \"ssid\":\"Tang_2_nha_moi\", \"password\":\"0313837124\", \"dhcp\":false, \"ip\":\"10.0.0.100\", \"mask\":\"255.0.0.0\", \"gw\":\"10.0.0.1\", \"serverPort\":80, \"timezone\":59, \"mqttUser\":\"binhpham\", \"mqttAPI\":\"19D5E9D6E86834E05CB27D7D0703E30C\", \"gpioName\":[\"a\",\"b\"]}";
 #endif /* MODULESETTINGS_H_ */

@@ -10,7 +10,6 @@ RM := del
 -include sources.mk
 -include subdir.mk
 -include libraries\pubsubclient-master\src/subdir.mk
--include libraries\Time/subdir.mk
 -include libraries\ESP8266WiFi\src/subdir.mk
 -include libraries\ESP8266WebServer\src/subdir.mk
 -include libraries\EEPROM/subdir.mk

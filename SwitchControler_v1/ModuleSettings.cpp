@@ -29,14 +29,14 @@ bool ModuleSettings::loadSettings() {
 		DBGF("File open failed");
 		f.close();
 		SPIFFS.end();
-		return 0;
+		return false;
 	}
 	DBGF("Read setting file:");
 	Settings = f.readString();
 	f.close();
 	SPIFFS.end();
 	DBG(Settings);
-	return 1;
+	return true;
 }
 
 bool ModuleSettings::saveSettings() {
@@ -46,14 +46,14 @@ bool ModuleSettings::saveSettings() {
 		DBGF("File open failed");
 		f.close();
 		SPIFFS.end();
-		return 0;
+		return false;
 	}
 	DBGF("Write setting file:");
 	f.println(Settings);
 	f.close();
 	SPIFFS.end();
 	DBG(Settings);
-	return 1;
+	return true;
 }
 
 String ModuleSettings::readSettings(char* key) {
@@ -69,7 +69,7 @@ bool ModuleSettings::writeSettings(char* key, String& value) {
 	String newSettings = "";
 	root.printTo(newSettings);
 	Settings = newSettings;
-	return 1;
+	return true;
 }
 
 bool ModuleSettings::writeSettings(char* key, int& value) {
@@ -79,11 +79,11 @@ bool ModuleSettings::writeSettings(char* key, int& value) {
 	String newSettings = "";
 	root.printTo(newSettings);
 	Settings = newSettings;
-	return 1;
+	return true;
 }
 
 bool ModuleSettings::setDeviceName(String value) {
-	if(value.length() > 48)	return 0;
+	if(value.length() < 5||value.length() > 48)	return false;
 	return writeSettings(ST_DEVICE_NAME, value);
 }
 
@@ -91,7 +91,7 @@ String ModuleSettings::getDeviceName() {
 	return readSettings(ST_DEVICE_NAME);
 }
 bool ModuleSettings::setPassDevice(String value) {
-	if(value.length() > 32)	return 0;
+	if(value.length() < 5||value.length() > 32)	return false;
 	return writeSettings(ST_DEVICE_PASS, value);
 }
 
@@ -100,7 +100,7 @@ String ModuleSettings::getPassDevice() {
 }
 
 bool ModuleSettings::setUserDevice(String value) {
-	if(value.length() > 32)	return 0;
+	if(value.length() < 5||value.length() > 32)	return false;
 	return writeSettings(ST_DEVICE_USER, value);
 }
 
@@ -109,7 +109,7 @@ String ModuleSettings::getUserDevice() {
 }
 
 bool ModuleSettings::setWifiSSID(String value) {
-	if(value.length() > 31)	return 0;
+	if(value.length() < 5||value.length() > 31)	return false;
 	return writeSettings(ST_STA_SSID, value);
 }
 
@@ -118,7 +118,7 @@ String ModuleSettings::getWifiSSID() {
 }
 
 bool ModuleSettings::setWifiPassword(String value) {
-	if(value.length() > 31)	return 0;
+	if(value.length() < 5||value.length() > 31)	return false;
 	return writeSettings(ST_STA_PASSWORD, value);
 }
 
@@ -127,7 +127,7 @@ String ModuleSettings::getWifiPassword() {
 }
 
 bool ModuleSettings::setMqttAPI(String value) {
-	if(value.length() > 33)	return 0;
+	if(value.length() < 5||value.length() > 33)	return false;
 	return writeSettings(ST_MQTT_API, value);
 }
 
@@ -136,7 +136,7 @@ String ModuleSettings::getMqttAPI() {
 }
 
 bool ModuleSettings::setMqttUser(String value) {
-	if(value.length() > 33)	return 0;
+	if(value.length() < 5||value.length() > 33)	return false;
 	return writeSettings(ST_MQTT_USER, value);
 }
 
@@ -145,6 +145,7 @@ String ModuleSettings::getMqttUser() {
 }
 
 bool ModuleSettings::setServerPort(int value) {
+	if(value<80) return false;
 	return writeSettings(ST_SERVER_PORT, value);
 }
 
@@ -174,7 +175,7 @@ String ModuleSettings::getGPIOName(int index) {
 }
 
 bool ModuleSettings::setGPIOName(int index, String value) {
-	if(value.length() > 48)	return 0;
+	if(value.length() > 48)	return false;
 	return writeArrSettings(ST_GPIO_NAME, index, value);
 }
 
@@ -188,7 +189,7 @@ bool ModuleSettings::getDHCP() {
 }
 
 bool ModuleSettings::setStaticIP(String value) {
-	if(value.length() > 15)	return 0;
+	if(value.length() > 15)	return false;
 	return writeSettings(ST_STA_IP, value);
 }
 
@@ -197,7 +198,7 @@ String ModuleSettings::getStaticIP() {
 }
 
 bool ModuleSettings::setMask(String value) {
-	if(value.length() > 15)	return 0;
+	if(value.length() > 15)	return false;
 	return writeSettings(ST_STA_MASK, value);
 }
 
@@ -206,10 +207,18 @@ String ModuleSettings::getMask() {
 }
 
 bool ModuleSettings::setGateway(String value) {
-	if(value.length() > 15)	return 0;
+	if(value.length() > 15)	return false;
 	return writeSettings(ST_STA_GATEWAY, value);
 }
 
 String ModuleSettings::getGateway() {
 	return readSettings(ST_STA_GATEWAY);
+}
+
+bool ModuleSettings::setTimezone(int value) {
+	return writeSettings(ST_TIMEZONE, value);
+}
+
+int ModuleSettings::getTimezone() {
+	return readSettings(ST_TIMEZONE).toInt();
 }

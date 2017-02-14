@@ -44,6 +44,5 @@ libraries\DNSServer\src \
 libraries\EEPROM \
 libraries\ESP8266WebServer\src \
 libraries\ESP8266WiFi\src \
-libraries\Time \
 libraries\pubsubclient-master\src \
 

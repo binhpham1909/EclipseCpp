@@ -25,7 +25,7 @@ String Session::createSS(int role) {
 	if(numSession==1){
 		strcpy(SS[0].name, GetRandomString().c_str());
 		SS[0].role = role;
-		SS[0].time = now();
+		SS[0].time = SysTime::getInstance()->now();
 		return String(SS[0].name);
 	}else if(numSession>1){
 		SessionParam *newSS = new SessionParam[numSession];
@@ -33,7 +33,7 @@ String Session::createSS(int role) {
 			newSS[i] = SS[i];
 		}
 		strcpy(newSS[numSession-1].name, GetRandomString().c_str());
-		newSS[numSession-1].time = now();
+		newSS[numSession-1].time = SysTime::getInstance()->now();
 		newSS[numSession-1].role = role;
 		delete SS;
 		SS = newSS;
@@ -65,7 +65,7 @@ void Session::checkExpireTime() {
 		DBGF("No has Session");
 		return;
 	}
-	time_t cur = now();
+	time_t cur = SysTime::getInstance()->now();
 	for(int i=0; i< numSession; i++){
 		DBG2F0("Session ", i);
 		DBG2F("==> ", SS[i].name);
@@ -83,7 +83,7 @@ int Session::getUserRole(String session) {
 	int retRole = -1;
 	for(int i=0; i< numSession; i++){
 		if(session==String(SS[i].name)){
-			SS[i].time = now();
+			SS[i].time = SysTime::getInstance()->now();
 			retRole = SS[i].role;
 		}
 	}

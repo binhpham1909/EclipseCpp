@@ -1,0 +1,21 @@
+/*
+ * TimeZone.cpp
+ *
+ *  Created on: 14 thg 2, 2017
+ *      Author: MyPC
+ */
+
+#include "TimeZone.h"
+
+namespace systime {
+
+TimeZone::TimeZone() {
+	// TODO Auto-generated constructor stub
+
+}
+
+TimeZone::~TimeZone() {
+	// TODO Auto-generated destructor stub
+}
+
+} /* namespace systime */

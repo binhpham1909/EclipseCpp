@@ -25,26 +25,26 @@ TaskManager::~TaskManager() {
 
 }
 
-void TaskManager::addTask(String name, void (*func)(), bool (*conditionFunc)(), TMode mode, unsigned long time) {
+void TaskManager::addTask(String name, void (*func)(), bool (*conditionFunc)(), TMode mode, unsigned long timer) {
 	TTask job;
 	strncpy(job.name,name.c_str(),15);
 	job.func = func;
 	job.conditionFunc = conditionFunc;
 	job.mode = mode;
-	job.time = time;
+	job.timer = timer;
 	job.nextTime = millis();
 	job.isRunning = true;
 	DBG2F("Add task: ", name);
 	insertTask(job);
 }
 
-void TaskManager::addTask(String name, void (*func)(), bool (*conditionFunc)(), unsigned long time) {
+void TaskManager::addTask(String name, void (*func)(), bool (*conditionFunc)(), unsigned long timer) {
 	TTask job;
 	strncpy(job.name,name.c_str(),15);
 	job.func = func;
 	job.conditionFunc = conditionFunc;
 	job.mode = Repeat;
-	job.time = time;
+	job.timer = timer;
 	job.nextTime = millis();
 	job.isRunning = true;
 	DBG2F("Add task: ", name);
@@ -52,29 +52,29 @@ void TaskManager::addTask(String name, void (*func)(), bool (*conditionFunc)(), 
 }
 
 void TaskManager::addTask(String name, void (*func)(), TMode mode,
-		unsigned long time) {
+		unsigned long timer) {
 	TTask job;
 	strncpy(job.name,name.c_str(),15);
 	job.func = func;
 	job.conditionFunc = true_condition;
 	job.mode = mode;
-	job.time = time;
+	job.timer = timer;
 	job.nextTime = millis();
 	job.isRunning = true;
 	DBG2F("Add task: ", name);
 	insertTask(job);
 }
 
-void TaskManager::addTask(String name, void (*func)(), unsigned long time) {
+void TaskManager::addTask(String name, void (*func)(), unsigned long timer) {
 	TTask job;
 	strncpy(job.name,name.c_str(),15);
 	job.func = func;
 	job.conditionFunc = true_condition;
 	job.mode = Repeat;
-	job.time = time;
+	job.timer = timer;
 	job.nextTime = millis();
 	job.isRunning = true;
-	DBG2F0("Add task: ", name);
+	DBG2F("Add task: ", name);
 	insertTask(job);
 }
 
@@ -86,6 +86,8 @@ void TaskManager::insertTask(TTask& job) {
 			tasks[i] = _tasks[i];
 		}
 	tasks[_totalTasks - 1] = job;
+	DBG2F("Interval (ms): ", job.timer);
+	DBG2F("Nexttime (ms): ", job.nextTime);
 	delete _tasks;
 	_tasks = tasks;
 	DBGF(".>> done");
@@ -106,12 +108,14 @@ void TaskManager::loop() {
 			if((job.mode == Repeat)&&(curr >= job.nextTime)){
 				if(job.conditionFunc()){
 					job.func();
-					job.nextTime = curr + job.time;
+					_tasks[_runTask].nextTime = curr + job.timer;
+					//DBG2F("Interval (ms): ", job.timer);
+					//DBG2F("Nexttime (ms): ", job.nextTime);
 				}
 			}
 		//	DBG2F0("Done task \"", job.name);
 		//	DBG2F("\" in (ms) : ", millis() - curr);
-			if(job.mode == Once)	job.isRunning = false;
+			if(job.mode == Once)	_tasks[_runTask].isRunning = false;
 		}
 		_runTask++;
 		if(_runTask >= _totalTasks)	_runTask = 0;	// index trong c++ bat dau tu 0

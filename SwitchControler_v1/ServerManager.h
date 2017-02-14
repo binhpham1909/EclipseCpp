@@ -13,7 +13,6 @@
 #include "Singleton.h"
 #include "Commander.h"
 #include "Session.h"
-#include "HTMLPage.h"
 
 #include "HTML/js/jquery.min.js.gz.h"
 #include "HTML/js/main.js.h"

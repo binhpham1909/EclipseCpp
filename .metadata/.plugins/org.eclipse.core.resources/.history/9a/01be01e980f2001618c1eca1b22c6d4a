@@ -1,0 +1,21 @@
+/*
+ * TimeZone.h
+ *
+ *  Created on: 14 thg 2, 2017
+ *      Author: MyPC
+ */
+
+#ifndef TIMEZONE_H_
+#define TIMEZONE_H_
+
+namespace systime {
+
+class TimeZone {
+public:
+	TimeZone();
+	virtual ~TimeZone();
+};
+
+} /* namespace systime */
+
+#endif /* TIMEZONE_H_ */
