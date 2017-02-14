@@ -1,4 +1,4 @@
-16:17:19 **** Build of configuration Release for project SwitchControler_v1 ****
+19:42:08 **** Build of configuration Release for project SwitchControler_v1 ****
 "C:\\eclipse\\arduinoPlugin\\tools\\make\\make" all 
 'Building file: ../.ino.cpp'
 'Starting C++ compile'
@@ -185,59 +185,59 @@ In file included from ../Session.h:11:0,
   return readSettings(ST_MQTT_USER);
                                   ^
 ../ModuleSettings.cpp: In member function 'bool ModuleSettings::setServerPort(int)':
-../ModuleSettings.cpp:148:44: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../ModuleSettings.cpp:149:44: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
   return writeSettings(ST_SERVER_PORT, value);
                                             ^
 ../ModuleSettings.cpp: In member function 'int ModuleSettings::getServerPort()':
-../ModuleSettings.cpp:152:36: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../ModuleSettings.cpp:153:36: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
   return readSettings(ST_SERVER_PORT).toInt();
                                     ^
 ../ModuleSettings.cpp: In member function 'String ModuleSettings::getGPIOName(int)':
-../ModuleSettings.cpp:173:44: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../ModuleSettings.cpp:174:44: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
   return readArrSettings(ST_GPIO_NAME, index);
                                             ^
 ../ModuleSettings.cpp: In member function 'bool ModuleSettings::setGPIOName(int, String)':
-../ModuleSettings.cpp:178:52: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../ModuleSettings.cpp:179:52: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
   return writeArrSettings(ST_GPIO_NAME, index, value);
                                                     ^
 ../ModuleSettings.cpp: In member function 'bool ModuleSettings::setDHCP(bool)':
-../ModuleSettings.cpp:183:39: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../ModuleSettings.cpp:184:39: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
   return writeSettings(ST_STA_DHCP, val);
                                        ^
 ../ModuleSettings.cpp: In member function 'bool ModuleSettings::getDHCP()':
-../ModuleSettings.cpp:187:33: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../ModuleSettings.cpp:188:33: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
   return readSettings(ST_STA_DHCP);
                                  ^
 ../ModuleSettings.cpp: In member function 'bool ModuleSettings::setStaticIP(String)':
-../ModuleSettings.cpp:192:39: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../ModuleSettings.cpp:193:39: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
   return writeSettings(ST_STA_IP, value);
                                        ^
 ../ModuleSettings.cpp: In member function 'String ModuleSettings::getStaticIP()':
-../ModuleSettings.cpp:196:31: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../ModuleSettings.cpp:197:31: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
   return readSettings(ST_STA_IP);
                                ^
 ../ModuleSettings.cpp: In member function 'bool ModuleSettings::setMask(String)':
-../ModuleSettings.cpp:201:41: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../ModuleSettings.cpp:202:41: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
   return writeSettings(ST_STA_MASK, value);
                                          ^
 ../ModuleSettings.cpp: In member function 'String ModuleSettings::getMask()':
-../ModuleSettings.cpp:205:33: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../ModuleSettings.cpp:206:33: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
   return readSettings(ST_STA_MASK);
                                  ^
 ../ModuleSettings.cpp: In member function 'bool ModuleSettings::setGateway(String)':
-../ModuleSettings.cpp:210:44: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../ModuleSettings.cpp:211:44: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
   return writeSettings(ST_STA_GATEWAY, value);
                                             ^
 ../ModuleSettings.cpp: In member function 'String ModuleSettings::getGateway()':
-../ModuleSettings.cpp:214:36: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../ModuleSettings.cpp:215:36: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
   return readSettings(ST_STA_GATEWAY);
                                     ^
 ../ModuleSettings.cpp: In member function 'bool ModuleSettings::setTimezone(int)':
-../ModuleSettings.cpp:218:41: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../ModuleSettings.cpp:219:41: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
   return writeSettings(ST_TIMEZONE, value);
                                          ^
 ../ModuleSettings.cpp: In member function 'int ModuleSettings::getTimezone()':
-../ModuleSettings.cpp:222:33: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../ModuleSettings.cpp:223:33: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
   return readSettings(ST_TIMEZONE).toInt();
                                  ^
 In file included from ../Session.h:11:0,
@@ -673,14 +673,14 @@ section                                                                         
 .data                                                                                                                                                                                                                          1272   1073643520
 .rodata                                                                                                                                                                                                                       10392   1073644800
 .bss                                                                                                                                                                                                                          30024   1073655192
-.irom0.text                                                                                                                                                                                                                  406320   1075843088
+.irom0.text                                                                                                                                                                                                                  406336   1075843088
 .text                                                                                                                                                                                                                         32185   1074790400
 .debug_frame                                                                                                                                                                                                                  62988            0
 .debug_info                                                                                                                                                                                                                 1401858            0
 .debug_abbrev                                                                                                                                                                                                                156798            0
 .debug_aranges                                                                                                                                                                                                                18952            0
 .debug_ranges                                                                                                                                                                                                                 43376            0
-.debug_line                                                                                                                                                                                                                  396877            0
+.debug_line                                                                                                                                                                                                                  396847            0
 .debug_str                                                                                                                                                                                                                   248390            0
 .comment                                                                                                                                                                                                                       7142            0
 .xtensa.info                                                                                                                                                                                                                     56            0
@@ -1005,12 +1005,12 @@ section                                                                         
 .xt.prop._ZTVSt19_Sp_counted_deleterIP14SPIFFSFileImplNSt12__shared_ptrIS0_LN9__gnu_cxx12_Lock_policyE0EE8_DeleterISaIS0_EEES7_LS4_0EE                                                                                           12            0
 .xt.prop._ZTVSt19_Sp_counted_deleterIP13SPIFFSDirImplNSt12__shared_ptrIS0_LN9__gnu_cxx12_Lock_policyE0EE8_DeleterISaIS0_EEES7_LS4_0EE                                                                                            12            0
 .xt.prop._ZNSt8functionIFvvEE4swapERS1_                                                                                                                                                                                          36            0
-.debug_loc                                                                                                                                                                                                                   415709            0
-Total                                                                                                                                                                                                                       3241759
+.debug_loc                                                                                                                                                                                                                   415829            0
+Total                                                                                                                                                                                                                       3241865
 
 
 'Finished building target: SwitchControler_v1'
 ' '
 
-16:17:53 Build Finished (took 34s.550ms)
+19:42:57 Build Finished (took 49s.0ms)
 

@@ -1,26 +1,9 @@
-16:17:16 **** Clean-only build of configuration Release for project SwitchControler_v1 ****
+19:42:02 **** Clean-only build of configuration Release for project SwitchControler_v1 ****
 "C:\\eclipse\\arduinoPlugin\\tools\\make\\make" clean 
 del   .\core\umm_malloc.c.d  .\core\spiffs_cache.c.d .\core\spiffs_check.c.d .\core\spiffs_gc.c.d .\core\spiffs_hydrogen.c.d .\core\spiffs_nucleus.c.d  .\core\cdecode.c.d .\core\cencode.c.d  .\core\cont_util.c.d .\core\core_esp8266_eboot_command.c.d .\core\core_esp8266_flash_utils.c.d .\core\core_esp8266_i2s.c.d .\core\core_esp8266_noniso.c.d .\core\core_esp8266_phy.c.d .\core\core_esp8266_postmortem.c.d .\core\core_esp8266_si2c.c.d .\core\core_esp8266_timer.c.d .\core\core_esp8266_wiring.c.d .\core\core_esp8266_wiring_analog.c.d .\core\core_esp8266_wiring_digital.c.d .\core\core_esp8266_wiring_pulse.c.d .\core\core_esp8266_wiring_pwm.c.d .\core\core_esp8266_wiring_shift.c.d .\core\heap.c.d .\core\libc_replacements.c.d .\core\time.c.d .\core\uart.c.d  arduino.ar  .\core\umm_malloc.c.o  .\core\spiffs_cache.c.o .\core\spiffs_check.c.o .\core\spiffs_gc.c.o .\core\spiffs_hydrogen.c.o .\core\spiffs_nucleus.c.o  .\core\cdecode.c.o .\core\cencode.c.o  .\core\Esp.cpp.o .\core\FS.cpp.o .\core\HardwareSerial.cpp.o .\core\IPAddress.cpp.o .\core\MD5Builder.cpp.o .\core\Print.cpp.o .\core\Schedule.cpp.o .\core\Stream.cpp.o .\core\StreamString.cpp.o .\core\Tone.cpp.o .\core\Updater.cpp.o .\core\WMath.cpp.o .\core\WString.cpp.o .\core\abi.cpp.o .\core\base64.cpp.o .\core\cbuf.cpp.o .\core\cont.S.o .\core\cont_util.c.o .\core\core_esp8266_eboot_command.c.o .\core\core_esp8266_flash_utils.c.o .\core\core_esp8266_i2s.c.o .\core\core_esp8266_main.cpp.o .\core\core_esp8266_noniso.c.o .\core\core_esp8266_phy.c.o .\core\core_esp8266_postmortem.c.o .\core\core_esp8266_si2c.c.o .\core\core_esp8266_timer.c.o .\core\core_esp8266_wiring.c.o .\core\core_esp8266_wiring_analog.c.o .\core\core_esp8266_wiring_digital.c.o .\core\core_esp8266_wiring_pulse.c.o .\core\core_esp8266_wiring_pwm.c.o .\core\core_esp8266_wiring_shift.c.o .\core\debug.cpp.o .\core\heap.c.o .\core\libc_replacements.c.o .\core\pgmspace.cpp.o .\core\spiffs_api.cpp.o .\core\spiffs_hal.cpp.o .\core\time.c.o .\core\uart.c.o  .\.ino.cpp.o .\Commander.cpp.o .\DeviceSetting.cpp.o .\GPIOManager.cpp.o .\MQTTConnection.cpp.o .\ModuleSettings.cpp.o .\ServerManager.cpp.o .\Session.cpp.o .\SysTime.cpp.o .\TaskManager.cpp.o .\TimerManager.cpp.o .\WifiManager.cpp.o  .\libraries\pubsubclient-master\src\PubSubClient.cpp.o  .\libraries\ESP8266WiFi\src\ESP8266WiFi.cpp.o .\libraries\ESP8266WiFi\src\ESP8266WiFiAP.cpp.o .\libraries\ESP8266WiFi\src\ESP8266WiFiGeneric.cpp.o .\libraries\ESP8266WiFi\src\ESP8266WiFiMulti.cpp.o .\libraries\ESP8266WiFi\src\ESP8266WiFiSTA.cpp.o .\libraries\ESP8266WiFi\src\ESP8266WiFiScan.cpp.o .\libraries\ESP8266WiFi\src\WiFiClient.cpp.o .\libraries\ESP8266WiFi\src\WiFiClientSecure.cpp.o .\libraries\ESP8266WiFi\src\WiFiServer.cpp.o .\libraries\ESP8266WiFi\src\WiFiUdp.cpp.o  .\libraries\ESP8266WebServer\src\ESP8266WebServer.cpp.o .\libraries\ESP8266WebServer\src\Parsing.cpp.o  .\libraries\EEPROM\EEPROM.cpp.o  .\libraries\DNSServer\src\DNSServer.cpp.o  SwitchControler_v1.hex  .\SwitchControler_v1.ino.d  .\core\cont.S.d  SwitchControler_v1.elf  .\.ino.cpp.d .\Commander.cpp.d .\DeviceSetting.cpp.d .\GPIOManager.cpp.d .\MQTTConnection.cpp.d .\ModuleSettings.cpp.d .\ServerManager.cpp.d .\Session.cpp.d .\SysTime.cpp.d .\TaskManager.cpp.d .\TimerManager.cpp.d .\WifiManager.cpp.d  .\libraries\pubsubclient-master\src\PubSubClient.cpp.d  .\libraries\ESP8266WiFi\src\ESP8266WiFi.cpp.d .\libraries\ESP8266WiFi\src\ESP8266WiFiAP.cpp.d .\libraries\ESP8266WiFi\src\ESP8266WiFiGeneric.cpp.d .\libraries\ESP8266WiFi\src\ESP8266WiFiMulti.cpp.d .\libraries\ESP8266WiFi\src\ESP8266WiFiSTA.cpp.d .\libraries\ESP8266WiFi\src\ESP8266WiFiScan.cpp.d .\libraries\ESP8266WiFi\src\WiFiClient.cpp.d .\libraries\ESP8266WiFi\src\WiFiClientSecure.cpp.d .\libraries\ESP8266WiFi\src\WiFiServer.cpp.d .\libraries\ESP8266WiFi\src\WiFiUdp.cpp.d  .\libraries\ESP8266WebServer\src\ESP8266WebServer.cpp.d .\libraries\ESP8266WebServer\src\Parsing.cpp.d  .\libraries\EEPROM\EEPROM.cpp.d  .\libraries\DNSServer\src\DNSServer.cpp.d  .\core\Esp.cpp.d .\core\FS.cpp.d .\core\HardwareSerial.cpp.d .\core\IPAddress.cpp.d .\core\MD5Builder.cpp.d .\core\Print.cpp.d .\core\Schedule.cpp.d .\core\Stream.cpp.d .\core\StreamString.cpp.d .\core\Tone.cpp.d .\core\Updater.cpp.d .\core\WMath.cpp.d .\core\WString.cpp.d .\core\abi.cpp.d .\core\base64.cpp.d .\core\cbuf.cpp.d .\core\core_esp8266_main.cpp.d .\core\debug.cpp.d .\core\pgmspace.cpp.d .\core\spiffs_api.cpp.d .\core\spiffs_hal.cpp.d 
-Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\core\umm_malloc.c.d
-Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\arduino.ar
-Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\core\umm_malloc.c.o
-Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\.ino.cpp.o
-Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\libraries\pubsubclient-master\src\PubSubClient.cpp.o
-Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\libraries\ESP8266WiFi\src\ESP8266WiFi.cpp.o
-Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\libraries\ESP8266WebServer\src\ESP8266WebServer.cpp.o
-Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\libraries\EEPROM\EEPROM.cpp.o
-Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\libraries\DNSServer\src\DNSServer.cpp.o
 Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\SwitchControler_v1.hex
-Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\core\cont.S.d
-Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\SwitchControler_v1.elf
-Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\libraries\pubsubclient-master\src\PubSubClient.cpp.d
-Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\libraries\ESP8266WiFi\src\ESP8266WiFi.cpp.d
-Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\libraries\ESP8266WebServer\src\ESP8266WebServer.cpp.d
-Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\libraries\EEPROM\EEPROM.cpp.d
-Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\libraries\DNSServer\src\DNSServer.cpp.d
-Could Not Find C:\eclipse\EclipseCpp\SwitchControler_v1\Release\core\Esp.cpp.d
 ' '
-16:17:19 **** Build of configuration Release for project SwitchControler_v1 ****
+19:42:08 **** Build of configuration Release for project SwitchControler_v1 ****
 "C:\\eclipse\\arduinoPlugin\\tools\\make\\make" all 
 'Building file: ../.ino.cpp'
 'Starting C++ compile'
@@ -207,59 +190,59 @@ In file included from ../Session.h:11:0,
   return readSettings(ST_MQTT_USER);
                                   ^
 ../ModuleSettings.cpp: In member function 'bool ModuleSettings::setServerPort(int)':
-../ModuleSettings.cpp:148:44: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../ModuleSettings.cpp:149:44: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
   return writeSettings(ST_SERVER_PORT, value);
                                             ^
 ../ModuleSettings.cpp: In member function 'int ModuleSettings::getServerPort()':
-../ModuleSettings.cpp:152:36: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../ModuleSettings.cpp:153:36: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
   return readSettings(ST_SERVER_PORT).toInt();
                                     ^
 ../ModuleSettings.cpp: In member function 'String ModuleSettings::getGPIOName(int)':
-../ModuleSettings.cpp:173:44: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../ModuleSettings.cpp:174:44: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
   return readArrSettings(ST_GPIO_NAME, index);
                                             ^
 ../ModuleSettings.cpp: In member function 'bool ModuleSettings::setGPIOName(int, String)':
-../ModuleSettings.cpp:178:52: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../ModuleSettings.cpp:179:52: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
   return writeArrSettings(ST_GPIO_NAME, index, value);
                                                     ^
 ../ModuleSettings.cpp: In member function 'bool ModuleSettings::setDHCP(bool)':
-../ModuleSettings.cpp:183:39: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../ModuleSettings.cpp:184:39: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
   return writeSettings(ST_STA_DHCP, val);
                                        ^
 ../ModuleSettings.cpp: In member function 'bool ModuleSettings::getDHCP()':
-../ModuleSettings.cpp:187:33: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../ModuleSettings.cpp:188:33: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
   return readSettings(ST_STA_DHCP);
                                  ^
 ../ModuleSettings.cpp: In member function 'bool ModuleSettings::setStaticIP(String)':
-../ModuleSettings.cpp:192:39: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../ModuleSettings.cpp:193:39: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
   return writeSettings(ST_STA_IP, value);
                                        ^
 ../ModuleSettings.cpp: In member function 'String ModuleSettings::getStaticIP()':
-../ModuleSettings.cpp:196:31: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../ModuleSettings.cpp:197:31: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
   return readSettings(ST_STA_IP);
                                ^
 ../ModuleSettings.cpp: In member function 'bool ModuleSettings::setMask(String)':
-../ModuleSettings.cpp:201:41: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../ModuleSettings.cpp:202:41: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
   return writeSettings(ST_STA_MASK, value);
                                          ^
 ../ModuleSettings.cpp: In member function 'String ModuleSettings::getMask()':
-../ModuleSettings.cpp:205:33: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../ModuleSettings.cpp:206:33: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
   return readSettings(ST_STA_MASK);
                                  ^
 ../ModuleSettings.cpp: In member function 'bool ModuleSettings::setGateway(String)':
-../ModuleSettings.cpp:210:44: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../ModuleSettings.cpp:211:44: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
   return writeSettings(ST_STA_GATEWAY, value);
                                             ^
 ../ModuleSettings.cpp: In member function 'String ModuleSettings::getGateway()':
-../ModuleSettings.cpp:214:36: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../ModuleSettings.cpp:215:36: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
   return readSettings(ST_STA_GATEWAY);
                                     ^
 ../ModuleSettings.cpp: In member function 'bool ModuleSettings::setTimezone(int)':
-../ModuleSettings.cpp:218:41: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../ModuleSettings.cpp:219:41: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
   return writeSettings(ST_TIMEZONE, value);
                                          ^
 ../ModuleSettings.cpp: In member function 'int ModuleSettings::getTimezone()':
-../ModuleSettings.cpp:222:33: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../ModuleSettings.cpp:223:33: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
   return readSettings(ST_TIMEZONE).toInt();
                                  ^
 In file included from ../Session.h:11:0,
@@ -695,14 +678,14 @@ section                                                                         
 .data                                                                                                                                                                                                                          1272   1073643520
 .rodata                                                                                                                                                                                                                       10392   1073644800
 .bss                                                                                                                                                                                                                          30024   1073655192
-.irom0.text                                                                                                                                                                                                                  406320   1075843088
+.irom0.text                                                                                                                                                                                                                  406336   1075843088
 .text                                                                                                                                                                                                                         32185   1074790400
 .debug_frame                                                                                                                                                                                                                  62988            0
 .debug_info                                                                                                                                                                                                                 1401858            0
 .debug_abbrev                                                                                                                                                                                                                156798            0
 .debug_aranges                                                                                                                                                                                                                18952            0
 .debug_ranges                                                                                                                                                                                                                 43376            0
-.debug_line                                                                                                                                                                                                                  396877            0
+.debug_line                                                                                                                                                                                                                  396847            0
 .debug_str                                                                                                                                                                                                                   248390            0
 .comment                                                                                                                                                                                                                       7142            0
 .xtensa.info                                                                                                                                                                                                                     56            0
@@ -1027,8 +1010,8 @@ section                                                                         
 .xt.prop._ZTVSt19_Sp_counted_deleterIP14SPIFFSFileImplNSt12__shared_ptrIS0_LN9__gnu_cxx12_Lock_policyE0EE8_DeleterISaIS0_EEES7_LS4_0EE                                                                                           12            0
 .xt.prop._ZTVSt19_Sp_counted_deleterIP13SPIFFSDirImplNSt12__shared_ptrIS0_LN9__gnu_cxx12_Lock_policyE0EE8_DeleterISaIS0_EEES7_LS4_0EE                                                                                            12            0
 .xt.prop._ZNSt8functionIFvvEE4swapERS1_                                                                                                                                                                                          36            0
-.debug_loc                                                                                                                                                                                                                   415709            0
-Total                                                                                                                                                                                                                       3241759
+.debug_loc                                                                                                                                                                                                                   415829            0
+Total                                                                                                                                                                                                                       3241865
 
 
 'Finished building target: SwitchControler_v1'

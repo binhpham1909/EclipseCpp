@@ -38,7 +38,7 @@
 #define HBOS_Version	"1.000.000"
 #define	HBOS_Super_User	"admin"
 #define	HBOS_Super_Password	"TNENVIBH@9091+"
-
+#define HBOS_GPIO_Type	""
 /* Cau truc vung nho EEPROM:
  * 0 - 128: Device setting chua du lieu truy xuat nguon goc:
  * 			xem class DeviceSetting.h
