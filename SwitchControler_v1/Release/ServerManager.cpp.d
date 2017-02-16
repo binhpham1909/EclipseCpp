@@ -139,18 +139,21 @@ ServerManager.cpp.o: ../ServerManager.cpp ../ServerManager.h \
  C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Serialization/JsonSerializerImpl.hpp \
  ../GlobalConfigs.h ../GPIOManager.h ../DeviceSetting.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM/EEPROM.h \
+ ../ProgmemStruct.h ../MQTTConnection.h \
+ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/WiFiClient.h \
+ ../Commander.h ../WifiManager.h \
+ C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master\src/PubSubClient.h \
  ../Session.h ../SysTime.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer\src/DNSServer.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/WiFiUdp.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Udp.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/include/slist.h \
- ../ProgmemStruct.h ../Commander.h ../HTML/js/jquery.min.js.gz.h \
- ../HTML/js/main.js.h ../HTML/js/language-vi.js.h \
- ../HTML/css/bootstrap.min.css.gz.h ../HTML/css/main.css.h \
- ../HTML/login.html.gz.h ../HTML/network.html.gz.h ../HTML/admin.html.h \
- ../HTML/device.html.h ../HTML/email.html.h ../HTML/favicon.png.h \
- ../HTML/general.html.h ../HTML/gpio.html.h ../HTML/prog.html.h \
- ../HTML/time.html.h
+ ../HTML/js/jquery.min.js.gz.h ../HTML/js/main.js.h \
+ ../HTML/js/language-vi.js.h ../HTML/css/bootstrap.min.css.gz.h \
+ ../HTML/css/main.css.h ../HTML/login.html.gz.h ../HTML/network.html.gz.h \
+ ../HTML/admin.html.h ../HTML/device.html.h ../HTML/email.html.h \
+ ../HTML/favicon.png.h ../HTML/general.html.h ../HTML/gpio.html.h \
+ ../HTML/prog.html.h ../HTML/time.html.h
 
 ../ServerManager.h:
 
@@ -440,6 +443,18 @@ C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Serialization
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM/EEPROM.h:
 
+../ProgmemStruct.h:
+
+../MQTTConnection.h:
+
+C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/WiFiClient.h:
+
+../Commander.h:
+
+../WifiManager.h:
+
+C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master\src/PubSubClient.h:
+
 ../Session.h:
 
 ../SysTime.h:
@@ -451,10 +466,6 @@ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Udp.h:
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/include/slist.h:
-
-../ProgmemStruct.h:
-
-../Commander.h:
 
 ../HTML/js/jquery.min.js.gz.h:
 

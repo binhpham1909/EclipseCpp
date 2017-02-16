@@ -10,26 +10,30 @@
 MQTTConnection::MQTTConnection() {
 	// TODO Auto-generated constructor stub
 	const char *server = "mqtt.hbinvent.com";
-	client = new PubSubClient(wclient);
-	client->setServer(server, 1883);
-	client->setCallback(std::bind(&MQTTConnection::callback, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));
+	_client = new PubSubClient(_wclient);
+	_client->setServer(server, 1883);
+	_client->setCallback(std::bind(&MQTTConnection::callback, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));
+	// Lay thong tin topic: hbinvent/deviceSerial
+	String topic = "hbinvent/";
+	topic += DeviceSetting::getInstance()->getDeviceSerial();
+	strncpy(_topic, topic.c_str(), topic.length() + 1);
 }
 
 MQTTConnection::~MQTTConnection() {
 	// TODO Auto-generated destructor stub
-	delete client;
+	delete _client;
 }
 
 
 void MQTTConnection::loop() {
 	if ((WiFi.status() == WL_CONNECTED)&&WifiManager::getInstance()->inSTAMode()) {
-		if (!client->connected()) {
-			if (client->connect("arduinoClient",ModuleSettings::getInstance()->getMqttAPI().c_str(),ModuleSettings::getInstance()->getMqttAPI().c_str())) {
-				client->subscribe("private/binhpham/+");
+		if (!_client->connected()) {
+			if (_client->connect(DeviceSetting::getInstance()->getDeviceSerial().c_str(),ModuleSettings::getInstance()->getMqttAPI().c_str(),ModuleSettings::getInstance()->getMqttAPI().c_str())) {
+				_client->subscribe(_topic);
 			}
 		}
-		if (client->connected())
-			client->loop();
+		if (_client->connected())
+			_client->loop();
 	}
 }
 
@@ -42,5 +46,14 @@ void MQTTConnection::callback(char* topic, uint8_t* payload, unsigned int length
 			msg += (char)(payload[i]);
 		}
 		DBG(msg);
-		Commander::getInstance()->process(msg);
-};
+		Commander::getInstance()->process(msg, MQTT);
+}
+;
+
+bool MQTTConnection::publish(String message) {
+	if (_client->connected()){
+		_client->publish(_topic, message.c_str());
+		return true;
+	}else
+		return false;
+}

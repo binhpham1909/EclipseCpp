@@ -7,18 +7,8 @@
 #include "GPIOManager.h"
 
 GPIOManager::GPIOManager() {
+	// TODO
 
-	EEPROM.begin(sizeof(GPIOSetting_t));
-	EEPROM.get(EEPROM_GPIO_SETTING, _gpio );
-	EEPROM.end();
-	for (int i = 0; i < MAX_GPIO_PIN; ++i) {
-		int _pin = GPIOList[i];
-		if (_gpio.gpio[i].type == IN) {
-			pinMode(_pin, INPUT);
-		} else{
-			pinMode(_pin, OUTPUT);
-		}
-	}
 }
 
 GPIOManager::~GPIOManager() {
@@ -26,50 +16,66 @@ GPIOManager::~GPIOManager() {
 }
 void GPIOManager::update() {
 	for (int i = 0; i < MAX_GPIO_PIN; ++i) {
-		GPIO_t gpio = _gpio.gpio[i];
+		GPIO_t gpio = DeviceSetting::getInstance()->getGPIOConfig(i);
 		int pin = GPIOList[i];
-		if (gpio.type == IN) {
-			gpio.value = digitalRead(pin);
-		}else if(gpio.type == FLASH){
-			if(gpio.value){
+		if(gpio.type == IN){
+			int newValue = digitalRead(pin);
+			if(newValue != _state[i].value){
+				_state[i].value = newValue;
+				processInput(i);
+			}
+		} else if(gpio.type == OUT){
+			digitalWrite(pin, _state[i].value);
+		} else if(gpio.type == FLASH){
+			if(_state[i].isEnable){
 				long curr = millis();
-				if(gpio.lastValue){
+				if(_state[i].value){
 					if((curr-lastUpdate[i]) > gpio.ONTime){
-						gpio.lastValue = LOW;
+						_state[i].value = LOW;
+						lastUpdate[i] = curr;
+						digitalWrite(pin, _state[i].value);
 					}
 				}else{
 					if((curr-lastUpdate[i]) > gpio.OFFTime){
-						gpio.lastValue = HIGH;
+						_state[i].value = HIGH;
+						lastUpdate[i] = curr;
+						digitalWrite(pin, _state[i].value);
 					}
 				}
 			}else{
-				gpio.lastValue = LOW;
+				_state[i].value = LOW;
+				digitalWrite(pin, _state[i].value);
 			}
-			digitalWrite(pin, gpio.lastValue);
-		} else {
-			digitalWrite(pin, gpio.value);
+		} else if(gpio.type == CLICK){
+			if(_state[i].isEnable){
+				long curr = millis();
+				if(_state[i].value){
+					if((curr-lastUpdate[i]) > gpio.ONTime){
+						_state[i].value = LOW;
+						_state[i].isEnable = LOW;
+						lastUpdate[i] = curr;
+						digitalWrite(pin, _state[i].value);
+					}
+				}else{
+					_state[i].value = HIGH;
+					lastUpdate[i] = curr;
+					digitalWrite(pin, _state[i].value);
+				}
+			}
 		}
 	}
 }
 
-GPIO_t GPIOManager::getGPIOConfig(int index) {
-	return _gpio.gpio[index];
+void GPIOManager::setState(int index, GPIOState_t state) {
+	_state[index] = state;
 }
 
-bool GPIOManager::setType(int index, GPIOType_t type, long ontime,
-		long offtime) {
-	GPIO_t gpio = {index, type, ontime, offtime, 0, 0};
-	setGPIOConfig(index, gpio);
+GPIOState_t GPIOManager::getState(int index) {
+	return _state[index];
 }
 
-bool GPIOManager::setValue(int index, int value) {
+void GPIOManager::processInput(int index) {
+	int pinValue = _state[index].value;
+	MQTTConnection::getInstance()->publish("chuoi can gui o day");	// chuoi json thong bao GPIO thay doi trang thai
 
-}
-
-int GPIOManager::getValue(int index) {
-}
-
-bool GPIOManager::setGPIOConfig(int index, GPIO_t gpio) {
-	_gpio.gpio[index] = gpio;
-	return true;
 }

@@ -8,8 +8,10 @@
 #ifndef MQTTCONNECTION_H_
 #define MQTTCONNECTION_H_
 
+#include "WiFiClient.h"
 #include "Singleton.h"
 #include "ModuleSettings.h"
+#include "DeviceSetting.h"
 #include "Commander.h"
 #include "WifiManager.h"
 #include <PubSubClient.h>
@@ -21,10 +23,12 @@ public:
 	MQTTConnection();
 	virtual ~MQTTConnection();
 	void loop();
+	bool publish(String message);
 private:
 	void callback(char* topic, uint8_t* payload, unsigned int length);
-	WiFiClient wclient;
-	PubSubClient *client;
+	WiFiClient _wclient;
+	PubSubClient *_client;
+	char* _topic;
 };
 
 #endif /* MQTTCONNECTION_H_ */

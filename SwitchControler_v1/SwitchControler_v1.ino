@@ -1,15 +1,18 @@
 #include "Arduino.h"
 #include "ModuleSettings.h"
 #include "MQTTConnection.h"
+#include "SerialConnection.h"
 #include "WifiManager.h"
 #include "ServerManager.h"
 #include "SysTime.h"
 #include "TimerManager.h"
 #include "TaskManager.h"
 
+
 void loadSetting();
 void wifiTask();
 void mqttTask();
+void serialCommTask();
 bool checkInternetTask();
 void httpServerTask();
 void timeSyncTask();
@@ -21,9 +24,11 @@ void setup()
 	delay(100);
 	loadSetting();
 	//	TaskManager::getInstance()->addTask("Load Settings", loadSetting, Once); test chay mot lan
+	//DeviceSetting::getInstance()->loadSetting();
 	TaskManager::getInstance()->addTask("Wifi Man", wifiTask);
 	TaskManager::getInstance()->addTask("HTTP Serv", httpServerTask);
 	TaskManager::getInstance()->addTask("MQTT Client", mqttTask, checkInternetTask);
+	//TaskManager::getInstance()->addTask("Serial CMD", serialCommTask);
 	TaskManager::getInstance()->addTask("Time sync", timeSyncTask, checkInternetTask, 300000UL);	// 5*60*1000 ms
 	TaskManager::getInstance()->startTasks();
 }
@@ -63,6 +68,10 @@ bool checkInternetTask(){
 }
 void httpServerTask(){
 	ServerManager::getInstance()->loop();
+}
+
+void serialCommTask() {
+	SerialConnection::getInstance()->loop();
 }
 
 void timeSyncTask(){

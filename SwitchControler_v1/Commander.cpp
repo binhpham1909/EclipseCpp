@@ -16,9 +16,14 @@ Commander::~Commander() {
 	// TODO Auto-generated destructor stub
 }
 
-String Commander::process(String commandJson) {
+String Commander::process(String commandJson, CmdProvider_t cmdr ) {
 	DynamicJsonBuffer jsonBuffer;
 	JsonObject& root = jsonBuffer.parseObject(commandJson);
+	if(cmdr == MQTT){
+		String pass = root["cmdPassword"].asString();
+		if(!(pass == ModuleSettings::getInstance()->getPassDevice()))
+			return FPSTR(JsonFalse);
+	}
 	String cmd = root["cmd"].asString();
 	DBG(root["cmd"].asString());
 	if(cmd=="control"){

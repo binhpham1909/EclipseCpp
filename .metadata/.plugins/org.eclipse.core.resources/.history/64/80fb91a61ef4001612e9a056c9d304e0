@@ -1,0 +1,50 @@
+/*
+ * GPIOManager.h
+ *
+ *  Created on: 24 thg 1, 2017
+ *      Author: MyPC
+ */
+
+#ifndef GPIOMANAGER_H_
+#define GPIOMANAGER_H_
+#include "Arduino.h"
+
+#include "DeviceSetting.h"
+#include "GlobalConfigs.h"
+#include "Singleton.h"
+#include "ProgmemStruct.h"
+#include "MQTTConnection.h"
+
+
+// Mang index lai thu tu GPIO
+static const int GPIOList[MAX_GPIO_PIN] = { 16, 14, 12, 13, 15, 2, 0, 4, 5};
+// Cac kieu GPIO: INPUT,
+typedef enum { IN = 1, OUT, CLICK, FLASH } GPIOType_t;
+
+typedef struct __attribute__((packed)){
+	int index;
+	GPIOType_t type;
+	long ONTime;	// ms turn on
+	long OFFTime; // ms turn off
+} GPIO_t;
+
+typedef struct __attribute__((packed)){
+	long lastUpdate[MAX_GPIO_PIN];
+	int lastValue;
+	int value;
+} GPIOState_t;
+
+class GPIOManager : public Singleton<GPIOManager> {
+	public:
+		GPIOManager();
+		~GPIOManager();
+		void update();
+		void setState(int index, GPIOState_t state);
+		GPIOState_t getState(int index);
+	private:
+		void processInput(int index);
+		GPIOState_t _state[MAX_GPIO_PIN];
+		long lastUpdate[MAX_GPIO_PIN];
+
+};
+#endif /* GPIOMANAGER_H_ */

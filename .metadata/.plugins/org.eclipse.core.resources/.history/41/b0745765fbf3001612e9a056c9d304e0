@@ -1,0 +1,33 @@
+/*
+ * MQTTConnection.h
+ *
+ *  Created on: 4 thg 2, 2017
+ *      Author: MyPC
+ */
+
+#ifndef MQTTCONNECTION_H_
+#define MQTTCONNECTION_H_
+
+#include "Singleton.h"
+#include "ModuleSettings.h"
+#include "DeviceSetting.h"
+#include "Commander.h"
+#include "WifiManager.h"
+#include <PubSubClient.h>
+#include "GlobalConfigs.h"
+
+
+class MQTTConnection : public Singleton<MQTTConnection>{
+public:
+	MQTTConnection();
+	virtual ~MQTTConnection();
+	void loop();
+	bool publish(String message);
+private:
+	void callback(char* topic, uint8_t* payload, unsigned int length);
+	WiFiClient _wclient;
+	PubSubClient *_client;
+	char* _topic;
+};
+
+#endif /* MQTTCONNECTION_H_ */

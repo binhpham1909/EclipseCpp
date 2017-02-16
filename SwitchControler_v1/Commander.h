@@ -15,13 +15,14 @@
 #include "ModuleSettings.h"
 
 #define COMM_COM	"cmd"
+typedef enum { MQTT, HTTP } CmdProvider_t;
 const char JsonTrue[] PROGMEM = "{\"status\":true}";
 const char JsonFalse[] PROGMEM = "{\"status\":false}";
 class Commander : public Singleton<Commander> {
 	public:
 		Commander();
 		virtual ~Commander();
-		String process(String commandJson);
+		String process(String commandJson, CmdProvider_t cmdr);
 	private:
 };
 

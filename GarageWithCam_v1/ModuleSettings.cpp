@@ -170,23 +170,23 @@ void ModuleSettings::LoadDefaultSettings() {
   UpdateMd5();
 }
 bool ModuleSettings::SetWifiSsid(const String& value) {
-  strncpy(data.ssid,value.c_str(),MAX_SSID_LENGTH);
+  strncpy(data.ssid,value.c_str(),SSID_MAX_LEN);
   return true;
 }
 bool ModuleSettings::SetWifiPassword(const String& value) {
-  strncpy(data.pw,value.c_str(),MAX_WIFI_PASSWORD);
+  strncpy(data.pw,value.c_str(),WIFI_PASSWORD_MAX_LEN);
   return true;
 }
 bool ModuleSettings::SetWifiIp(const String& value) {
-  strncpy(data.ip,value.c_str(),MAX_IP_LENGTH);
+  strncpy(data.ip,value.c_str(),IP_MAX_LEN);
   return true;
 }
 bool ModuleSettings::SetWifiMask(const String& value) {
-  strncpy(data.mask,value.c_str(),MAX_IP_LENGTH);
+  strncpy(data.mask,value.c_str(),IP_MAX_LEN);
   return true;
 }
 bool ModuleSettings::SetWifiGw(const String& value) {
-  strncpy(data.gw,value.c_str(),MAX_IP_LENGTH);
+  strncpy(data.gw,value.c_str(),IP_MAX_LEN);
   return true;
 }
 bool ModuleSettings::SetWifiDhcp(int value) {

@@ -2,12 +2,13 @@
 //This is a automatic generated file
 //Please do not modify this file
 //If you touch this file your change will be overwritten during the next build
-//This file has been generated on 2017-02-15 13:51:32
+//This file has been generated on 2017-02-16 16:00:52
 
 #include "Arduino.h"
 #include "Arduino.h"
 #include "ModuleSettings.h"
 #include "MQTTConnection.h"
+#include "SerialConnection.h"
 #include "WifiManager.h"
 #include "ServerManager.h"
 #include "SysTime.h"
@@ -20,6 +21,7 @@ void wifiTask();
 void mqttTask();
 bool checkInternetTask();
 void httpServerTask();
+void serialCommTask() ;
 void timeSyncTask();
 
 #include "SwitchControler_v1.ino"

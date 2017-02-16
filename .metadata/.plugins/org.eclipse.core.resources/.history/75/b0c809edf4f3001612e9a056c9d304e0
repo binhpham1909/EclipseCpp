@@ -1,0 +1,18 @@
+/*
+ * SerialConnection.h
+ *
+ *  Created on: 16 thg 2, 2017
+ *      Author: MyPC
+ */
+
+#ifndef SERIALCONNECTION_H_
+#define SERIALCONNECTION_H_
+
+class SerialConnection {
+public:
+	SerialConnection();
+	virtual ~SerialConnection();
+	void loop();
+};
+
+#endif /* SERIALCONNECTION_H_ */

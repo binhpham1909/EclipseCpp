@@ -1,0 +1,35 @@
+/*
+ * SerialConnection.cpp
+ *
+ *  Created on: 16 thg 2, 2017
+ *      Author: MyPC
+ */
+
+#include "SerialConnection.h"
+
+SerialConnection::SerialConnection() {
+	// TODO Auto-generated constructor stub
+	_inputStr = "";
+	_complete = false;
+}
+
+SerialConnection::~SerialConnection() {
+	// TODO Auto-generated destructor stub
+}
+
+void SerialConnection::loop() {
+	// TODO Doc gia tri tu bo dem serial
+	while (Serial.available()) {
+		// doc byte moi tu bo nho dem:
+		char inChar = (char)Serial.read();
+		// them no vao inputStr:
+		_inputStr += inChar;
+		// gap ky tu xuong dong thi ket thuc
+		if (inChar == '\n') {
+		_complete = true;
+		}
+	}
+}
+
+void SerialConnection::process() {
+}

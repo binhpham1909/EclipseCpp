@@ -27,9 +27,9 @@
 #define EMAIL_MAX_LENGTH   31
 #define PHONE_MAX_LENGTH   15
 
-#define MAX_SSID_LENGTH 33
-#define MAX_WIFI_PASSWORD 21
-#define MAX_IP_LENGTH 15
+#define SSID_MAX_LEN 33
+#define WIFI_PASSWORD_MAX_LEN 21
+#define IP_MAX_LEN 15
 
 #define MAX_LOGIN_PASSWORD 13
 #define API_KEY_LENGTH 36
@@ -73,11 +73,11 @@ typedef struct __attribute__((packed)) {
   int InputPulseTime;
   int SmsInput;
   
-  char ssid[MAX_SSID_LENGTH+1];
-  char pw[MAX_WIFI_PASSWORD+1];
-  char ip[MAX_IP_LENGTH+1];
-  char mask[MAX_IP_LENGTH+1];
-  char gw[MAX_IP_LENGTH+1];
+  char ssid[SSID_MAX_LEN+1];
+  char pw[WIFI_PASSWORD_MAX_LEN+1];
+  char ip[IP_MAX_LEN+1];
+  char mask[IP_MAX_LEN+1];
+  char gw[IP_MAX_LEN+1];
   int port;
   bool dhcp;
   char apiKey[API_KEY_LENGTH+1];

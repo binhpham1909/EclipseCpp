@@ -1,0 +1,64 @@
+/*
+ * Commander.cpp
+ *
+ *  Created on: 4 thg 2, 2017
+ *      Author: MyPC
+ */
+
+#include "Commander.h"
+
+Commander::Commander() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Commander::~Commander() {
+	// TODO Auto-generated destructor stub
+}
+
+String Commander::process(String commandJson, CmdProvider_t cmdr ) {
+	DynamicJsonBuffer jsonBuffer;
+	JsonObject& root = jsonBuffer.parseObject(commandJson);
+	if(cmdr == MQTT)
+	String cmd = root["cmd"].asString();
+	DBG(root["cmd"].asString());
+	if(cmd=="control"){
+		DBG("control");
+	}
+	else if(cmd=="networkSetup") {
+		DBG(root["dhcp"].asString());
+		DBG(root["ssid"].asString());
+		DBG(root["wifiPassword"].asString());
+		DBG(root["port"].asString());
+		DBG(root["ip"].asString());
+		DBG(root["mask"].asString());
+		DBG(root["gw"].asString());
+		bool dhcp = root["dhcp"];
+		bool result;
+		if(dhcp){
+			result = ModuleSettings::getInstance()->setWifiSSID(root["ssid"].asString())&
+					ModuleSettings::getInstance()->setWifiPassword(root["wifiPassword"].asString())&
+					ModuleSettings::getInstance()->setServerPort(root["port"].as<int>())&
+					ModuleSettings::getInstance()->setDHCP(dhcp);
+		}else{
+			result = ModuleSettings::getInstance()->setWifiSSID(root["ssid"].asString())&
+					ModuleSettings::getInstance()->setWifiPassword(root["wifiPassword"].asString())&
+					ModuleSettings::getInstance()->setServerPort(root["port"].as<int>())&
+					ModuleSettings::getInstance()->setStaticIP(root["ip"].asString())&
+					ModuleSettings::getInstance()->setMask(root["mask"].asString())&
+					ModuleSettings::getInstance()->setGateway(root["gw"].asString())&
+					ModuleSettings::getInstance()->setDHCP(dhcp);
+		}
+		if(result){
+			ModuleSettings::getInstance()->saveSettings();
+			return FPSTR(JsonTrue);
+		}
+		else return FPSTR(JsonFalse);
+	}
+	else if(cmd=="debug") {
+		DBG("debug");
+	}else {
+		DBG("exit");
+	}
+	return FPSTR(JsonFalse);
+}

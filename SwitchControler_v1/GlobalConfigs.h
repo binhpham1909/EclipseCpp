@@ -39,6 +39,7 @@
 #define	HBOS_Super_User	"admin"
 #define	HBOS_Super_Password	"TNENVIBH@9091+"
 #define HBOS_GPIO_Type	""
+
 /* Cau truc vung nho EEPROM:
  * 0 - 128: Device setting chua du lieu truy xuat nguon goc:
  * 			xem class DeviceSetting.h
@@ -51,4 +52,40 @@
  *
  */
 
+/*
+ * Cac thiet lap cho GPIO
+ */
+#define MAX_GPIO_PIN	9
+#define GPIO_NAME_MAX_LEN	32
+
+// Mang index lai thu tu GPIO
+static const int GPIOList[MAX_GPIO_PIN] = { 16, 14, 12, 13, 15, 2, 0, 4, 5};
+
+// Cac kieu GPIO: INPUT,
+typedef enum { IN = 1, OUT, CLICK, FLASH } GPIOType_t;
+
+typedef struct __attribute__((packed)){
+	int index;
+	GPIOType_t type;
+	char name[GPIO_NAME_MAX_LEN + 1];
+	long ONTime;	// ms turn on
+	long OFFTime; // ms turn off
+} GPIO_t;
+
+typedef struct __attribute__((packed)){
+	unsigned long lastUpdate[MAX_GPIO_PIN];
+	int value;
+	int isEnable;
+} GPIOState_t;
+
+/*
+ * Cac khai bao va dinh nghia cho Timer
+ */
+#define TIMER_MAX_ALLOW	50
+
+typedef struct __attribute__((packed)){
+	int time;
+	unsigned long weekend;
+	int isEnable;
+} GPIOTimer_t;
 #endif /* GLOBALCONFIGS_H_ */

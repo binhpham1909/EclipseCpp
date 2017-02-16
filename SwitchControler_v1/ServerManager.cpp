@@ -109,8 +109,13 @@ void ServerManager::handlerNotFound() {
 }
 
 void ServerManager::handlerCommand() {
-	server->sendHeader("Connection", "close");
-	server->send(200, MimeJson, Commander::getInstance()->process(server->arg("plain")));
+	if(getUserRole()>0){
+		server->sendHeader("Connection", "close");
+		server->send(200, MimeJson, Commander::getInstance()->process(server->arg("plain"), HTTP));
+	}else{
+		server->sendHeader("Connection", "close");
+		server->send_P(200, MimeJson, JsonFalse, sizeof(JsonFalse));
+	}
 }
 
 int ServerManager::checkLogined() {
@@ -276,7 +281,7 @@ void ServerManager::handlerJqueryJS() {
 void ServerManager::handlerAjax() {
 	if(getUserRole()>0){
 		server->sendHeader("Connection", "close");
-		server->send(200, MimeJson, Commander::getInstance()->process(server->arg("plain")));
+		server->send(200, MimeJson, Commander::getInstance()->process(server->arg("plain"), HTTP));
 	}else{
 		server->sendHeader("Connection", "close");
 		server->send_P(200, MimeJson, JsonFalse, sizeof(JsonFalse));

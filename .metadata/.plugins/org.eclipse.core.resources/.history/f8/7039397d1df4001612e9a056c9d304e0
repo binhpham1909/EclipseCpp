@@ -1,0 +1,74 @@
+/*
+ * GPIOManager.cpp
+ *
+ *  Created on: 24 thg 1, 2017
+ *      Author: MyPC
+ */
+#include "GPIOManager.h"
+
+GPIOManager::GPIOManager() {
+	// TODO
+
+}
+
+GPIOManager::~GPIOManager() {
+
+}
+void GPIOManager::update() {
+	for (int i = 0; i < MAX_GPIO_PIN; ++i) {
+		GPIO_t gpio = DeviceSetting::getInstance()->getGPIOConfig(i);
+		int pin = GPIOList[i];
+		if (gpio.type == IN) {
+			int newValue = digitalRead(pin);
+			if(newValue != _state[i].value){
+				GPIO_t newgpio = gpio;
+				_state[i].lastValue = _state[i].value;
+				_state[i].value = newValue;
+				MQTTConnection::getInstance()->publish("chuoi can gui o day");	// chuoi json thong bao GPIO thay doi trang thai
+			}
+		} else if(gpio.type == OUT){
+			digitalWrite(pin, _state[i].value);
+		} else if(gpio.type == FLASH){
+			if(_state[i].value){
+				long curr = millis();
+				if(_state[i].lastValue){
+					if((curr-lastUpdate[i]) > gpio.ONTime){
+						_state[i].lastValue = LOW;
+						lastUpdate[i] = curr;
+					}
+				}else{
+					if((curr-lastUpdate[i]) > gpio.OFFTime){
+						_state[i].lastValue = HIGH;
+						lastUpdate[i] = curr;
+					}
+				}
+			}else{
+				_state[i].lastValue = LOW;
+			}
+			digitalWrite(pin, _state[i].lastValue);
+		} else if(gpio.type == CLICK){
+			if(_state[i].value){
+				long curr = millis();
+				if(_state[i].lastValue){
+					if((curr-lastUpdate[i]) > gpio.ONTime){
+						GPIO_t newgpio = gpio;
+						newgpio.lastValue = LOW;
+						newgpio.value = LOW;
+						gpio.lastValue = LOW;
+						DeviceSetting::getInstance()->setGPIOConfig(i, newgpio);
+						lastUpdate[i] = curr;
+						digitalWrite(pin, _state[i].lastValue);
+					}
+				}else{
+					GPIO_t newgpio = gpio;
+					newgpio.lastValue = HIGH;
+					gpio.lastValue = HIGH;
+					DeviceSetting::getInstance()->setGPIOConfig(i, newgpio);
+					lastUpdate[i] = curr;
+					digitalWrite(pin, _state[i].lastValue);
+				}
+			}
+		}
+	}
+}
+
