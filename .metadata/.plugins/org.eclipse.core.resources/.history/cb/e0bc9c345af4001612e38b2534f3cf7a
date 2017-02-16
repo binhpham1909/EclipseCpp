@@ -1,0 +1,38 @@
+/*
+ * WifiManager.h
+ *
+ *  Created on: 4 thg 2, 2017
+ *      Author: MyPC
+ */
+
+#ifndef WIFIMANAGER_H_
+#define WIFIMANAGER_H_
+
+#include "Arduino.h"
+#include "Singleton.h"
+#include "DeviceSetting.h"
+#include "Commander.h"
+#include "GlobalConfigs.h"
+
+#define MAX_LIST_AP	20
+typedef struct {
+  char ssid[32];
+  int rssi;
+} WifiList_t;
+
+class WifiManager : public Singleton<WifiManager> {
+	public:
+		WifiManager();
+		virtual ~WifiManager();
+		void loop();
+		void setAPMode();
+		bool inAPMode();
+		bool inSTAMode();
+		void setSTAMode();
+		bool isConnected();
+		bool isSTAConnected();
+	private:
+		boolean isAPMode;
+};
+
+#endif /* WIFIMANAGER_H_ */

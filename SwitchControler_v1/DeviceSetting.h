@@ -43,7 +43,6 @@ typedef struct __attribute__((packed)){
 	char STAmask[IP_MAX_LEN + 1];	// 17 bytes
 	char STAgateway[IP_MAX_LEN + 1];	// 17 bytes
 	bool DHCP;
-	char APssid[SSID_MAX_LEN + 1];	// 17 bytes
 	char APpassword[WIFI_PASSWORD_MAX_LEN + 1];	// 17 bytes
 	int timezone;
 
@@ -65,6 +64,7 @@ class DeviceSetting : public Singleton<DeviceSetting> {
 	public:
 		DeviceSetting();
 		virtual ~DeviceSetting();
+		void init();
 		bool saveSetting();
 		bool loadSetting();
 		bool resetSettings();
@@ -89,8 +89,6 @@ class DeviceSetting : public Singleton<DeviceSetting> {
 		String getGateway();
 		bool setDHCP(bool value);
 		bool getDHCP();
-		bool setAPssid(const String& value);
-		String getAPssid();
 		bool setAPpassword(const String& value);
 		String getAPpassword();
 

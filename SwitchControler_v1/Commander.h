@@ -12,12 +12,11 @@
 
 #include "GlobalConfigs.h"
 #include "Singleton.h"
-#include "ModuleSettings.h"
+#include "DeviceSetting.h"
 
 #define COMM_COM	"cmd"
 typedef enum { MQTT, HTTP } CmdProvider_t;
-const char JsonTrue[] PROGMEM = "{\"status\":true}";
-const char JsonFalse[] PROGMEM = "{\"status\":false}";
+
 class Commander : public Singleton<Commander> {
 	public:
 		Commander();

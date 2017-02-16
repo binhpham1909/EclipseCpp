@@ -1,0 +1,327 @@
+/*
+ * FirmwareSetting.cpp
+ *
+ *  Created on: 24 thg 1, 2017
+ *      Author: MyPC
+ */
+
+#include "DeviceSetting.h"
+
+DeviceSetting::DeviceSetting() {
+	// TODO Auto-generated constructor stub
+	loadSetting();
+	if(isDirty()){
+		DBGF("Invalid CRC, restore default setting");
+		resetSettings();
+		loadSetting();
+	}
+}
+
+DeviceSetting::~DeviceSetting() {
+	// TODO Auto-generated destructor stub
+	saveSetting();
+}
+
+bool DeviceSetting::loadSetting() {
+	int n = sizeof(DeviceSetting_t);
+	DBG2F("Size of setting in EEPROM (byte):", n);
+	uint8_t *p = (uint8_t*)(&_dv);
+	EEPROM.begin(n);
+	for (int i=0; i<n; i++) {
+		delay(0);
+		*p = EEPROM.read(i);
+		p++;
+	}
+	EEPROM.end();
+	DBG2F("Device name: ", ModuleSettings::getInstance()->getDeviceName());
+	DBG2F("Username: ", ModuleSettings::getInstance()->getUserDevice());
+	DBG2F("Password: ", ModuleSettings::getInstance()->getPassDevice());
+	DBG2F("Wifi SSID: ", ModuleSettings::getInstance()->getWifiSSID());
+	DBG2F("Wifi password: ", ModuleSettings::getInstance()->getWifiPassword());
+	DBG2F("HTTP Server port: ", ModuleSettings::getInstance()->getServerPort());
+	DBG2F("MQTT Username: ", ModuleSettings::getInstance()->getMqttUser());
+	DBG2F("MQTT API: ", ModuleSettings::getInstance()->getMqttAPI());
+	DBG2F("GPIO 0 name: ", ModuleSettings::getInstance()->getGPIOName(0));
+	DBG2F("GPIO 1 name: ", ModuleSettings::getInstance()->getGPIOName(1));
+	return true;
+}
+
+bool DeviceSetting::saveSetting() {
+	int n = sizeof(DeviceSetting_t);
+	uint8_t *p = (uint8_t*)(&_dv);
+	EEPROM.begin(n);
+	for (int i = EEPROM_DEVICE_SETTING; i < n + EEPROM_DEVICE_SETTING; i++) {
+		delay(0);
+		EEPROM.write(i,0);
+	}
+	bool bRvl = EEPROM.commit();
+	for (int i = EEPROM_DEVICE_SETTING; i < n + EEPROM_DEVICE_SETTING; i++) {
+		delay(0);
+		EEPROM.write(i,*p);
+		p++;
+	}
+	bRvl = EEPROM.commit();
+	EEPROM.end();
+	return bRvl;
+}
+
+bool DeviceSetting::resetSettings() {
+	strncpy(_dv.deviceName, HBOS_Device_Name_DEF, DV_NAME_MAX_LEN + 1);
+	strncpy(_dv.adminPassword, HBOS_Super_Password, DV_USER_MAX_LEN + 1);
+	strncpy(_dv.userPassword, HBOS_User_Password, DV_USER_MAX_LEN + 1);
+	strncpy(_dv.STAssid, "", SSID_MAX_LEN + 1);
+	strncpy(_dv.STApassword, "", WIFI_PASSWORD_MAX_LEN + 1);
+	strncpy(_dv.STAip, "", IP_MAX_LEN + 1);
+	strncpy(_dv.STAmask, "", IP_MAX_LEN + 1);
+	strncpy(_dv.STAgateway, "", IP_MAX_LEN + 1);
+	_dv.DHCP = true;
+	strncpy(_dv.APpassword, "", WIFI_PASSWORD_MAX_LEN + 1);
+	_dv.timezone = 59;
+	strncpy(_dv.MQTTServer, HBOS_MQTT_SERVER, MQTT_SERVER_MAX_LEN + 1);
+	strncpy(_dv.MQTTUser, "", MQTT_USER_MAX_LEN + 1);
+	strncpy(_dv.MQTTAPI, "", MQTT_API_MAX_LEN + 1);
+	_dv.MQTTPort = 1883;
+	_dv.HTTPPort = 80;
+	_dv.saveGPIOState = true;
+	GPIOState_t state;
+	state.isEnable = false;
+	state.value = 0;
+	GPIO_t gpio;
+	gpio.ONTime = 500;
+	gpio.OFFTime = 500;
+	char buf[16];
+	for(int i = 0; i < MAX_GPIO_PIN; i++){
+		_dv.gpioState[i] = state;
+		_dv.gpioState[i] = state;
+		sprintf(buf,"IO - %d", i);
+		strncpy(gpio.name, buf, 16);
+		_dv.gpio = gpio;
+	}
+	GPIOTimer_t tim;
+	tim.isEnable = false;
+	tim.time = 0;
+	tim.weekend = 1;
+	for(int i = 0; i < TIMER_MAX_ALLOW; i++){
+		_dv.timer[i] = tim;
+	}
+	_dv.numTimerEnable = 0;
+	updateMD5();
+	saveSetting();
+	return true;
+}
+
+String DeviceSetting::calcMD5() {
+	MD5Builder builder;
+	int md5len = sizeof(_dv.md5);
+	uint8_t *p = (uint8_t*)(&_dv);
+	p += md5len;
+	delay(0);
+	builder.begin();
+	builder.add(p,sizeof(DeviceSetting_t)-md5len);
+	builder.calculate();
+	return builder.toString();
+}
+
+void DeviceSetting::updateMD5() {
+	strncpy(_dv.md5,calcMD5().c_str(),32);
+}
+
+bool DeviceSetting::setDeviceName(const String& value) {
+	if(value.length() > DV_NAME_MAX_LEN || value.length() < 1)	return false;
+	strncpy(_dv.deviceName, value.c_str(), value.length()+1);
+	return true;
+}
+
+String DeviceSetting::getDeviceName() {
+	return String(_dv.deviceName);
+}
+
+bool DeviceSetting::setUserPassword(const String& value) {
+	if(value.length() > DV_USER_MAX_LEN || value.length() < 8)	return false;
+	strncpy(_dv.userPassword, value.c_str(), value.length()+1);
+	return true;
+}
+
+String DeviceSetting::getUserPassword() {
+	return String(_dv.userPassword);
+}
+
+bool DeviceSetting::setSTAssid(const String& value) {
+	if(value.length() > SSID_MAX_LEN || value.length() < 1)	return false;
+	strncpy(_dv.STAssid, value.c_str(), value.length()+1);
+	return true;
+}
+
+String DeviceSetting::getSTAssid() {
+	return String(_dv.STAssid);
+}
+
+bool DeviceSetting::setSTApassword(const String& value) {
+	if(value.length() > WIFI_PASSWORD_MAX_LEN)	return false;
+	strncpy(_dv.STApassword, value.c_str(), value.length()+1);
+	return true;
+}
+
+String DeviceSetting::getSTApassword() {
+	return String(_dv.STApassword);
+}
+
+bool DeviceSetting::setStaticIP(const String& value) {
+	if(value.length() > IP_MAX_LEN || value.length() < 4)	return false;
+	strncpy(_dv.STAip, value.c_str(), value.length()+1);
+	return true;
+}
+
+String DeviceSetting::getStaticIP() {
+	return String(_dv.STAip);
+}
+
+bool DeviceSetting::setMask(const String& value) {
+	if(value.length() > IP_MAX_LEN || value.length() < 4)	return false;
+	strncpy(_dv.STAmask, value.c_str(), value.length()+1);
+	return true;
+}
+
+String DeviceSetting::getMask() {
+	return String(_dv.STAmask);
+}
+
+bool DeviceSetting::setGateway(const String& value) {
+	if(value.length() > IP_MAX_LEN || value.length() < 4)	return false;
+	strncpy(_dv.STAgateway, value.c_str(), value.length()+1);
+	return true;
+}
+
+String DeviceSetting::getGateway() {
+	return String(_dv.STAgateway);
+}
+
+bool DeviceSetting::setDHCP(bool value) {
+	_dv.DHCP = value;
+	return true;
+}
+
+bool DeviceSetting::getDHCP() {
+	return _dv.DHCP;
+}
+
+bool DeviceSetting::setAPpassword(const String& value) {
+	if(value.length() > WIFI_PASSWORD_MAX_LEN)	return false;
+	strncpy(_dv.APpassword, value.c_str(), value.length()+1);
+	return true;
+}
+
+String DeviceSetting::getAPpassword() {
+	return String(_dv.APpassword);
+}
+
+bool DeviceSetting::setTimezone(int value) {
+	_dv.timezone = value;
+	return true;
+}
+
+int DeviceSetting::getTimezone() {
+	return _dv.timezone;
+}
+
+bool DeviceSetting::setMqttServer(const String& value) {
+	if(value.length() > MQTT_SERVER_MAX_LEN || value.length() < 1)	return false;
+	strncpy(_dv.MQTTServer, value.c_str(), value.length()+1);
+	return true;
+}
+
+String DeviceSetting::getMqttServer() {
+	return String(_dv.MQTTServer);
+}
+
+bool DeviceSetting::setMqttUser(const String& value) {
+	if(value.length() > MQTT_USER_MAX_LEN || value.length() < 1)	return false;
+	strncpy(_dv.MQTTUser, value.c_str(), value.length()+1);
+	return true;
+}
+
+String DeviceSetting::getMqttUser() {
+	return String(_dv.MQTTUser);
+}
+
+bool DeviceSetting::setMqttAPI(const String& value) {
+	if(value.length() > MQTT_API_MAX_LEN || value.length() < 10)	return false;
+	strncpy(_dv.MQTTAPI, value.c_str(), value.length()+1);
+	return true;
+}
+
+String DeviceSetting::getMqttAPI() {
+	return String(_dv.MQTTAPI);
+}
+
+bool DeviceSetting::setMQTTPort(int value) {
+	if(value > 0){
+		_dv.MQTTPort = value;
+		return true;
+	}else	return false;
+}
+
+int DeviceSetting::getMQTTPort() {
+	return _dv.MQTTPort;
+}
+
+bool DeviceSetting::setHTTPPort(int value) {
+	if(value > 0){
+		_dv.HTTPPort = value;
+		return true;
+	}else	return false;
+}
+
+int DeviceSetting::getHTTPPort() {
+	return _dv.HTTPPort;
+}
+
+bool DeviceSetting::setGPIOName(int index, const String& value) {
+	if(value.length() > GPIO_NAME_MAX_LEN || value.length() < 1)	return false;
+	strncpy(_dv.gpio[index].name, value.c_str(), value.length()+1);
+	return true;
+}
+
+String DeviceSetting::getGPIOName(int index) {
+	return String(_dv.gpio[index].name);
+}
+
+bool DeviceSetting::init() {
+}
+
+bool DeviceSetting::isDirty() {
+	DBG2F("MD5 of Settings: ",_dv.md5);
+	DBG2F("Calculated MD5:  ",calcMD5());
+	return calcMD5()!=_dv.md5;
+}
+
+bool DeviceSetting::setDeviceSerial(const String& serial) {
+	if(serial.length() > 16 || serial.length() < 10)	return false;
+	strncpy(_dv.deviceSerial, serial.c_str(), serial.length()+1);
+	return true;
+}
+
+String DeviceSetting::getDeviceSerial() {
+	return String(_dv.deviceSerial);
+}
+
+bool DeviceSetting::setAdminPassword(const String& password) {
+	if(password.length() > DV_USER_MAX_LEN || password.length() < 8)	return false;
+	strncpy(_dv.adminPassword, password.c_str(), password.length()+1);
+	return true;
+}
+
+String DeviceSetting::getAdminPassword() {
+	return String(_dv.adminPassword);
+}
+
+GPIO_t DeviceSetting::getGPIOConfig(int index) {
+	return _dv.gpio[index];
+}
+
+bool DeviceSetting::setGPIOConfig(int index, GPIO_t gpio) {
+	_dv.gpio[index] = gpio;
+	return true;
+}
+
+

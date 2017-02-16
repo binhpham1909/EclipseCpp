@@ -37,8 +37,14 @@
 
 #define HBOS_Version	"1.000.000"
 #define	HBOS_Super_User	"admin"
+
 #define	HBOS_Super_Password	"TNENVIBH@9091+"
+#define	HBOS_User_Password	"1234567890"
+#define	HBOS_Device_Name_DEF	"Thiet Bi"
 #define HBOS_GPIO_Type	""
+#define HBOS_MQTT_SERVER	"mqtt.hbinvent.com"
+#define HBOS_WIFI_SSID_DEF	"HBInvent"
+#define HBOS_WIFI_PASS_DEF	"!()(!(*("
 
 /* Cau truc vung nho EEPROM:
  * 0 - 128: Device setting chua du lieu truy xuat nguon goc:
@@ -88,4 +94,13 @@ typedef struct __attribute__((packed)){
 	unsigned long weekend;
 	int isEnable;
 } GPIOTimer_t;
+
+/*
+ * Cac chuoi luu trong PROGMEM
+ */
+
+
+const char JsonTrue[] PROGMEM = "{\"status\":true}";
+const char JsonFalse[] PROGMEM = "{\"status\":false}";
+
 #endif /* GLOBALCONFIGS_H_ */

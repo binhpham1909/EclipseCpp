@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="server" key="selection"/>
 		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="server"/>
 			<item value="dt_MAX_STRING_LEN"/>
 			<item value="stdLoc"/>
 			<item value="_lastSync"/>
@@ -15,7 +16,6 @@
 			<item value="_isSetTime"/>
 			<item value="_Status"/>
 			<item value="Timezone"/>
-			<item value="_dst"/>
 		</list>
 		<list key="replacehistory">
 			<item value="TimeZone"/>

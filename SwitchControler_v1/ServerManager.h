@@ -9,7 +9,7 @@
 #define SERVERMANAGER_H_
 
 #include "ESP8266WebServer.h"
-#include "ModuleSettings.h"
+#include "DeviceSetting.h"
 #include "Singleton.h"
 #include "Commander.h"
 #include "Session.h"

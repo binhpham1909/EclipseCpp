@@ -58,8 +58,17 @@ SysTime.cpp.o: ../SysTime.cpp ../SysTime.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/debug.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic/pins_arduino.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic/common.h \
- ../GlobalConfigs.h ../Singleton.h ../ModuleSettings.h \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/FS.h \
+ ../GlobalConfigs.h ../Singleton.h ../DeviceSetting.h \
+ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM/EEPROM.h \
+ ../GPIOManager.h ../ProgmemStruct.h ../MQTTConnection.h \
+ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/WiFiClient.h \
+ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Print.h \
+ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Client.h \
+ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/IPAddress.h \
+ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Printable.h \
+ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/IPAddress.h \
+ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/include/slist.h \
+ ../Commander.h \
  C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/ArduinoJson.h \
  C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson.h \
  C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson.hpp \
@@ -81,7 +90,6 @@ SysTime.cpp.o: ../SysTime.cpp ../SysTime.h \
  C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../Serialization/../TypeTraits/EnableIf.hpp \
  C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../Serialization/DummyPrint.hpp \
  C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../Serialization/../Print.hpp \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Print.h \
  C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../Serialization/DynamicStringBuilder.hpp \
  C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../Serialization/../StringTraits/StringTraits.hpp \
  C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../Serialization/../StringTraits/CharPointer.hpp \
@@ -133,18 +141,7 @@ SysTime.cpp.o: ../SysTime.cpp ../SysTime.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/errno.h \
  C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx106-elf/include/sys/errno.h \
  C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Serialization/JsonSerializerImpl.hpp \
- ../GPIOManager.h ../DeviceSetting.h \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM/EEPROM.h \
- ../ProgmemStruct.h ../MQTTConnection.h \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/WiFiClient.h \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Client.h \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/IPAddress.h \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Printable.h \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/IPAddress.h \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/include/slist.h \
- ../Commander.h ../WifiManager.h \
- C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master\src/PubSubClient.h \
- ../Session.h \
+ ../WifiManager.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/ESP8266WiFi.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/include/wl_definitions.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/ESP8266WiFiType.h \
@@ -158,6 +155,7 @@ SysTime.cpp.o: ../SysTime.cpp ../SysTime.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Server.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/WiFiClientSecure.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/include/ssl.h \
+ C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master\src/PubSubClient.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer\src/DNSServer.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/WiFiUdp.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Udp.h \
@@ -287,9 +285,31 @@ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\variants\generic/common.h:
 
 ../Singleton.h:
 
-../ModuleSettings.h:
+../DeviceSetting.h:
 
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/FS.h:
+C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM/EEPROM.h:
+
+../GPIOManager.h:
+
+../ProgmemStruct.h:
+
+../MQTTConnection.h:
+
+C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/WiFiClient.h:
+
+C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Print.h:
+
+C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Client.h:
+
+C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/IPAddress.h:
+
+C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Printable.h:
+
+C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/IPAddress.h:
+
+C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/include/slist.h:
+
+../Commander.h:
 
 C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/ArduinoJson.h:
 
@@ -332,8 +352,6 @@ C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserializati
 C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../Serialization/DummyPrint.hpp:
 
 C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../Serialization/../Print.hpp:
-
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Print.h:
 
 C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Deserialization/../Serialization/DynamicStringBuilder.hpp:
 
@@ -437,35 +455,7 @@ C:/eclipse/arduino-1.6.12/hardware/esp8266com/esp8266/tools/sdk/libc/xtensa-lx10
 
 C:\eclipse\EclipseCpp\zzzlibraries\ArduinoJson/include/ArduinoJson/Serialization/JsonSerializerImpl.hpp:
 
-../GPIOManager.h:
-
-../DeviceSetting.h:
-
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\EEPROM/EEPROM.h:
-
-../ProgmemStruct.h:
-
-../MQTTConnection.h:
-
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/WiFiClient.h:
-
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Client.h:
-
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/IPAddress.h:
-
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Printable.h:
-
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/IPAddress.h:
-
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/include/slist.h:
-
-../Commander.h:
-
 ../WifiManager.h:
-
-C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master\src/PubSubClient.h:
-
-../Session.h:
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/ESP8266WiFi.h:
 
@@ -492,6 +482,8 @@ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Server.h:
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/WiFiClientSecure.h:
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/include/ssl.h:
+
+C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master\src/PubSubClient.h:
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer\src/DNSServer.h:
 

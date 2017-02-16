@@ -8,8 +8,9 @@
 #ifndef WIFIMANAGER_H_
 #define WIFIMANAGER_H_
 
+#include "ESP8266WiFi.h"
 #include "Singleton.h"
-#include "ModuleSettings.h"
+#include "DeviceSetting.h"
 #include "Commander.h"
 #include "GlobalConfigs.h"
 
@@ -28,6 +29,8 @@ class WifiManager : public Singleton<WifiManager> {
 		bool inAPMode();
 		bool inSTAMode();
 		void setSTAMode();
+		bool isConnected();
+		bool isSTAConnected();
 	private:
 		boolean isAPMode;
 };

@@ -21,7 +21,7 @@ String Commander::process(String commandJson, CmdProvider_t cmdr ) {
 	JsonObject& root = jsonBuffer.parseObject(commandJson);
 	if(cmdr == MQTT){
 		String pass = root["cmdPassword"].asString();
-		if(!(pass == ModuleSettings::getInstance()->getPassDevice()))
+		if(!(pass == DeviceSetting::getInstance()->getUserPassword()))
 			return FPSTR(JsonFalse);
 	}
 	String cmd = root["cmd"].asString();
@@ -40,21 +40,21 @@ String Commander::process(String commandJson, CmdProvider_t cmdr ) {
 		bool dhcp = root["dhcp"];
 		bool result;
 		if(dhcp){
-			result = ModuleSettings::getInstance()->setWifiSSID(root["ssid"].asString())&
-					ModuleSettings::getInstance()->setWifiPassword(root["wifiPassword"].asString())&
-					ModuleSettings::getInstance()->setServerPort(root["port"].as<int>())&
-					ModuleSettings::getInstance()->setDHCP(dhcp);
+			result = DeviceSetting::getInstance()->setSTAssid(root["ssid"].asString())&
+					DeviceSetting::getInstance()->setSTApassword(root["wifiPassword"].asString())&
+					DeviceSetting::getInstance()->setHTTPPort(root["port"].as<int>())&
+					DeviceSetting::getInstance()->setDHCP(dhcp);
 		}else{
-			result = ModuleSettings::getInstance()->setWifiSSID(root["ssid"].asString())&
-					ModuleSettings::getInstance()->setWifiPassword(root["wifiPassword"].asString())&
-					ModuleSettings::getInstance()->setServerPort(root["port"].as<int>())&
-					ModuleSettings::getInstance()->setStaticIP(root["ip"].asString())&
-					ModuleSettings::getInstance()->setMask(root["mask"].asString())&
-					ModuleSettings::getInstance()->setGateway(root["gw"].asString())&
-					ModuleSettings::getInstance()->setDHCP(dhcp);
+			result = DeviceSetting::getInstance()->setSTAssid(root["ssid"].asString())&
+					DeviceSetting::getInstance()->setSTApassword(root["wifiPassword"].asString())&
+					DeviceSetting::getInstance()->setHTTPPort(root["port"].as<int>())&
+					DeviceSetting::getInstance()->setStaticIP(root["ip"].asString())&
+					DeviceSetting::getInstance()->setMask(root["mask"].asString())&
+					DeviceSetting::getInstance()->setGateway(root["gw"].asString())&
+					DeviceSetting::getInstance()->setDHCP(dhcp);
 		}
 		if(result){
-			ModuleSettings::getInstance()->saveSettings();
+			DeviceSetting::getInstance()->saveSetting();
 			return FPSTR(JsonTrue);
 		}
 		else return FPSTR(JsonFalse);

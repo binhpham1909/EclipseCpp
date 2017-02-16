@@ -9,7 +9,7 @@
 
 WifiManager::WifiManager() {
 	// TODO Auto-generated constructor stub
-
+	setSTAMode();
 }
 
 WifiManager::~WifiManager() {
@@ -20,9 +20,9 @@ void WifiManager::loop() {
 	if(inSTAMode()){
 		if (WiFi.status() != WL_CONNECTED) {
 			DBG0("Connecting to ");
-			DBG0(ModuleSettings::getInstance()->getWifiSSID());
+			DBG0(DeviceSetting::getInstance()->getSTAssid());
 			DBG("...");
-			WiFi.begin(ModuleSettings::getInstance()->getWifiSSID().c_str(), ModuleSettings::getInstance()->getWifiPassword().c_str());
+			WiFi.begin(DeviceSetting::getInstance()->getSTAssid().c_str(), DeviceSetting::getInstance()->getSTApassword().c_str());
 			if (WiFi.waitForConnectResult() != WL_CONNECTED)
 				return;
 			DBG("WiFi connected");
@@ -47,4 +47,12 @@ bool WifiManager::inSTAMode() {
 
 void WifiManager::setSTAMode() {
 	isAPMode = false;
+}
+
+bool WifiManager::isConnected() {
+	return WiFi.status() == WL_CONNECTED;
+}
+
+bool WifiManager::isSTAConnected() {
+	return (WiFi.status() == WL_CONNECTED)&&!isAPMode;
 }

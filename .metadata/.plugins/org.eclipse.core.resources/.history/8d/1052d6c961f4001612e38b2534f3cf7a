@@ -1,0 +1,39 @@
+#include "Arduino.h"
+#include "DeviceSetting.h"
+#include "MQTTConnection.h"
+#include "SerialConnection.h"
+#include "WifiManager.h"
+#include "ServerManager.h"
+#include "SysTime.h"
+#include "TimerManager.h"
+#include "TaskManager.h"
+
+
+//The setup function is called once at startup of the sketch
+void setup()
+{
+// Add your initialization code here
+	INIT_SERIAL_DEBUG();
+	delay(100);
+	DeviceSetting::getInstance()->init();
+	TaskManager::getInstance()->addTask("Wifi Man", wifiTask);
+	TaskManager::getInstance()->addTask("HTTP Serv", httpServerTask);
+	TaskManager::getInstance()->addTask("MQTT Client", mqttTask, checkInternetTask);
+	//TaskManager::getInstance()->addTask("Serial CMD", serialCommTask);
+	TaskManager::getInstance()->addTask("Time sync", timeSyncTask, checkInternetTask, 300000UL);	// 5*60*1000 ms
+	TaskManager::getInstance()->startTasks();
+}
+
+// The loop function is called in an endless loop
+void loop()
+{
+//Add your repeated code here
+	SerialConnection::getInstance()->loop();
+	WifiManager::getInstance()->loop();
+	ServerManager::getInstance()->loop();
+	if(WifiManager::getInstance()->isSTAConnected()){
+		MQTTConnection::getInstance()->loop();
+		SysTime::getInstance()->syncNTP();
+	}
+}
+

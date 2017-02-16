@@ -11,7 +11,7 @@
 #include "Arduino.h"
 #include "GlobalConfigs.h"
 #include "Singleton.h"
-#include "ModuleSettings.h"
+#include "DeviceSetting.h"
 #include "DNSServer.h"
 #include "ProgmemStruct.h"
 
@@ -231,7 +231,7 @@ class SysTime : public Singleton<SysTime>{
 public:
 	SysTime();
 	virtual ~SysTime();
-
+	void init();
 	void    setTime(time_t t);
 	void    setTime(int hr,int min,int sec,int day, int month, int yr);
 	void    adjustTime(long adjustment);
@@ -273,7 +273,7 @@ public:
 	// Time NTP
 	void setNTPServer(const char *server);
 	bool syncNTP();
-
+	bool AutoSync(time_t ifSyncOK = 14400, time_t ifSyncFailed = 300);
 private:
 	tmElements_t _tm;          // a cache of time elements
 	time_t _cacheTime;   // the time the cache was updated
@@ -303,6 +303,7 @@ private:
 	String _NtpServerName;
 	byte* _packetBuffer;
 	time_t _lastSync;
+	time_t _resyncPeriod;
 };
 
 

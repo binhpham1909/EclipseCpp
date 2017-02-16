@@ -7,10 +7,6 @@
 
 #include "TimerManager.h"
 
-#include "SysTime.h"
-
-#include "GlobalConfigs.h"
-#include "Singleton.h"
 TimerManager::TimerManager() {
 	// TODO Auto-generated constructor stub
 

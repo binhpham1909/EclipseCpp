@@ -1,0 +1,61 @@
+/*
+ * MQTTConnection.cpp
+ *
+ *  Created on: 4 thg 2, 2017
+ *      Author: MyPC
+ */
+
+#include "MQTTConnection.h"
+
+MQTTConnection::MQTTConnection() {
+	// TODO Auto-generated constructor stub
+	strncpy(_server, DeviceSetting::getInstance()->getMqttServer().c_str(), MQTT_SERVER_MAX_LEN + 1);
+	String topic = "hbinvent/";
+	topic += DeviceSetting::getInstance()->getDeviceSerial();
+	strncpy(_topic, topic.c_str(), topic.length() + 1);
+	DBG(_server);
+	DBG(_topic);
+	_client = new PubSubClient(_wclient);
+	_client->setServer(DeviceSetting::getInstance()->getMqttServer().c_str(), DeviceSetting::getInstance()->getMQTTPort());
+	_client->setCallback(std::bind(&MQTTConnection::callback, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));
+	// Lay thong tin topic: hbinvent/deviceSerial
+}
+
+MQTTConnection::~MQTTConnection() {
+	// TODO Auto-generated destructor stub
+	delete _client;
+}
+
+
+void MQTTConnection::loop() {
+	if (WifiManager::getInstance()->isSTAConnected()) {
+		if (!_client->connected()) {
+			if (_client->connect(DeviceSetting::getInstance()->getDeviceSerial().c_str(),DeviceSetting::getInstance()->getMqttAPI().c_str(),DeviceSetting::getInstance()->getMqttAPI().c_str())) {
+				_client->subscribe(_topic);
+			}
+		}
+		if (_client->connected())
+			_client->loop();
+	}
+}
+
+void MQTTConnection::callback(char* topic, uint8_t* payload, unsigned int length){
+		String msg;
+		//char msg[length];
+		DBG0(topic);
+		DBG0(" => ");
+		for (unsigned int i = 0; i < length; i++) {
+			msg += (char)(payload[i]);
+		}
+		DBG(msg);
+		Commander::getInstance()->process(msg, MQTT);
+}
+;
+
+bool MQTTConnection::publish(String message) {
+	if (_client->connected()){
+		_client->publish(_topic, message.c_str());
+		return true;
+	}else
+		return false;
+}

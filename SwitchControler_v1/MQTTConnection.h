@@ -10,7 +10,6 @@
 
 #include "WiFiClient.h"
 #include "Singleton.h"
-#include "ModuleSettings.h"
 #include "DeviceSetting.h"
 #include "Commander.h"
 #include "WifiManager.h"
@@ -22,13 +21,15 @@ class MQTTConnection : public Singleton<MQTTConnection>{
 public:
 	MQTTConnection();
 	virtual ~MQTTConnection();
+	void init();
 	void loop();
 	bool publish(String message);
 private:
 	void callback(char* topic, uint8_t* payload, unsigned int length);
 	WiFiClient _wclient;
 	PubSubClient *_client;
-	char* _topic;
+	String _topic;
+	String _server;
 };
 
 #endif /* MQTTCONNECTION_H_ */

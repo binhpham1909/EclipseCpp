@@ -10,6 +10,15 @@
 
 SysTime::SysTime() {
 	// TODO Auto-generated constructor stub
+
+}
+
+SysTime::~SysTime() {
+	// TODO Auto-generated destructor stub
+	if ( _packetBuffer ) free(_packetBuffer);
+}
+
+void SysTime::init() {
 	DBGF("Init System Time.");
 	_syncInterval = 300;
 	_sysTime = 0;
@@ -17,7 +26,7 @@ SysTime::SysTime() {
 	_nextSyncTime = 0;
 	_isSetTime = false;
 	// Timezone
-	_localIndex = ModuleSettings::getInstance()->getTimezone();	// doc cai nay tu EEPROM
+	_localIndex = DeviceSetting::getInstance()->getTimezone();	// doc cai nay tu EEPROM
 	DBG2F("Time zone index: ", _localIndex);
 	readProgmem(&TimeZone [_localIndex*2], _dst);
 	readProgmem(&TimeZone [_localIndex*2 + 1], _std);
@@ -28,12 +37,6 @@ SysTime::SysTime() {
 	_packetBuffer = (byte*)malloc(NTP_PACKET_SIZE);
 	_lastSync = 0;
 }
-
-SysTime::~SysTime() {
-	// TODO Auto-generated destructor stub
-	if ( _packetBuffer ) free(_packetBuffer);
-}
-
 void SysTime::refreshCache(time_t t) {
 	if (t != _cacheTime) {
 		breakTime(t, _tm);
@@ -435,6 +438,20 @@ bool SysTime::syncNTP() {
 	  DBG2F(" - ", second(tn));
 	  return true;
 }
+
+bool SysTime::AutoSync(time_t ifSyncOK, time_t ifSyncFailed) {
+	if ( now() > _resyncPeriod ) {
+		if ( syncNTP() ) {
+			_resyncPeriod = now() + ifSyncOK;
+		}
+		else {
+			_resyncPeriod = now() + ifSyncFailed;
+			return false;
+		}
+	}
+	return true;
+}
+
 bool SysTime::sendNTPpacket(WiFiUDP& udp) {
 	  if ( !_packetBuffer ) {
 		  DBGF("Error: Cannot allocate memory");

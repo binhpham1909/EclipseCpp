@@ -9,8 +9,8 @@
 
 ServerManager::ServerManager() {
 	// TODO Auto-generated constructor stub
-	server = new ESP8266WebServer(ModuleSettings::getInstance()->getServerPort());
-	//Them Cookie vao danh sach header de lay tu client
+	server = new ESP8266WebServer(DeviceSetting::getInstance()->getHTTPPort());
+	//Them Cookie, Host vao danh sach header de lay tu client
 	const char * headerkeys[] = {"Cookie","Host"};
 	size_t headerkeyssize = sizeof(headerkeys)/sizeof(char*);
 	server->collectHeaders(headerkeys, headerkeyssize );
@@ -169,9 +169,17 @@ void ServerManager::handlerLogin() {
 	}else{
 		String username = server->arg("userid");
 		String password = server->arg("password");
-		if(username == ModuleSettings::getInstance()->getUserDevice()){
-			if(password == ModuleSettings::getInstance()->getPassDevice()){
+		if(username == "user"){
+			if(password == DeviceSetting::getInstance()->getUserPassword()){
 				setSession(USER_ROLE);
+				server->send(200, MimeHtml, "ok");
+			}else{
+				server->sendHeader("Connection", "close");
+				server->send(200, MimeHtml, "wrongp");
+			}
+		}else if(username == "admin"){
+			if(password == DeviceSetting::getInstance()->getAdminPassword()){
+				setSession(ADMIN_ROLE);
 				server->send(200, MimeHtml, "ok");
 			}else{
 				server->sendHeader("Connection", "close");
@@ -221,9 +229,9 @@ String ServerManager::getHost() {
 	host = server->header("Host");
 	if ( host.length()<1 ) {
 	host=WiFi.localIP().toString();
-	if ( ModuleSettings::getInstance()->getServerPort()!=80 ) {
+	if ( DeviceSetting::getInstance()->getHTTPPort()!=80 ) {
 	  host += ":";
-	  host += ModuleSettings::getInstance()->getServerPort();
+	  host += DeviceSetting::getInstance()->getHTTPPort();
 	}
 	}
 	DBG2F("Host: ",host);
@@ -233,7 +241,7 @@ String ServerManager::getHost() {
 void ServerManager::setSession(int role) {
 	String cookie;
 	String ssName= Session::getInstance()->createSS(role);
-	cookie = "clid=";
+	cookie = "hbid=";
 	cookie += ssName;
 	cookie += "; Path=/; Max-Age=";
 	cookie += SESSION_EXPIRE_TIME;
@@ -243,7 +251,7 @@ void ServerManager::setSession(int role) {
 
 String ServerManager::getSession() {
 	String cookie = server->header("Cookie");
-	int start = cookie.indexOf("clid=");
+	int start = cookie.indexOf("hbid=");
 	DBGF0("Client Cookie: ");
 	DBG(server->header("Cookie"));
 	return cookie.substring(start+5);
@@ -256,13 +264,13 @@ void ServerManager::handlerGetConfigs() {
 	config.replace("$cf1$","vi");
 
 	config+= FPSTR(configs_nework_js);
-	config.replace("$cf1$",ModuleSettings::getInstance()->getWifiSSID());
-	config.replace("$cf2$",ModuleSettings::getInstance()->getWifiPassword());
-	config.replace("$cf3$",String(ModuleSettings::getInstance()->getDHCP()));
-	config.replace("$cf4$",ModuleSettings::getInstance()->getStaticIP());
-	config.replace("$cf5$",ModuleSettings::getInstance()->getMask());
-	config.replace("$cf6$",ModuleSettings::getInstance()->getGateway());
-	config.replace("$cf7$",String(ModuleSettings::getInstance()->getServerPort()));
+	config.replace("$cf1$",DeviceSetting::getInstance()->getSTAssid());
+	config.replace("$cf2$",DeviceSetting::getInstance()->getSTApassword());
+	config.replace("$cf3$",String(DeviceSetting::getInstance()->getDHCP()));
+	config.replace("$cf4$",DeviceSetting::getInstance()->getStaticIP());
+	config.replace("$cf5$",DeviceSetting::getInstance()->getMask());
+	config.replace("$cf6$",DeviceSetting::getInstance()->getGateway());
+	config.replace("$cf7$",String(DeviceSetting::getInstance()->getHTTPPort()));
 	server->send(200, MimeTypeJS, config);
 }
 

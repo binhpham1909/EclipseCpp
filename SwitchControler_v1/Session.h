@@ -17,7 +17,7 @@
 #define SESSION_EXPIRE_TIME   (600) //  seconds
 
 #define USER_ROLE 1
-#define ADMIN_ROLE 1
+#define ADMIN_ROLE 2
 
 typedef struct __attribute__((packed)) {
 	char name[33];

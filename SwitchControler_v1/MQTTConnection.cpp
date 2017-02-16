@@ -9,14 +9,6 @@
 
 MQTTConnection::MQTTConnection() {
 	// TODO Auto-generated constructor stub
-	const char *server = "mqtt.hbinvent.com";
-	_client = new PubSubClient(_wclient);
-	_client->setServer(server, 1883);
-	_client->setCallback(std::bind(&MQTTConnection::callback, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));
-	// Lay thong tin topic: hbinvent/deviceSerial
-	String topic = "hbinvent/";
-	topic += DeviceSetting::getInstance()->getDeviceSerial();
-	strncpy(_topic, topic.c_str(), topic.length() + 1);
 }
 
 MQTTConnection::~MQTTConnection() {
@@ -26,15 +18,28 @@ MQTTConnection::~MQTTConnection() {
 
 
 void MQTTConnection::loop() {
-	if ((WiFi.status() == WL_CONNECTED)&&WifiManager::getInstance()->inSTAMode()) {
+	if (WifiManager::getInstance()->isSTAConnected()) {
 		if (!_client->connected()) {
-			if (_client->connect(DeviceSetting::getInstance()->getDeviceSerial().c_str(),ModuleSettings::getInstance()->getMqttAPI().c_str(),ModuleSettings::getInstance()->getMqttAPI().c_str())) {
-				_client->subscribe(_topic);
+			if (_client->connect(DeviceSetting::getInstance()->getDeviceSerial().c_str(),DeviceSetting::getInstance()->getMqttAPI().c_str(),DeviceSetting::getInstance()->getMqttAPI().c_str())) {
+				_client->subscribe(_topic.c_str());
 			}
 		}
 		if (_client->connected())
 			_client->loop();
 	}
+}
+
+void MQTTConnection::init() {
+	_server = DeviceSetting::getInstance()->getMqttServer();
+	DBG(_server);
+	_topic = "hbinvent/";
+	_topic += DeviceSetting::getInstance()->getDeviceSerial();
+	DBG(_topic);
+	_client = new PubSubClient(_wclient);
+	_client->setServer(_server.c_str(), DeviceSetting::getInstance()->getMQTTPort());
+	_client->setCallback(std::bind(&MQTTConnection::callback, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));
+	// Lay thong tin topic: hbinvent/deviceSerial
+
 }
 
 void MQTTConnection::callback(char* topic, uint8_t* payload, unsigned int length){
@@ -52,7 +57,7 @@ void MQTTConnection::callback(char* topic, uint8_t* payload, unsigned int length
 
 bool MQTTConnection::publish(String message) {
 	if (_client->connected()){
-		_client->publish(_topic, message.c_str());
+		_client->publish(_topic.c_str(), message.c_str());
 		return true;
 	}else
 		return false;

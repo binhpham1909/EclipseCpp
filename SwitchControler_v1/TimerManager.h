@@ -9,6 +9,7 @@
 #define TIMERMANAGER_H_
 
 #include "GlobalConfigs.h"
+#include "GlobalConfigs.h"
 #include "SysTime.h"
 #include "Singleton.h"
 

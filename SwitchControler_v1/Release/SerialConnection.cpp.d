@@ -140,13 +140,7 @@ SerialConnection.cpp.o: ../SerialConnection.cpp ../SerialConnection.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Printable.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/IPAddress.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/include/slist.h \
- ../ModuleSettings.h \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/FS.h \
- ../Session.h ../SysTime.h \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer\src/DNSServer.h \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/WiFiUdp.h \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Udp.h \
- C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/include/slist.h \
+ ../Commander.h ../WifiManager.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/ESP8266WiFi.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/include/wl_definitions.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/ESP8266WiFiType.h \
@@ -160,7 +154,6 @@ SerialConnection.cpp.o: ../SerialConnection.cpp ../SerialConnection.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Server.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/WiFiClientSecure.h \
  C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/include/ssl.h \
- ../Commander.h ../WifiManager.h \
  C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master\src/PubSubClient.h
 
 ../SerialConnection.h:
@@ -453,21 +446,9 @@ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/IPAddress.h:
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/include/slist.h:
 
-../ModuleSettings.h:
+../Commander.h:
 
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/FS.h:
-
-../Session.h:
-
-../SysTime.h:
-
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\DNSServer\src/DNSServer.h:
-
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/WiFiUdp.h:
-
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Udp.h:
-
-C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/include/slist.h:
+../WifiManager.h:
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/ESP8266WiFi.h:
 
@@ -494,9 +475,5 @@ C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\cores\esp8266/Server.h:
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/WiFiClientSecure.h:
 
 C:\eclipse\arduino-1.6.12\hardware\esp8266com\esp8266\libraries\ESP8266WiFi\src/include/ssl.h:
-
-../Commander.h:
-
-../WifiManager.h:
 
 C:\eclipse\EclipseCpp\zzzlibraries\pubsubclient-master\src/PubSubClient.h:
